@@ -1,0 +1,149 @@
+
+[36mBroker: NINJATRADER  |  127.0.0.1:5555  |  MNQ 06-26[0m
+  Orders enabled: True   Dry run: False
+[32m  ✔ NinjaTrader connected | 127.0.0.1:5555 instrument=MNQ 06-26[0m
+Startup: STARTUP_FLATTEN=false — skipping auto-flatten
+
+[36mConnecting to Interactive Brokers TWS...[0m
+  Connecting to IBKR | 127.0.0.1:7496  clientId=99 ...
+  ✖ IBKR connect failed on 127.0.0.1:7496 → [WinError 1225] The remote computer refused the network connection
+  Connecting to IBKR | 127.0.0.1:7497  clientId=99 ...
+[32m  ✔ IBKR connected | 127.0.0.1:7497[0m
+  NDX contract qualified: NDX NASDAQ USD
+  Fetching EMA/ATR warmup bars (2 days)...
+[32m  ✔ Warmup bars loaded: 156 bars — EMA/ATR ready[0m
+  Pausing 5s before live stream subscription (IBKR pacing)...
+  Starting live 5-min bar stream (Error 162 below is normal)...
+  Live bar stream active: 48 recent bars
+[32m  ✔ Real-time NDX tick subscription active[0m
+
+[36m════════════════════════════════════════════════════════[0m
+  Mode         : [31m[1mLIVE ORDERS[0m
+  Signal window: 09:30 – 15:00 NY
+  Trade window : 10:01 – 15:00 NY
+  EOD flatten  : 15:30 NY
+  Max trades   : 2/day
+[36m════════════════════════════════════════════════════════[0m
+
+
+[36mNew trading day: 2026-05-02 | trade count reset[0m
+
+[HEARTBEAT 13:35:03] NDX=27452.10  trades=0/2  position=FLAT  pending=NONE
+
+[13:35:03] BAR CLOSED 2026-05-01 15:55:00 | O=27709.01  H=27718.19  L=27704.11  C=27706.24 | NDX tick=27452.10
+  [36mEMA=27734.95  ATR=20.58  Angle(slope_atr)=+0.008  Bounce dist=24.69 pts  Risk cap=60 pts[0m
+
+[HEARTBEAT 13:40:03] NDX=27452.10  trades=0/2  position=FLAT  pending=NONE
+
+[33m[1m[Q] Quit requested — exiting WITHOUT squaring off position.{Style.RESET_ALL}
+IBKR disconnected.
+
+[36mBroker: NINJATRADER  |  127.0.0.1:5555  |  MNQ 06-26[0m
+  Orders enabled: True   Dry run: False
+[32m  ✔ NinjaTrader connected | 127.0.0.1:5555 instrument=MNQ 06-26[0m
+Startup: STARTUP_FLATTEN=false — skipping auto-flatten
+
+[36mConnecting to Interactive Brokers TWS...[0m
+  Connecting to IBKR | 127.0.0.1:4001  clientId=99 ...
+[32m  ✔ IBKR connected | 127.0.0.1:4001[0m
+  NDX contract qualified: NDX NASDAQ USD
+  Fetching EMA/ATR warmup bars (2 days)...
+[32m  ✔ Warmup bars loaded: 156 bars — EMA/ATR ready[0m
+  Pausing 5s before live stream subscription (IBKR pacing)...
+  Starting live 5-min bar stream (Error 162 below is normal)...
+  Live bar stream active: 48 recent bars
+[32m  ✔ Real-time NDX tick subscription active[0m
+
+[36m════════════════════════════════════════════════════════[0m
+  Mode         : [31m[1mLIVE ORDERS[0m
+  Signal window: 09:30 – 15:00 NY
+  Trade window : 10:01 – 15:00 NY
+  EOD flatten  : 15:30 NY
+  Max trades   : 2/day
+[36m════════════════════════════════════════════════════════[0m
+
+
+[36mNew trading day: 2026-05-02 | trade count reset[0m
+
+[HEARTBEAT 13:46:35] NDX=27452.10  trades=0/2  position=FLAT  pending=NONE
+
+[13:46:35] BAR CLOSED 2026-05-01 15:55:00 | O=27709.01  H=27718.19  L=27704.11  C=27706.24 | NDX tick=27452.10
+  [36mEMA=27734.95  ATR=20.58  Angle(slope_atr)=+0.008  Bounce dist=24.69 pts  Risk cap=60 pts[0m
+
+[33m[1m[Q] Quit requested — exiting WITHOUT squaring off position.{Style.RESET_ALL}
+IBKR disconnected.
+
+[36mBroker: NINJATRADER  |  127.0.0.1:5555  |  MNQ 06-26[0m
+  Orders enabled: True   Dry run: False
+[32m  ✔ NinjaTrader connected | 127.0.0.1:5555 instrument=MNQ 06-26[0m
+Startup: STARTUP_FLATTEN=false — skipping auto-flatten
+
+[36mConnecting to Interactive Brokers TWS...[0m
+  Connecting to IBKR | 127.0.0.1:4001  clientId=99 ...
+[32m  ✔ IBKR connected | 127.0.0.1:4001[0m
+  NDX contract qualified: NDX NASDAQ USD
+  Fetching EMA/ATR warmup bars (2 days)...
+[32m  ✔ Warmup bars loaded: 156 bars — EMA/ATR ready[0m
+  Pausing 5s before live stream subscription (IBKR pacing)...
+  Starting live 5-min bar stream (Error 162 below is normal)...
+  Live bar stream active: 48 recent bars
+[32m  ✔ Real-time NDX tick subscription active[0m
+
+[36m════════════════════════════════════════════════════════[0m
+  Mode         : [31m[1mLIVE ORDERS[0m
+  Signal window: 09:30 – 15:00 NY
+  Trade window : 10:01 – 15:00 NY
+  EOD flatten  : 15:30 NY
+  Max trades   : 2/day
+[36m════════════════════════════════════════════════════════[0m
+
+
+[36mNew trading day: 2026-05-02 | trade count reset[0m
+
+[HEARTBEAT 13:47:11] NDX=27452.10  trades=0/2  position=FLAT  pending=NONE
+
+[13:47:11] BAR CLOSED 2026-05-01 15:55:00 | O=27709.01  H=27718.19  L=27704.11  C=27706.24 | NDX tick=27452.10
+  [36mEMA=27734.95  ATR=20.58  Angle(slope_atr)=+0.008  Bounce dist=24.69 pts  Risk cap=60 pts[0m
+
+[HEARTBEAT 13:52:11] NDX=27452.10  trades=0/2  position=FLAT  pending=NONE
+
+[33m[1m[Q] Quit requested — exiting WITHOUT squaring off position.{Style.RESET_ALL}
+IBKR disconnected.
+
+[36mBroker: NINJATRADER  |  127.0.0.1:5555  |  MNQ 06-26[0m
+  Orders enabled: True   Dry run: False
+[32m  ✔ NinjaTrader connected | 127.0.0.1:5555 instrument=MNQ 06-26[0m
+Startup: STARTUP_FLATTEN=false — skipping auto-flatten
+
+[36mConnecting to Interactive Brokers TWS...[0m
+  Connecting to IBKR | 127.0.0.1:4001  clientId=99 ...
+  ✖ IBKR connect failed on 127.0.0.1:4001 → [WinError 1225] The remote computer refused the network connection
+  Connecting to IBKR | 127.0.0.1:7497  clientId=99 ...
+[32m  ✔ IBKR connected | 127.0.0.1:7497[0m
+  NDX contract qualified: NDX NASDAQ USD
+  Fetching EMA/ATR warmup bars (2 days)...
+[32m  ✔ Warmup bars loaded: 156 bars — EMA/ATR ready[0m
+  Pausing 5s before live stream subscription (IBKR pacing)...
+  Starting live 5-min bar stream (Error 162 below is normal)...
+  Live bar stream active: 48 recent bars
+[32m  ✔ Real-time NDX tick subscription active[0m
+
+[36m════════════════════════════════════════════════════════[0m
+  Mode         : [31m[1mLIVE ORDERS[0m
+  Signal window: 09:30 – 15:00 NY
+  Trade window : 10:01 – 15:00 NY
+  EOD flatten  : 15:30 NY
+  Max trades   : 2/day
+[36m════════════════════════════════════════════════════════[0m
+
+
+[36mNew trading day: 2026-05-02 | trade count reset[0m
+
+[HEARTBEAT 13:54:15] NDX=27452.10  trades=0/2  position=FLAT  pending=NONE
+
+[13:54:15] BAR CLOSED 2026-05-01 15:55:00 | O=27709.01  H=27718.19  L=27704.11  C=27706.24 | NDX tick=27452.10
+  [36mEMA=27734.95  ATR=20.58  Angle(slope_atr)=+0.008  Bounce dist=24.69 pts  Risk cap=60 pts[0m
+
+[HEARTBEAT 13:59:15] NDX=27452.10  trades=0/2  position=FLAT  pending=NONE
+
+[HEARTBEAT 14:04:15] NDX=27452.10  trades=0/2  position=FLAT  pending=NONE

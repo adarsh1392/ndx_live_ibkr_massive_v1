@@ -1,0 +1,545 @@
+BROKER | name=ninjatrader  host=127.0.0.1  port=5557  instrument=MNQ 06-26
+  orders=False  dry_run=True  default_qty=1
+Startup: skipping auto-flatten (STARTUP_FLATTEN=false)
+Startup cleanup complete.
+
+Connecting to IBKR | 127.0.0.1:7497  clientId=99  timeout=6.0s
+IBKR connected | 127.0.0.1:7497
+NDX contract: NDX NASDAQ USD (IBKR 127.0.0.1:7497)
+Historical bars loaded: 156 bars (5-min, NDX)
+Real-time NDX tick subscription active.
+
+[36m============================================================[0m
+[36m    NDX SIGNAL  →  MNQ EXECUTION  ENGINE[0m
+[36m============================================================[0m
+  Session : 10:01 – 15:00 NY  |  EOD exit: 15:30
+  Signal window : 09:30 - 15:00 NY
+  Trade window  : 10:01 - 15:00 NY
+  Max trades/day: 2
+
+
+New day: 2026-04-30 | trade count reset
+STATUS 5M | now=2026-04-30 08:03:17 EDT ndx=27186.98 in_signal_window=False in_trade_window=False trades=0/2 broker=ninjatrader instrument=MNQ 06-26 position=FLAT pending=NONE
+
+[08:03:17] BAR 2026-04-29 15:50:00 | O=27134.3 H=27162.39 L=27128.94 C=27160.61 | NDX live=27186.98
+[33m  SIGNAL CHECK: NO  | outside_signal_window: bar_time=15:50:00 allowed=09:30:00-15:00:00[0m
+BROKER | name=ninjatrader  host=127.0.0.1  port=5557  instrument=MNQ 06-26
+  orders=False  dry_run=True  default_qty=1
+Startup: skipping auto-flatten (STARTUP_FLATTEN=false)
+Startup cleanup complete.
+
+Connecting to IBKR | 127.0.0.1:7497  clientId=99  timeout=6.0s
+IBKR connected | 127.0.0.1:7497
+NDX contract: NDX NASDAQ USD (IBKR 127.0.0.1:7497)
+Historical bars loaded: 156 bars (5-min, NDX)
+Real-time NDX tick subscription active.
+
+[36m============================================================[0m
+[36m    NDX SIGNAL  →  MNQ EXECUTION  ENGINE[0m
+[36m============================================================[0m
+  Session : 10:01 – 15:00 NY  |  EOD exit: 15:30
+  Signal window : 09:30 - 15:00 NY
+  Trade window  : 10:01 - 15:00 NY
+  Max trades/day: 2
+
+
+New day: 2026-04-30 | trade count reset
+STATUS 5M | now=2026-04-30 09:14:38 EDT ndx=27186.98 in_signal_window=False in_trade_window=False trades=0/2 broker=ninjatrader instrument=MNQ 06-26 position=FLAT pending=NONE
+
+[09:14:38] BAR 2026-04-29 15:50:00 | O=27134.3 H=27162.39 L=27128.94 C=27160.61 | NDX live=27186.98
+[33m  SIGNAL CHECK: NO  | outside_signal_window: bar_time=15:50:00 allowed=09:30:00-15:00:00[0m
+BROKER | name=ninjatrader  host=127.0.0.1  port=5557  instrument=MNQ 06-26
+  orders=True  dry_run=False  default_qty=1
+Startup: skipping auto-flatten (STARTUP_FLATTEN=false)
+Startup cleanup complete.
+
+Connecting to IBKR | 127.0.0.1:7497  clientId=99  timeout=6.0s
+IBKR connected | 127.0.0.1:7497
+NDX contract: NDX NASDAQ USD (IBKR 127.0.0.1:7497)
+Historical bars loaded: 156 bars (5-min, NDX)
+Real-time NDX tick subscription active.
+
+[36m============================================================[0m
+[36m    NDX SIGNAL  →  MNQ EXECUTION  ENGINE[0m
+[36m============================================================[0m
+  Session : 10:01 – 15:00 NY  |  EOD exit: 15:30
+  Signal window : 09:30 - 15:00 NY
+  Trade window  : 10:01 - 15:00 NY
+  Max trades/day: 2
+
+
+New day: 2026-04-30 | trade count reset
+STATUS 5M | now=2026-04-30 09:15:20 EDT ndx=27186.98 in_signal_window=False in_trade_window=False trades=0/2 broker=ninjatrader instrument=MNQ 06-26 position=FLAT pending=NONE
+
+[09:15:20] BAR 2026-04-29 15:50:00 | O=27134.3 H=27162.39 L=27128.94 C=27160.61 | NDX live=27186.98
+[33m  SIGNAL CHECK: NO  | outside_signal_window: bar_time=15:50:00 allowed=09:30:00-15:00:00[0m
+STATUS 5M | now=2026-04-30 09:20:20 EDT ndx=27186.98 in_signal_window=False in_trade_window=False trades=0/2 broker=ninjatrader instrument=MNQ 06-26 position=FLAT pending=NONE
+STATUS 5M | now=2026-04-30 09:25:20 EDT ndx=27186.98 in_signal_window=False in_trade_window=False trades=0/2 broker=ninjatrader instrument=MNQ 06-26 position=FLAT pending=NONE
+STATUS 5M | now=2026-04-30 09:30:20 EDT ndx=27315.84 in_signal_window=True in_trade_window=False trades=0/2 broker=ninjatrader instrument=MNQ 06-26 position=FLAT pending=NONE
+
+[09:30:20] BAR 2026-04-29 15:55:00 | O=27157.11 H=27192.12 L=27151.15 C=27192.12 | NDX live=27318.48
+[33m  SIGNAL CHECK: NO  | outside_signal_window: bar_time=15:55:00 allowed=09:30:00-15:00:00[0m
+
+[09:35:05] BAR 2026-04-30 09:30:00 | O=27328.99 H=27328.99 L=27204.51 C=27215.07 | NDX live=27201.94
+[33m  SIGNAL CHECK: NO  | SHORT_FAILS=not_bearish_regime(slope_atr=0.534 threshold<-0.4) | not_green_candle(close=27215.07 <= open=27328.99) | low_not_below_ema(low=27204.51 >= ema=27160.33) | close_not_below_ema(close_minus_ema=54.74 >= 0) || LONG_FAILS=long_bounce_fail(low_minus_ema=44.18 >= bounce=43.24)[0m
+STATUS 5M | now=2026-04-30 09:35:20 EDT ndx=27200.48 in_signal_window=True in_trade_window=False trades=0/2 broker=ninjatrader instrument=MNQ 06-26 position=FLAT pending=NONE
+BROKER | name=ninjatrader  host=127.0.0.1  port=5557  instrument=MNQ 06-26
+  orders=True  dry_run=False  default_qty=1
+Startup: skipping auto-flatten (STARTUP_FLATTEN=false)
+Startup cleanup complete.
+
+Connecting to IBKR | 127.0.0.1:7497  clientId=99  timeout=6.0s
+IBKR connected | 127.0.0.1:7497
+NDX contract: NDX NASDAQ USD (IBKR 127.0.0.1:7497)
+Historical bars loaded: 80 bars (5-min, NDX)
+Real-time NDX tick subscription active.
+
+[36m============================================================[0m
+[36m    NDX SIGNAL  →  MNQ EXECUTION  ENGINE[0m
+[36m============================================================[0m
+  Session : 10:01 – 15:00 NY  |  EOD exit: 15:30
+  Signal window : 09:30 - 15:00 NY
+  Trade window  : 10:01 - 15:00 NY
+  Max trades/day: 2
+
+
+New day: 2026-04-30 | trade count reset
+STATUS 5M | now=2026-04-30 09:39:30 EDT ndx=27183.59 in_signal_window=True in_trade_window=False trades=0/2 broker=ninjatrader instrument=MNQ 06-26 position=FLAT pending=NONE
+
+[09:39:30] BAR 2026-04-30 09:30:00 | O=27328.99 H=27328.99 L=27204.51 C=27215.07 | NDX live=27183.59
+[33m  SIGNAL CHECK: NO  | SHORT_FAILS=not_bearish_regime(slope_atr=0.534 threshold<-0.4) | not_green_candle(close=27215.07 <= open=27328.99) | low_not_below_ema(low=27204.51 >= ema=27160.33) | close_not_below_ema(close_minus_ema=54.74 >= 0) || LONG_FAILS=long_bounce_fail(low_minus_ema=44.18 >= bounce=43.24)[0m
+[2026-04-30 09:35:00] LONG signal rejected: risk 78.56 pts outside allowed range (0, 60.0]
+
+[09:40:05] BAR 2026-04-30 09:35:00 | O=27213.81 H=27235.01 L=27166.57 C=27168.69 | NDX live=27168.65
+[33m  SIGNAL CHECK: NO  | SHORT_FAILS=not_bearish_regime(slope_atr=0.481 threshold<-0.4) | not_green_candle(close=27168.69 <= open=27213.81) | low_not_below_ema(low=27166.57 >= ema=27161.45) | close_not_below_ema(close_minus_ema=7.24 >= 0) || LONG_FAILS=long_risk_rejected(risk=78.56 not_in_(0,60.00])[0m
+BROKER | name=ninjatrader  host=127.0.0.1  port=5557  instrument=MNQ 06-26
+  orders=True  dry_run=False  default_qty=1
+Startup: skipping auto-flatten (STARTUP_FLATTEN=false)
+Startup cleanup complete.
+
+Connecting to IBKR | 127.0.0.1:7497  clientId=99  timeout=6.0s
+IBKR connected | 127.0.0.1:7497
+NDX contract: NDX NASDAQ USD (IBKR 127.0.0.1:7497)
+Historical bars loaded: 81 bars (5-min, NDX)
+Real-time NDX tick subscription active.
+
+[36m============================================================[0m
+[36m    NDX SIGNAL  →  MNQ EXECUTION  ENGINE[0m
+[36m============================================================[0m
+  Session : 10:01 – 15:00 NY  |  EOD exit: 15:30
+  Signal window : 09:30 - 15:00 NY
+  Trade window  : 10:01 - 15:00 NY
+  Max trades/day: 2
+
+
+New day: 2026-04-30 | trade count reset
+STATUS 5M | now=2026-04-30 09:40:56 EDT ndx=27149.21 in_signal_window=True in_trade_window=False trades=0/2 broker=ninjatrader instrument=MNQ 06-26 position=FLAT pending=NONE
+[2026-04-30 09:35:00] LONG signal rejected: risk 78.56 pts outside allowed range (0, 60.00]
+
+[09:40:56] BAR 2026-04-30 09:35:00 | O=27213.81 H=27235.01 L=27166.57 C=27168.69 | NDX live=27149.21
+[33m  SIGNAL CHECK: NO  | SHORT_FAILS=not_bearish_regime(slope_atr=0.481 threshold<-0.4) | not_green_candle(close=27168.69 <= open=27213.81) | low_not_below_ema(low=27166.57 >= ema=27161.45) | close_not_below_ema(close_minus_ema=7.24 >= 0) || LONG_FAILS=long_risk_rejected(risk=78.56 not_in_(0,60.00])[0m
+
+[09:45:05] BAR 2026-04-30 09:40:00 | O=27167.72 H=27217.37 L=27132.75 C=27217.37 | NDX live=27199.14
+[33m  SIGNAL CHECK: NO  | SHORT_FAILS=not_bearish_regime(slope_atr=0.618 threshold<-0.4) | close_not_below_ema(close_minus_ema=48.47 >= 0) || LONG_FAILS=not_red_candle(close=27217.37 >= open=27167.72)[0m
+STATUS 5M | now=2026-04-30 09:45:56 EDT ndx=27221.09 in_signal_window=True in_trade_window=False trades=0/2 broker=ninjatrader instrument=MNQ 06-26 position=FLAT pending=NONE
+[2026-04-30 09:45:00] LONG signal rejected: risk 65.28 pts outside allowed range (0, 60.00]
+
+[09:50:05] BAR 2026-04-30 09:45:00 | O=27215.88 H=27233.13 L=27153.9 C=27198.53 | NDX live=27202.09
+[33m  SIGNAL CHECK: NO  | SHORT_FAILS=not_bearish_regime(slope_atr=0.643 threshold<-0.4) | not_green_candle(close=27198.53 <= open=27215.88) | close_not_below_ema(close_minus_ema=25.68 >= 0) || LONG_FAILS=long_risk_rejected(risk=65.28 not_in_(0,60.00])[0m
+STATUS 5M | now=2026-04-30 09:50:56 EDT ndx=27193.92 in_signal_window=True in_trade_window=False trades=0/2 broker=ninjatrader instrument=MNQ 06-26 position=FLAT pending=NONE
+
+[09:55:05] BAR 2026-04-30 09:50:00 | O=27198.69 H=27212.21 L=27113.13 C=27114.56 | NDX live=27101.62
+[33m  SIGNAL CHECK: NO  | SHORT_FAILS=not_bearish_regime(slope_atr=0.387 threshold<-0.4) | not_green_candle(close=27114.56 <= open=27198.69) || LONG_FAILS=close_not_above_ema(close_minus_ema=-50.52 <= 0)[0m
+STATUS 5M | now=2026-04-30 09:55:56 EDT ndx=27109.81 in_signal_window=True in_trade_window=False trades=0/2 broker=ninjatrader instrument=MNQ 06-26 position=FLAT pending=NONE
+
+[10:00:05] BAR 2026-04-30 09:55:00 | O=27115.87 H=27125.74 L=27074.21 C=27113.22 | NDX live=27108.10
+[33m  SIGNAL CHECK: NO  | SHORT_FAILS=not_bearish_regime(slope_atr=0.119 threshold<-0.4) | not_green_candle(close=27113.22 <= open=27115.87) | body_too_small(body=2.65 < min=5.00) || LONG_FAILS=not_bullish_regime(slope_atr=0.119 threshold>0.2) | high_not_above_ema(high=27125.74 <= ema=27158.17) | close_not_above_ema(close_minus_ema=-44.95 <= 0) | body_too_small(body=2.65 < min=5.00)[0m
+STATUS 5M | now=2026-04-30 10:00:56 EDT ndx=27127.51 in_signal_window=True in_trade_window=False trades=0/2 broker=ninjatrader instrument=MNQ 06-26 position=FLAT pending=NONE
+
+[10:05:05] BAR 2026-04-30 10:00:00 | O=27116.63 H=27168.72 L=27108.09 C=27153.64 | NDX live=27156.97
+[33m  SIGNAL CHECK: NO  | SHORT_FAILS=not_bearish_regime(slope_atr=-0.050 threshold<-0.4) || LONG_FAILS=not_bullish_regime(slope_atr=-0.050 threshold>0.2) | not_red_candle(close=27153.64 >= open=27116.63) | close_not_above_ema(close_minus_ema=-3.92 <= 0)[0m
+STATUS 5M | now=2026-04-30 10:05:56 EDT ndx=27149.87 in_signal_window=True in_trade_window=True trades=0/2 broker=ninjatrader instrument=MNQ 06-26 position=FLAT pending=NONE
+
+[10:10:05] BAR 2026-04-30 10:05:00 | O=27154.08 H=27164.06 L=27073.22 C=27095.4 | NDX live=27095.84
+[33m  SIGNAL CHECK: NO  | SHORT_FAILS=not_bearish_regime(slope_atr=-0.201 threshold<-0.4) | not_green_candle(close=27095.40 <= open=27154.08) || LONG_FAILS=not_bullish_regime(slope_atr=-0.201 threshold>0.2) | close_not_above_ema(close_minus_ema=-53.87 <= 0)[0m
+STATUS 5M | now=2026-04-30 10:10:56 EDT ndx=27077.00 in_signal_window=True in_trade_window=True trades=0/2 broker=ninjatrader instrument=MNQ 06-26 position=FLAT pending=NONE
+
+[10:15:05] BAR 2026-04-30 10:10:00 | O=27094.1 H=27135.61 L=27068.36 C=27118.71 | NDX live=27108.50
+[33m  SIGNAL CHECK: NO  | SHORT_FAILS=not_bearish_regime(slope_atr=-0.380 threshold<-0.4) || LONG_FAILS=not_bullish_regime(slope_atr=-0.380 threshold>0.2) | not_red_candle(close=27118.71 >= open=27094.10) | high_not_above_ema(high=27135.61 <= ema=27145.20) | close_not_above_ema(close_minus_ema=-26.49 <= 0)[0m
+STATUS 5M | now=2026-04-30 10:15:56 EDT ndx=27091.66 in_signal_window=True in_trade_window=True trades=0/2 broker=ninjatrader instrument=MNQ 06-26 position=FLAT pending=NONE
+
+[10:20:05] BAR 2026-04-30 10:15:00 | O=27117.26 H=27117.27 L=27029.41 C=27078.5 | NDX live=27093.72
+[33m  SIGNAL CHECK: NO  | SHORT_FAILS=not_green_candle(close=27078.50 <= open=27117.26) || LONG_FAILS=not_bullish_regime(slope_atr=-0.547 threshold>0.2) | high_not_above_ema(high=27117.27 <= ema=27136.31) | close_not_above_ema(close_minus_ema=-57.81 <= 0)[0m
+STATUS 5M | now=2026-04-30 10:20:56 EDT ndx=27079.25 in_signal_window=True in_trade_window=True trades=0/2 broker=ninjatrader instrument=MNQ 06-26 position=FLAT pending=NONE
+[2026-04-30 10:20:00] SHORT signal rejected: risk 63.33 pts outside allowed range (0, 60.00]
+
+[10:25:05] BAR 2026-04-30 10:20:00 | O=27077.52 H=27121.06 L=27073.53 C=27102.97 | NDX live=27096.93
+[33m  SIGNAL CHECK: NO  | SHORT_FAILS=short_risk_rejected(risk=63.33 not_in_(0,60.00]) || LONG_FAILS=not_bullish_regime(slope_atr=-0.484 threshold>0.2) | not_red_candle(close=27102.97 >= open=27077.52) | high_not_above_ema(high=27121.06 <= ema=27131.86) | close_not_above_ema(close_minus_ema=-28.89 <= 0)[0m
+STATUS 5M | now=2026-04-30 10:25:56 EDT ndx=27084.32 in_signal_window=True in_trade_window=True trades=0/2 broker=ninjatrader instrument=MNQ 06-26 position=FLAT pending=NONE
+
+[10:30:05] BAR 2026-04-30 10:25:00 | O=27103.03 H=27105.85 L=27054.02 C=27093.24 | NDX live=27075.71
+[33m  SIGNAL CHECK: NO  | SHORT_FAILS=not_green_candle(close=27093.24 <= open=27103.03) || LONG_FAILS=not_bullish_regime(slope_atr=-0.440 threshold>0.2) | high_not_above_ema(high=27105.85 <= ema=27126.71) | close_not_above_ema(close_minus_ema=-33.47 <= 0)[0m
+STATUS 5M | now=2026-04-30 10:30:56 EDT ndx=27109.84 in_signal_window=True in_trade_window=True trades=0/2 broker=ninjatrader instrument=MNQ 06-26 position=FLAT pending=NONE
+
+[10:35:05] BAR 2026-04-30 10:30:00 | O=27089.17 H=27138.85 L=27069.58 C=27080.59 | NDX live=27086.22
+[33m  SIGNAL CHECK: NO  | SHORT_FAILS=not_green_candle(close=27080.59 <= open=27089.17) || LONG_FAILS=not_bullish_regime(slope_atr=-0.499 threshold>0.2) | close_not_above_ema(close_minus_ema=-39.97 <= 0)[0m
+STATUS 5M | now=2026-04-30 10:35:56 EDT ndx=27091.57 in_signal_window=True in_trade_window=True trades=0/2 broker=ninjatrader instrument=MNQ 06-26 position=FLAT pending=NONE
+
+[10:40:05] BAR 2026-04-30 10:35:00 | O=27081.89 H=27093.65 L=27037.88 C=27038.3 | NDX live=27060.89
+[33m  SIGNAL CHECK: NO  | SHORT_FAILS=not_green_candle(close=27038.30 <= open=27081.89) || LONG_FAILS=not_bullish_regime(slope_atr=-0.528 threshold>0.2) | high_not_above_ema(high=27093.65 <= ema=27109.59) | close_not_above_ema(close_minus_ema=-71.29 <= 0)[0m
+STATUS 5M | now=2026-04-30 10:40:56 EDT ndx=27064.13 in_signal_window=True in_trade_window=True trades=0/2 broker=ninjatrader instrument=MNQ 06-26 position=FLAT pending=NONE
+
+[10:45:05] BAR 2026-04-30 10:40:00 | O=27040.38 H=27120.59 L=27039.95 C=27112.17 | NDX live=27120.60
+[33m  SIGNAL CHECK: NO  | SHORT_FAILS=close_not_below_ema(close_minus_ema=2.23 >= 0) || LONG_FAILS=not_bullish_regime(slope_atr=-0.495 threshold>0.2) | not_red_candle(close=27112.17 >= open=27040.38)[0m
+STATUS 5M | now=2026-04-30 10:45:56 EDT ndx=27126.88 in_signal_window=True in_trade_window=True trades=0/2 broker=ninjatrader instrument=MNQ 06-26 position=FLAT pending=NONE
+
+[10:50:05] BAR 2026-04-30 10:45:00 | O=27112.07 H=27162.17 L=27111.35 C=27150.14 | NDX live=27147.64
+[33m  SIGNAL CHECK: NO  | SHORT_FAILS=not_bearish_regime(slope_atr=-0.300 threshold<-0.4) | close_not_below_ema(close_minus_ema=34.84 >= 0) || LONG_FAILS=not_bullish_regime(slope_atr=-0.300 threshold>0.2) | not_red_candle(close=27150.14 >= open=27112.07)[0m
+STATUS 5M | now=2026-04-30 10:50:56 EDT ndx=27154.91 in_signal_window=True in_trade_window=True trades=0/2 broker=ninjatrader instrument=MNQ 06-26 position=FLAT pending=NONE
+
+[10:55:05] BAR 2026-04-30 10:50:00 | O=27147.69 H=27215.9 L=27140.9 C=27208.83 | NDX live=27209.03
+[33m  SIGNAL CHECK: NO  | SHORT_FAILS=not_bearish_regime(slope_atr=-0.059 threshold<-0.4) | low_not_below_ema(low=27140.90 >= ema=27127.77) | close_not_below_ema(close_minus_ema=81.06 >= 0) || LONG_FAILS=not_bullish_regime(slope_atr=-0.059 threshold>0.2) | not_red_candle(close=27208.83 >= open=27147.69)[0m
+STATUS 5M | now=2026-04-30 10:55:56 EDT ndx=27217.10 in_signal_window=True in_trade_window=True trades=0/2 broker=ninjatrader instrument=MNQ 06-26 position=FLAT pending=NONE
+
+[11:00:05] BAR 2026-04-30 10:55:00 | O=27207.56 H=27244.41 L=27206.65 C=27229.36 | NDX live=27231.04
+[33m  SIGNAL CHECK: NO  | SHORT_FAILS=not_bearish_regime(slope_atr=0.220 threshold<-0.4) | low_not_below_ema(low=27206.65 >= ema=27141.31) | close_not_below_ema(close_minus_ema=88.05 >= 0) || LONG_FAILS=not_red_candle(close=27229.36 >= open=27207.56)[0m
+STATUS 5M | now=2026-04-30 11:00:56 EDT ndx=27255.14 in_signal_window=True in_trade_window=True trades=0/2 broker=ninjatrader instrument=MNQ 06-26 position=FLAT pending=NONE
+
+[11:05:05] BAR 2026-04-30 11:00:00 | O=27228.54 H=27272.23 L=27228.53 C=27247.92 | NDX live=27240.85
+[33m  SIGNAL CHECK: NO  | SHORT_FAILS=not_bearish_regime(slope_atr=0.560 threshold<-0.4) | low_not_below_ema(low=27228.53 >= ema=27155.53) | close_not_below_ema(close_minus_ema=92.39 >= 0) || LONG_FAILS=not_red_candle(close=27247.92 >= open=27228.54)[0m
+STATUS 5M | now=2026-04-30 11:05:56 EDT ndx=27237.24 in_signal_window=True in_trade_window=True trades=0/2 broker=ninjatrader instrument=MNQ 06-26 position=FLAT pending=NONE
+
+[11:10:05] BAR 2026-04-30 11:05:00 | O=27245.74 H=27270.43 L=27226.2 C=27270.42 | NDX live=27266.82
+[33m  SIGNAL CHECK: NO  | SHORT_FAILS=not_bearish_regime(slope_atr=0.990 threshold<-0.4) | low_not_below_ema(low=27226.20 >= ema=27170.85) | close_not_below_ema(close_minus_ema=99.57 >= 0) || LONG_FAILS=not_red_candle(close=27270.42 >= open=27245.74)[0m
+STATUS 5M | now=2026-04-30 11:10:56 EDT ndx=27275.00 in_signal_window=True in_trade_window=True trades=0/2 broker=ninjatrader instrument=MNQ 06-26 position=FLAT pending=NONE
+
+[11:15:05] BAR 2026-04-30 11:10:00 | O=27271.55 H=27282.86 L=27243.19 C=27269.41 | NDX live=27267.45
+[33m  SIGNAL CHECK: NO  | SHORT_FAILS=not_bearish_regime(slope_atr=1.227 threshold<-0.4) | not_green_candle(close=27269.41 <= open=27271.55) | low_not_below_ema(low=27243.19 >= ema=27183.99) | close_not_below_ema(close_minus_ema=85.42 >= 0) | body_too_small(body=2.14 < min=5.00) || LONG_FAILS=body_too_small(body=2.14 < min=5.00)[0m
+STATUS 5M | now=2026-04-30 11:15:56 EDT ndx=27268.22 in_signal_window=True in_trade_window=True trades=0/2 broker=ninjatrader instrument=MNQ 06-26 position=FLAT pending=NONE
+[2026-04-30 11:15:00] LONG signal rejected: risk 86.45 pts outside allowed range (0, 80.00]
+
+[11:20:05] BAR 2026-04-30 11:15:00 | O=27270.78 H=27276.22 L=27254.95 C=27264.88 | NDX live=27263.94
+[33m  SIGNAL CHECK: NO  | SHORT_FAILS=not_bearish_regime(slope_atr=1.434 threshold<-0.4) | not_green_candle(close=27264.88 <= open=27270.78) | low_not_below_ema(low=27254.95 >= ema=27194.77) | close_not_below_ema(close_minus_ema=70.11 >= 0) || LONG_FAILS=long_risk_rejected(risk=86.45 not_in_(0,80.00])[0m
+STATUS 5M | now=2026-04-30 11:20:56 EDT ndx=27264.69 in_signal_window=True in_trade_window=True trades=0/2 broker=ninjatrader instrument=MNQ 06-26 position=FLAT pending=NONE
+
+[11:25:05] BAR 2026-04-30 11:20:00 | O=27264.38 H=27267.12 L=27245.73 C=27261.85 | NDX live=27260.33
+[33m  SIGNAL CHECK: NO  | SHORT_FAILS=not_bearish_regime(slope_atr=1.457 threshold<-0.4) | not_green_candle(close=27261.85 <= open=27264.38) | low_not_below_ema(low=27245.73 >= ema=27203.72) | close_not_below_ema(close_minus_ema=58.13 >= 0) | body_too_small(body=2.53 < min=5.00) || LONG_FAILS=body_too_small(body=2.53 < min=5.00)[0m
+STATUS 5M | now=2026-04-30 11:25:56 EDT ndx=27266.03 in_signal_window=True in_trade_window=True trades=0/2 broker=ninjatrader instrument=MNQ 06-26 position=FLAT pending=NONE
+
+[11:30:05] BAR 2026-04-30 11:25:00 | O=27262.61 H=27283.1 L=27258.6 C=27273.43 | NDX live=27276.33
+[33m  SIGNAL CHECK: NO  | SHORT_FAILS=not_bearish_regime(slope_atr=1.509 threshold<-0.4) | low_not_below_ema(low=27258.60 >= ema=27213.01) | close_not_below_ema(close_minus_ema=60.42 >= 0) || LONG_FAILS=not_red_candle(close=27273.43 >= open=27262.61)[0m
+STATUS 5M | now=2026-04-30 11:30:56 EDT ndx=27287.95 in_signal_window=True in_trade_window=True trades=0/2 broker=ninjatrader instrument=MNQ 06-26 position=FLAT pending=NONE
+
+[11:35:05] BAR 2026-04-30 11:30:00 | O=27271.85 H=27304.72 L=27271.17 C=27277.4 | NDX live=27267.43
+[33m  SIGNAL CHECK: NO  | SHORT_FAILS=not_bearish_regime(slope_atr=1.421 threshold<-0.4) | low_not_below_ema(low=27271.17 >= ema=27221.60) | close_not_below_ema(close_minus_ema=55.80 >= 0) || LONG_FAILS=not_red_candle(close=27277.40 >= open=27271.85)[0m
+STATUS 5M | now=2026-04-30 11:35:56 EDT ndx=27260.24 in_signal_window=True in_trade_window=True trades=0/2 broker=ninjatrader instrument=MNQ 06-26 position=FLAT pending=NONE
+
+[11:40:05] BAR 2026-04-30 11:35:00 | O=27274.63 H=27274.64 L=27229.8 C=27235.7 | NDX live=27232.87
+[32m  SIGNAL CHECK: YES | LONG signal | entry=27279.64 sl=27223.48 target=27560.45 risk=56.16 rr=5.00 qty=auto[0m
+[32m  SIGNAL LONG | entry=27279.6  sl=27223.5  target=27560.4  risk=56.16 pts  qty=1[0m
+  TELEGRAM ALERT failed: All connection attempts failed
+STATUS 5M | now=2026-04-30 11:40:56 EDT ndx=27224.39 in_signal_window=True in_trade_window=True trades=0/2 broker=ninjatrader instrument=MNQ 06-26 position=FLAT pending=LONG entry=27279.64 sl=27223.48 target=27560.45 risk=56.16 qty=1 signal_dt=2026-04-30 11:35:00
+BROKER | name=ninjatrader  host=127.0.0.1  port=5557  instrument=MNQ 06-26
+  orders=True  dry_run=False  default_qty=1
+Startup: skipping auto-flatten (STARTUP_FLATTEN=false)
+Startup cleanup complete.
+
+Connecting to IBKR | 127.0.0.1:7497  clientId=99  timeout=6.0s
+IBKR connected | 127.0.0.1:7497
+NDX contract: NDX NASDAQ USD (IBKR 127.0.0.1:7497)
+Historical bars loaded: 105 bars (5-min, NDX)
+Real-time NDX tick subscription active.
+
+[36m============================================================[0m
+[36m    NDX SIGNAL  →  MNQ EXECUTION  ENGINE[0m
+[36m============================================================[0m
+  Session : 10:01 – 15:00 NY  |  EOD exit: 15:30
+  Signal window : 09:30 - 15:00 NY
+  Trade window  : 10:01 - 15:00 NY
+  Max trades/day: 2
+
+
+New day: 2026-04-30 | trade count reset
+STATUS 5M | now=2026-04-30 11:42:59 EDT ndx=27223.32 in_signal_window=True in_trade_window=True trades=0/2 broker=ninjatrader instrument=MNQ 06-26 position=FLAT pending=NONE
+
+[11:42:59] BAR 2026-04-30 11:35:00 | O=27274.63 H=27274.64 L=27229.8 C=27235.7 | NDX live=27223.32
+[32m  SIGNAL CHECK: YES | LONG signal | entry=27279.64 sl=27223.48 target=27560.45 risk=56.16 rr=5.00 qty=auto[0m
+[32m  SIGNAL LONG | entry=27279.6  sl=27223.5  target=27560.4  risk=56.16 pts  qty=1[0m
+  TELEGRAM ALERT sent to chat_id=1372083421
+  TELEGRAM ALERT sent to chat_id=-5036528161
+
+[11:45:05] BAR 2026-04-30 11:40:00 | O=27235.26 H=27241.0 L=27221.85 C=27232.4 | NDX live=27225.98
+[33m  SIGNAL CHECK: NO  | SHORT_FAILS=not_bearish_regime(slope_atr=0.954 threshold<-0.4) | not_green_candle(close=27232.40 <= open=27235.26) | close_not_below_ema(close_minus_ema=7.73 >= 0) | body_too_small(body=2.86 < min=5.00) || LONG_FAILS=body_too_small(body=2.86 < min=5.00)[0m
+STATUS 5M | now=2026-04-30 11:47:59 EDT ndx=27203.60 in_signal_window=True in_trade_window=True trades=0/2 broker=ninjatrader instrument=MNQ 06-26 position=FLAT pending=LONG entry=27279.64 sl=27223.48 target=27560.45 risk=56.16 qty=1 signal_dt=2026-04-30 11:35:00
+
+[11:50:05] BAR 2026-04-30 11:45:00 | O=27229.73 H=27237.46 L=27200.74 C=27237.46 | NDX live=27238.20
+[33m  SIGNAL CHECK: NO  | SHORT_FAILS=not_bearish_regime(slope_atr=0.766 threshold<-0.4) | close_not_below_ema(close_minus_ema=11.09 >= 0) || LONG_FAILS=not_red_candle(close=27237.46 >= open=27229.73)[0m
+STATUS 5M | now=2026-04-30 11:52:59 EDT ndx=27257.55 in_signal_window=True in_trade_window=True trades=0/2 broker=ninjatrader instrument=MNQ 06-26 position=FLAT pending=LONG entry=27279.64 sl=27223.48 target=27560.45 risk=56.16 qty=1 signal_dt=2026-04-30 11:35:00
+
+[11:55:05] BAR 2026-04-30 11:50:00 | O=27238.81 H=27276.45 L=27237.11 C=27272.38 | NDX live=27275.92
+[33m  SIGNAL CHECK: NO  | SHORT_FAILS=not_bearish_regime(slope_atr=0.754 threshold<-0.4) | low_not_below_ema(low=27237.11 >= ema=27232.51) | close_not_below_ema(close_minus_ema=39.87 >= 0) || LONG_FAILS=not_red_candle(close=27272.38 >= open=27238.81)[0m
+[33m
+[11:55:23] ENTRY TRIGGERED | LONG | NDX=27279.86 | level=27279.6[0m
+  MNQ SNAPSHOT unavailable at trigger: ERROR: expected ACTION|DIRECTION|QTY
+  ORDER PUSH -> NinjaTrader ENTRY|LONG|1 instrument=MNQ 06-26 host=127.0.0.1 port=5557
+  ENTRY ORDER response: {'success': True, 'message': 'OK: ENTRY LONG 1 MNQ JUN26', 'data': {}}
+  NINJA FILL (ENTRY): not captured within wait window
+STATUS 5M | now=2026-04-30 11:57:59 EDT ndx=27269.22 in_signal_window=True in_trade_window=True trades=1/2 broker=ninjatrader instrument=MNQ 06-26 position=LONG entry=27279.86 sl=27223.48 target=27560.45 trail_step=0 qty=1 pending=NONE
+
+[12:00:05] BAR 2026-04-30 11:55:00 | O=27272.5 H=27284.83 L=27253.75 C=27254.08 | NDX live=27247.01
+[32m  SIGNAL CHECK: YES | LONG signal | entry=27289.83 sl=27235.38 target=27562.06 risk=54.45 rr=5.00 qty=auto[0m
+[33m  Signal suppressed — position open.[0m
+STATUS 5M | now=2026-04-30 12:02:59 EDT ndx=27232.97 in_signal_window=True in_trade_window=True trades=1/2 broker=ninjatrader instrument=MNQ 06-26 position=LONG entry=27279.86 sl=27223.48 target=27560.45 trail_step=0 qty=1 pending=NONE
+
+[12:05:05] BAR 2026-04-30 12:00:00 | O=27254.48 H=27257.15 L=27228.57 C=27252.87 | NDX live=27251.75
+[33m  SIGNAL CHECK: NO  | SHORT_FAILS=not_bearish_regime(slope_atr=0.482 threshold<-0.4) | not_green_candle(close=27252.87 <= open=27254.48) | close_not_below_ema(close_minus_ema=15.15 >= 0) | body_too_small(body=1.61 < min=5.00) || LONG_FAILS=body_too_small(body=1.61 < min=5.00)[0m
+STATUS 5M | now=2026-04-30 12:07:59 EDT ndx=27265.72 in_signal_window=True in_trade_window=True trades=1/2 broker=ninjatrader instrument=MNQ 06-26 position=LONG entry=27279.86 sl=27223.48 target=27560.45 trail_step=0 qty=1 pending=NONE
+
+[12:10:05] BAR 2026-04-30 12:05:00 | O=27252.49 H=27274.66 L=27251.61 C=27257.28 | NDX live=27254.38
+[33m  SIGNAL CHECK: NO  | SHORT_FAILS=not_bearish_regime(slope_atr=0.520 threshold<-0.4) | low_not_below_ema(low=27251.61 >= ema=27240.32) | close_not_below_ema(close_minus_ema=16.96 >= 0) | body_too_small(body=4.79 < min=5.00) || LONG_FAILS=not_red_candle(close=27257.28 >= open=27252.49) | body_too_small(body=4.79 < min=5.00)[0m
+STATUS 5M | now=2026-04-30 12:12:59 EDT ndx=27278.94 in_signal_window=True in_trade_window=True trades=1/2 broker=ninjatrader instrument=MNQ 06-26 position=LONG entry=27279.86 sl=27223.48 target=27560.45 trail_step=0 qty=1 pending=NONE
+
+[12:15:05] BAR 2026-04-30 12:10:00 | O=27257.05 H=27299.59 L=27253.8 C=27299.58 | NDX live=27300.11
+[33m  SIGNAL CHECK: NO  | SHORT_FAILS=not_bearish_regime(slope_atr=0.723 threshold<-0.4) | low_not_below_ema(low=27253.80 >= ema=27248.22) | close_not_below_ema(close_minus_ema=51.36 >= 0) || LONG_FAILS=not_red_candle(close=27299.58 >= open=27257.05)[0m
+STATUS 5M | now=2026-04-30 12:17:59 EDT ndx=27282.84 in_signal_window=True in_trade_window=True trades=1/2 broker=ninjatrader instrument=MNQ 06-26 position=LONG entry=27279.86 sl=27223.48 target=27560.45 trail_step=0 qty=1 pending=NONE
+
+[12:20:05] BAR 2026-04-30 12:15:00 | O=27299.14 H=27300.12 L=27277.34 C=27295.0 | NDX live=27297.01
+[33m  SIGNAL CHECK: NO  | SHORT_FAILS=not_bearish_regime(slope_atr=0.905 threshold<-0.4) | not_green_candle(close=27295.00 <= open=27299.14) | low_not_below_ema(low=27277.34 >= ema=27254.46) | close_not_below_ema(close_minus_ema=40.54 >= 0) | body_too_small(body=4.14 < min=5.00) || LONG_FAILS=body_too_small(body=4.14 < min=5.00)[0m
+STATUS 5M | now=2026-04-30 12:22:59 EDT ndx=27294.95 in_signal_window=True in_trade_window=True trades=1/2 broker=ninjatrader instrument=MNQ 06-26 position=LONG entry=27279.86 sl=27223.48 target=27560.45 trail_step=0 qty=1 pending=NONE
+
+[12:25:05] BAR 2026-04-30 12:20:00 | O=27292.99 H=27297.99 L=27273.66 C=27273.67 | NDX live=27266.78
+[32m  SIGNAL CHECK: YES | LONG signal | entry=27302.99 sl=27257.02 target=27532.83 risk=45.97 rr=5.00 qty=auto[0m
+[33m  Signal suppressed — position open.[0m
+STATUS 5M | now=2026-04-30 12:27:59 EDT ndx=27274.40 in_signal_window=True in_trade_window=True trades=1/2 broker=ninjatrader instrument=MNQ 06-26 position=LONG entry=27279.86 sl=27223.48 target=27560.45 trail_step=0 qty=1 pending=NONE
+
+[12:30:05] BAR 2026-04-30 12:25:00 | O=27273.53 H=27282.47 L=27262.46 C=27282.11 | NDX live=27287.56
+[33m  SIGNAL CHECK: NO  | SHORT_FAILS=not_bearish_regime(slope_atr=0.837 threshold<-0.4) | low_not_below_ema(low=27262.46 >= ema=27260.37) | close_not_below_ema(close_minus_ema=21.74 >= 0) || LONG_FAILS=not_red_candle(close=27282.11 >= open=27273.53)[0m
+STATUS 5M | now=2026-04-30 12:32:59 EDT ndx=27289.50 in_signal_window=True in_trade_window=True trades=1/2 broker=ninjatrader instrument=MNQ 06-26 position=LONG entry=27279.86 sl=27223.48 target=27560.45 trail_step=0 qty=1 pending=NONE
+
+[12:35:05] BAR 2026-04-30 12:30:00 | O=27282.35 H=27290.87 L=27278.76 C=27282.9 | NDX live=27283.32
+[33m  SIGNAL CHECK: NO  | SHORT_FAILS=not_bearish_regime(slope_atr=0.879 threshold<-0.4) | low_not_below_ema(low=27278.76 >= ema=27263.37) | close_not_below_ema(close_minus_ema=19.53 >= 0) | body_too_small(body=0.55 < min=5.00) || LONG_FAILS=not_red_candle(close=27282.90 >= open=27282.35) | body_too_small(body=0.55 < min=5.00)[0m
+STATUS 5M | now=2026-04-30 12:37:59 EDT ndx=27273.68 in_signal_window=True in_trade_window=True trades=1/2 broker=ninjatrader instrument=MNQ 06-26 position=LONG entry=27279.86 sl=27223.48 target=27560.45 trail_step=0 qty=1 pending=NONE
+
+[12:40:05] BAR 2026-04-30 12:35:00 | O=27283.21 H=27289.51 L=27272.43 C=27289.12 | NDX live=27286.89
+[33m  SIGNAL CHECK: NO  | SHORT_FAILS=not_bearish_regime(slope_atr=0.924 threshold<-0.4) | low_not_below_ema(low=27272.43 >= ema=27266.80) | close_not_below_ema(close_minus_ema=22.32 >= 0) || LONG_FAILS=not_red_candle(close=27289.12 >= open=27283.21)[0m
+STATUS 5M | now=2026-04-30 12:42:59 EDT ndx=27272.37 in_signal_window=True in_trade_window=True trades=1/2 broker=ninjatrader instrument=MNQ 06-26 position=LONG entry=27279.86 sl=27223.48 target=27560.45 trail_step=0 qty=1 pending=NONE
+
+[12:45:05] BAR 2026-04-30 12:40:00 | O=27289.03 H=27289.47 L=27259.66 C=27260.64 | NDX live=27257.63
+[33m  SIGNAL CHECK: NO  | SHORT_FAILS=not_bearish_regime(slope_atr=0.626 threshold<-0.4) | not_green_candle(close=27260.64 <= open=27289.03) || LONG_FAILS=close_not_above_ema(close_minus_ema=-5.34 <= 0)[0m
+STATUS 5M | now=2026-04-30 12:47:59 EDT ndx=27260.85 in_signal_window=True in_trade_window=True trades=1/2 broker=ninjatrader instrument=MNQ 06-26 position=LONG entry=27279.86 sl=27223.48 target=27560.45 trail_step=0 qty=1 pending=NONE
+
+[12:50:05] BAR 2026-04-30 12:45:00 | O=27260.43 H=27266.6 L=27248.72 C=27263.7 | NDX live=27260.87
+[33m  SIGNAL CHECK: NO  | SHORT_FAILS=not_bearish_regime(slope_atr=0.427 threshold<-0.4) | body_too_small(body=3.27 < min=5.00) || LONG_FAILS=not_red_candle(close=27263.70 >= open=27260.43) | close_not_above_ema(close_minus_ema=-1.98 <= 0) | body_too_small(body=3.27 < min=5.00)[0m
+STATUS 5M | now=2026-04-30 12:52:59 EDT ndx=27244.65 in_signal_window=True in_trade_window=True trades=1/2 broker=ninjatrader instrument=MNQ 06-26 position=LONG entry=27279.86 sl=27223.48 target=27560.45 trail_step=0 qty=1 pending=NONE
+
+[12:55:05] BAR 2026-04-30 12:50:00 | O=27263.62 H=27264.04 L=27227.72 C=27237.85 | NDX live=27234.03
+[33m  SIGNAL CHECK: NO  | SHORT_FAILS=not_bearish_regime(slope_atr=0.180 threshold<-0.4) | not_green_candle(close=27237.85 <= open=27263.62) || LONG_FAILS=not_bullish_regime(slope_atr=0.180 threshold>0.2) | close_not_above_ema(close_minus_ema=-24.12 <= 0)[0m
+[31m
+[12:57:01] EXIT | SL | LONG | NDX=27223.31 | level=27223.5 | PnL=-56.38 pts[0m
+  MNQ SNAPSHOT unavailable at exit trigger: ERROR: expected ACTION|DIRECTION|QTY
+  ORDER PUSH -> NinjaTrader EXIT|LONG|1 instrument=MNQ 06-26 host=127.0.0.1 port=5557
+  EXIT ORDER response: {'success': True, 'message': 'OK: EXIT LONG 1 MNQ JUN26', 'data': {}}
+  NINJA FILL (EXIT): not captured within wait window
+STATUS 5M | now=2026-04-30 12:57:59 EDT ndx=27219.58 in_signal_window=True in_trade_window=True trades=1/2 broker=ninjatrader instrument=MNQ 06-26 position=FLAT pending=NONE
+
+[13:00:05] BAR 2026-04-30 12:55:00 | O=27237.38 H=27239.06 L=27217.29 C=27234.9 | NDX live=27236.37
+[33m  SIGNAL CHECK: NO  | SHORT_FAILS=not_bearish_regime(slope_atr=-0.076 threshold<-0.4) | not_green_candle(close=27234.90 <= open=27237.38) | body_too_small(body=2.48 < min=5.00) || LONG_FAILS=not_bullish_regime(slope_atr=-0.076 threshold>0.2) | high_not_above_ema(high=27239.06 <= ema=27258.36) | close_not_above_ema(close_minus_ema=-23.46 <= 0) | body_too_small(body=2.48 < min=5.00)[0m
+STATUS 5M | now=2026-04-30 13:02:59 EDT ndx=27272.72 in_signal_window=True in_trade_window=True trades=1/2 broker=ninjatrader instrument=MNQ 06-26 position=FLAT pending=NONE
+
+[13:05:05] BAR 2026-04-30 13:00:00 | O=27235.55 H=27285.78 L=27235.55 C=27277.97 | NDX live=27278.26
+[33m  SIGNAL CHECK: NO  | SHORT_FAILS=not_bearish_regime(slope_atr=-0.088 threshold<-0.4) | close_not_below_ema(close_minus_ema=17.00 >= 0) || LONG_FAILS=not_bullish_regime(slope_atr=-0.088 threshold>0.2) | not_red_candle(close=27277.97 >= open=27235.55)[0m
+STATUS 5M | now=2026-04-30 13:07:59 EDT ndx=27284.42 in_signal_window=True in_trade_window=True trades=1/2 broker=ninjatrader instrument=MNQ 06-26 position=FLAT pending=NONE
+
+[13:10:05] BAR 2026-04-30 13:05:00 | O=27278.25 H=27295.55 L=27271.34 C=27293.69 | NDX live=27291.13
+[33m  SIGNAL CHECK: NO  | SHORT_FAILS=not_bearish_regime(slope_atr=-0.055 threshold<-0.4) | low_not_below_ema(low=27271.34 >= ema=27265.34) | close_not_below_ema(close_minus_ema=28.35 >= 0) || LONG_FAILS=not_bullish_regime(slope_atr=-0.055 threshold>0.2) | not_red_candle(close=27293.69 >= open=27278.25)[0m
+STATUS 5M | now=2026-04-30 13:12:59 EDT ndx=27302.03 in_signal_window=True in_trade_window=True trades=1/2 broker=ninjatrader instrument=MNQ 06-26 position=FLAT pending=NONE
+
+[13:15:05] BAR 2026-04-30 13:10:00 | O=27293.44 H=27317.85 L=27290.63 C=27314.49 | NDX live=27311.51
+[33m  SIGNAL CHECK: NO  | SHORT_FAILS=not_bearish_regime(slope_atr=0.222 threshold<-0.4) | low_not_below_ema(low=27290.63 >= ema=27271.89) | close_not_below_ema(close_minus_ema=42.60 >= 0) || LONG_FAILS=not_red_candle(close=27314.49 >= open=27293.44)[0m
+STATUS 5M | now=2026-04-30 13:17:59 EDT ndx=27299.30 in_signal_window=True in_trade_window=True trades=1/2 broker=ninjatrader instrument=MNQ 06-26 position=FLAT pending=NONE
+
+[13:20:05] BAR 2026-04-30 13:15:00 | O=27313.82 H=27313.83 L=27293.14 C=27305.18 | NDX live=27305.59
+[32m  SIGNAL CHECK: YES | LONG signal | entry=27318.83 sl=27276.33 target=27531.34 risk=42.50 rr=5.00 qty=auto[0m
+[32m  SIGNAL LONG | entry=27318.8  sl=27276.3  target=27531.3  risk=42.50 pts  qty=1[0m
+  TELEGRAM ALERT sent to chat_id=1372083421
+  TELEGRAM ALERT sent to chat_id=-5036528161
+STATUS 5M | now=2026-04-30 13:22:59 EDT ndx=27302.61 in_signal_window=True in_trade_window=True trades=1/2 broker=ninjatrader instrument=MNQ 06-26 position=FLAT pending=LONG entry=27318.83 sl=27276.33 target=27531.34 risk=42.50 qty=1 signal_dt=2026-04-30 13:15:00
+
+[13:25:05] BAR 2026-04-30 13:20:00 | O=27304.69 H=27318.42 L=27298.25 C=27317.31 | NDX live=27317.01
+[33m  SIGNAL CHECK: NO  | SHORT_FAILS=not_bearish_regime(slope_atr=0.802 threshold<-0.4) | low_not_below_ema(low=27298.25 >= ema=27281.79) | close_not_below_ema(close_minus_ema=35.52 >= 0) || LONG_FAILS=not_red_candle(close=27317.31 >= open=27304.69)[0m
+[33m
+[13:25:18] ENTRY TRIGGERED | LONG | NDX=27318.97 | level=27318.8[0m
+  MNQ SNAPSHOT unavailable at trigger: ERROR: expected ACTION|DIRECTION|QTY
+  ORDER PUSH -> NinjaTrader ENTRY|LONG|1 instrument=MNQ 06-26 host=127.0.0.1 port=5557
+  ENTRY ORDER response: {'success': True, 'message': 'OK: ENTRY LONG 1 MNQ JUN26', 'data': {}}
+  NINJA FILL (ENTRY): not captured within wait window
+STATUS 5M | now=2026-04-30 13:27:59 EDT ndx=27313.50 in_signal_window=True in_trade_window=True trades=2/2 broker=ninjatrader instrument=MNQ 06-26 position=LONG entry=27318.97 sl=27276.33 target=27531.34 trail_step=0 qty=1 pending=NONE
+
+[13:30:05] BAR 2026-04-30 13:25:00 | O=27316.41 H=27327.9 L=27309.3 C=27327.74 | NDX live=27333.95
+[33m  SIGNAL CHECK: NO  | SHORT_FAILS=not_bearish_regime(slope_atr=1.211 threshold<-0.4) | low_not_below_ema(low=27309.30 >= ema=27287.92) | close_not_below_ema(close_minus_ema=39.82 >= 0) || LONG_FAILS=not_red_candle(close=27327.74 >= open=27316.41)[0m
+STATUS 5M | now=2026-04-30 13:32:59 EDT ndx=27349.75 in_signal_window=True in_trade_window=True trades=2/2 broker=ninjatrader instrument=MNQ 06-26 position=LONG entry=27318.97 sl=27276.33 target=27531.34 trail_step=0 qty=1 pending=NONE
+
+[13:35:05] BAR 2026-04-30 13:30:00 | O=27327.36 H=27364.28 L=27326.38 C=27351.88 | NDX live=27350.93
+[33m  SIGNAL CHECK: NO  | SHORT_FAILS=not_bearish_regime(slope_atr=1.398 threshold<-0.4) | low_not_below_ema(low=27326.38 >= ema=27296.45) | close_not_below_ema(close_minus_ema=55.43 >= 0) || LONG_FAILS=not_red_candle(close=27351.88 >= open=27327.36)[0m
+STATUS 5M | now=2026-04-30 13:37:59 EDT ndx=27359.12 in_signal_window=True in_trade_window=True trades=2/2 broker=ninjatrader instrument=MNQ 06-26 position=LONG entry=27318.97 sl=27276.33 target=27531.34 trail_step=0 qty=1 pending=NONE
+
+[13:40:05] BAR 2026-04-30 13:35:00 | O=27351.83 H=27365.72 L=27347.33 C=27365.72 | NDX live=27364.71
+[33m  SIGNAL CHECK: NO  | SHORT_FAILS=not_bearish_regime(slope_atr=1.597 threshold<-0.4) | low_not_below_ema(low=27347.33 >= ema=27305.68) | close_not_below_ema(close_minus_ema=60.04 >= 0) || LONG_FAILS=not_red_candle(close=27365.72 >= open=27351.83)[0m
+STATUS 5M | now=2026-04-30 13:42:59 EDT ndx=27356.98 in_signal_window=True in_trade_window=True trades=2/2 broker=ninjatrader instrument=MNQ 06-26 position=LONG entry=27318.97 sl=27276.33 target=27531.34 trail_step=0 qty=1 pending=NONE
+
+[13:45:05] BAR 2026-04-30 13:40:00 | O=27365.58 H=27367.23 L=27355.9 C=27361.31 | NDX live=27362.90
+[33m  SIGNAL CHECK: NO  | SHORT_FAILS=not_bearish_regime(slope_atr=1.635 threshold<-0.4) | not_green_candle(close=27361.31 <= open=27365.58) | low_not_below_ema(low=27355.90 >= ema=27313.10) | close_not_below_ema(close_minus_ema=48.21 >= 0) | body_too_small(body=4.27 < min=5.00) || LONG_FAILS=body_too_small(body=4.27 < min=5.00)[0m
+STATUS 5M | now=2026-04-30 13:47:59 EDT ndx=27380.28 in_signal_window=True in_trade_window=True trades=2/2 broker=ninjatrader instrument=MNQ 06-26 position=LONG entry=27318.97 sl=27276.33 target=27531.34 trail_step=0 qty=1 pending=NONE
+
+[13:50:05] BAR 2026-04-30 13:45:00 | O=27360.84 H=27385.03 L=27360.7 C=27375.41 | NDX live=27374.29
+[33m  SIGNAL CHECK: NO  | SHORT_FAILS=not_bearish_regime(slope_atr=1.752 threshold<-0.4) | low_not_below_ema(low=27360.70 >= ema=27321.41) | close_not_below_ema(close_minus_ema=54.00 >= 0) || LONG_FAILS=not_red_candle(close=27375.41 >= open=27360.84)[0m
+STATUS 5M | now=2026-04-30 13:52:59 EDT ndx=27376.31 in_signal_window=True in_trade_window=True trades=2/2 broker=ninjatrader instrument=MNQ 06-26 position=LONG entry=27318.97 sl=27276.33 target=27531.34 trail_step=0 qty=1 pending=NONE
+
+[13:55:05] BAR 2026-04-30 13:50:00 | O=27374.74 H=27385.57 L=27371.47 C=27381.93 | NDX live=27383.25
+[33m  SIGNAL CHECK: NO  | SHORT_FAILS=not_bearish_regime(slope_atr=1.938 threshold<-0.4) | low_not_below_ema(low=27371.47 >= ema=27329.48) | close_not_below_ema(close_minus_ema=52.45 >= 0) || LONG_FAILS=not_red_candle(close=27381.93 >= open=27374.74)[0m
+STATUS 5M | now=2026-04-30 13:57:59 EDT ndx=27399.51 in_signal_window=True in_trade_window=True trades=2/2 broker=ninjatrader instrument=MNQ 06-26 position=LONG entry=27318.97 sl=27276.33 target=27531.34 trail_step=0 qty=1 pending=NONE
+[33m
+[13:58:30] TSL MOVED | LONG | new_sl=27340.2 | step 0→1[0m
+
+[14:00:05] BAR 2026-04-30 13:55:00 | O=27381.69 H=27412.98 L=27381.13 C=27410.94 | NDX live=27410.76
+[33m  SIGNAL CHECK: NO  | SHORT_FAILS=not_bearish_regime(slope_atr=2.048 threshold<-0.4) | low_not_below_ema(low=27381.13 >= ema=27340.34) | close_not_below_ema(close_minus_ema=70.60 >= 0) || LONG_FAILS=not_red_candle(close=27410.94 >= open=27381.69)[0m
+STATUS 5M | now=2026-04-30 14:02:59 EDT ndx=27440.55 in_signal_window=True in_trade_window=True trades=2/2 broker=ninjatrader instrument=MNQ 06-26 position=LONG entry=27318.97 sl=27340.22 target=27531.34 trail_step=1 qty=1 pending=NONE
+[33m
+[14:03:21] TSL MOVED | LONG | new_sl=27404.0 | step 1→2[0m
+
+[14:05:05] BAR 2026-04-30 14:00:00 | O=27411.68 H=27447.53 L=27409.73 C=27440.44 | NDX live=27439.87
+[33m  SIGNAL CHECK: NO  | SHORT_FAILS=not_bearish_regime(slope_atr=2.227 threshold<-0.4) | low_not_below_ema(low=27409.73 >= ema=27353.69) | close_not_below_ema(close_minus_ema=86.75 >= 0) || LONG_FAILS=not_red_candle(close=27440.44 >= open=27411.68) | long_bounce_fail(low_minus_ema=56.04 >= bounce=46.27)[0m
+STATUS 5M | now=2026-04-30 14:07:59 EDT ndx=27433.12 in_signal_window=True in_trade_window=True trades=2/2 broker=ninjatrader instrument=MNQ 06-26 position=LONG entry=27318.97 sl=27403.97 target=27531.34 trail_step=2 qty=1 pending=NONE
+
+[14:10:05] BAR 2026-04-30 14:05:00 | O=27441.06 H=27444.79 L=27421.92 C=27426.68 | NDX live=27423.49
+[33m  SIGNAL CHECK: NO  | SHORT_FAILS=not_bearish_regime(slope_atr=2.239 threshold<-0.4) | not_green_candle(close=27426.68 <= open=27441.06) | low_not_below_ema(low=27421.92 >= ema=27363.42) | close_not_below_ema(close_minus_ema=63.26 >= 0) || LONG_FAILS=long_bounce_fail(low_minus_ema=58.50 >= bounce=46.41)[0m
+STATUS 5M | now=2026-04-30 14:12:59 EDT ndx=27430.84 in_signal_window=True in_trade_window=True trades=2/2 broker=ninjatrader instrument=MNQ 06-26 position=LONG entry=27318.97 sl=27403.97 target=27531.34 trail_step=2 qty=1 pending=NONE
+
+[14:15:05] BAR 2026-04-30 14:10:00 | O=27426.82 H=27435.97 L=27419.15 C=27434.39 | NDX live=27436.40
+[33m  SIGNAL CHECK: NO  | SHORT_FAILS=not_bearish_regime(slope_atr=2.560 threshold<-0.4) | low_not_below_ema(low=27419.15 >= ema=27372.88) | close_not_below_ema(close_minus_ema=61.51 >= 0) || LONG_FAILS=not_red_candle(close=27434.39 >= open=27426.82) | long_bounce_fail(low_minus_ema=46.27 >= bounce=42.04)[0m
+STATUS 5M | now=2026-04-30 14:17:59 EDT ndx=27443.82 in_signal_window=True in_trade_window=True trades=2/2 broker=ninjatrader instrument=MNQ 06-26 position=LONG entry=27318.97 sl=27403.97 target=27531.34 trail_step=2 qty=1 pending=NONE
+
+[14:20:05] BAR 2026-04-30 14:15:00 | O=27434.61 H=27449.6 L=27431.74 C=27432.33 | NDX live=27432.00
+[33m  SIGNAL CHECK: NO  | SHORT_FAILS=not_bearish_regime(slope_atr=2.594 threshold<-0.4) | not_green_candle(close=27432.33 <= open=27434.61) | low_not_below_ema(low=27431.74 >= ema=27380.81) | close_not_below_ema(close_minus_ema=51.52 >= 0) | body_too_small(body=2.28 < min=5.00) || LONG_FAILS=long_bounce_fail(low_minus_ema=50.93 >= bounce=41.22) | body_too_small(body=2.28 < min=5.00)[0m
+STATUS 5M | now=2026-04-30 14:22:59 EDT ndx=27427.65 in_signal_window=True in_trade_window=True trades=2/2 broker=ninjatrader instrument=MNQ 06-26 position=LONG entry=27318.97 sl=27403.97 target=27531.34 trail_step=2 qty=1 pending=NONE
+[2026-04-30 14:20:00] LONG signal rejected: risk 53.70 pts outside allowed range (0, 43.87]
+
+[14:25:05] BAR 2026-04-30 14:20:00 | O=27431.68 H=27435.17 L=27421.44 C=27423.28 | NDX live=27420.12
+[33m  SIGNAL CHECK: NO  | SHORT_FAILS=not_bearish_regime(slope_atr=2.598 threshold<-0.4) | not_green_candle(close=27423.28 <= open=27431.68) | low_not_below_ema(low=27421.44 >= ema=27386.47) | close_not_below_ema(close_minus_ema=36.81 >= 0) || LONG_FAILS=long_risk_rejected(risk=53.70 not_in_(0,43.87])[0m
+STATUS 5M | now=2026-04-30 14:27:59 EDT ndx=27420.52 in_signal_window=True in_trade_window=True trades=2/2 broker=ninjatrader instrument=MNQ 06-26 position=LONG entry=27318.97 sl=27403.97 target=27531.34 trail_step=2 qty=1 pending=NONE
+
+[14:30:05] BAR 2026-04-30 14:25:00 | O=27423.06 H=27429.31 L=27418.97 C=27429.31 | NDX live=27429.91
+[33m  SIGNAL CHECK: NO  | SHORT_FAILS=not_bearish_regime(slope_atr=2.451 threshold<-0.4) | low_not_below_ema(low=27418.97 >= ema=27392.18) | close_not_below_ema(close_minus_ema=37.13 >= 0) || LONG_FAILS=not_red_candle(close=27429.31 >= open=27423.06)[0m
+STATUS 5M | now=2026-04-30 14:32:59 EDT ndx=27440.51 in_signal_window=True in_trade_window=True trades=2/2 broker=ninjatrader instrument=MNQ 06-26 position=LONG entry=27318.97 sl=27403.97 target=27531.34 trail_step=2 qty=1 pending=NONE
+
+[14:35:05] BAR 2026-04-30 14:30:00 | O=27428.5 H=27444.2 L=27428.15 C=27438.91 | NDX live=27440.10
+[33m  SIGNAL CHECK: NO  | SHORT_FAILS=not_bearish_regime(slope_atr=2.145 threshold<-0.4) | low_not_below_ema(low=27428.15 >= ema=27398.41) | close_not_below_ema(close_minus_ema=40.50 >= 0) || LONG_FAILS=not_red_candle(close=27438.91 >= open=27428.50)[0m
+STATUS 5M | now=2026-04-30 14:37:59 EDT ndx=27453.21 in_signal_window=True in_trade_window=True trades=2/2 broker=ninjatrader instrument=MNQ 06-26 position=LONG entry=27318.97 sl=27403.97 target=27531.34 trail_step=2 qty=1 pending=NONE
+
+[14:40:05] BAR 2026-04-30 14:35:00 | O=27438.6 H=27456.24 L=27438.6 C=27446.34 | NDX live=27445.32
+[33m  SIGNAL CHECK: NO  | SHORT_FAILS=not_bearish_regime(slope_atr=1.991 threshold<-0.4) | low_not_below_ema(low=27438.60 >= ema=27404.80) | close_not_below_ema(close_minus_ema=41.54 >= 0) || LONG_FAILS=not_red_candle(close=27446.34 >= open=27438.60)[0m
+STATUS 5M | now=2026-04-30 14:42:59 EDT ndx=27441.48 in_signal_window=True in_trade_window=True trades=2/2 broker=ninjatrader instrument=MNQ 06-26 position=LONG entry=27318.97 sl=27403.97 target=27531.34 trail_step=2 qty=1 pending=NONE
+
+[14:45:05] BAR 2026-04-30 14:40:00 | O=27445.67 H=27451.21 L=27439.6 C=27442.82 | NDX live=27439.24
+[33m  SIGNAL CHECK: NO  | SHORT_FAILS=not_bearish_regime(slope_atr=1.956 threshold<-0.4) | not_green_candle(close=27442.82 <= open=27445.67) | low_not_below_ema(low=27439.60 >= ema=27409.87) | close_not_below_ema(close_minus_ema=32.95 >= 0) | body_too_small(body=2.85 < min=5.00) || LONG_FAILS=body_too_small(body=2.85 < min=5.00)[0m
+STATUS 5M | now=2026-04-30 14:47:59 EDT ndx=27443.62 in_signal_window=True in_trade_window=True trades=2/2 broker=ninjatrader instrument=MNQ 06-26 position=LONG entry=27318.97 sl=27403.97 target=27531.34 trail_step=2 qty=1 pending=NONE
+[2026-04-30 14:45:00] LONG signal rejected: risk 38.68 pts outside allowed range (0, 36.79]
+
+[14:50:05] BAR 2026-04-30 14:45:00 | O=27442.51 H=27447.01 L=27435.81 C=27435.81 | NDX live=27434.00
+[33m  SIGNAL CHECK: NO  | SHORT_FAILS=not_bearish_regime(slope_atr=1.768 threshold<-0.4) | not_green_candle(close=27435.81 <= open=27442.51) | low_not_below_ema(low=27435.81 >= ema=27413.33) | close_not_below_ema(close_minus_ema=22.48 >= 0) || LONG_FAILS=long_risk_rejected(risk=38.68 not_in_(0,36.79])[0m
+STATUS 5M | now=2026-04-30 14:52:59 EDT ndx=27438.28 in_signal_window=True in_trade_window=True trades=2/2 broker=ninjatrader instrument=MNQ 06-26 position=LONG entry=27318.97 sl=27403.97 target=27531.34 trail_step=2 qty=1 pending=NONE
+
+[14:55:05] BAR 2026-04-30 14:50:00 | O=27435.82 H=27440.34 L=27428.61 C=27435.98 | NDX live=27434.31
+[33m  SIGNAL CHECK: NO  | SHORT_FAILS=not_bearish_regime(slope_atr=1.622 threshold<-0.4) | low_not_below_ema(low=27428.61 >= ema=27416.35) | close_not_below_ema(close_minus_ema=19.63 >= 0) | body_too_small(body=0.16 < min=5.00) || LONG_FAILS=not_red_candle(close=27435.98 >= open=27435.82) | body_too_small(body=0.16 < min=5.00)[0m
+STATUS 5M | now=2026-04-30 14:57:59 EDT ndx=27420.05 in_signal_window=True in_trade_window=True trades=2/2 broker=ninjatrader instrument=MNQ 06-26 position=LONG entry=27318.97 sl=27403.97 target=27531.34 trail_step=2 qty=1 pending=NONE
+
+[15:00:05] BAR 2026-04-30 14:55:00 | O=27436.2 H=27438.65 L=27414.69 C=27416.55 | NDX live=27416.31
+[32m  SIGNAL CHECK: YES | LONG signal | entry=27443.65 sl=27416.38 target=27580.01 risk=27.27 rr=5.00 qty=auto[0m
+  Signal outside signal window — ignored.
+STATUS 5M | now=2026-04-30 15:02:59 EDT ndx=27429.76 in_signal_window=False in_trade_window=False trades=2/2 broker=ninjatrader instrument=MNQ 06-26 position=LONG entry=27318.97 sl=27403.97 target=27531.34 trail_step=2 qty=1 pending=NONE
+
+[15:05:05] BAR 2026-04-30 15:00:00 | O=27416.2 H=27432.76 L=27408.85 C=27430.59 | NDX live=27431.75
+[33m  SIGNAL CHECK: NO  | SHORT_FAILS=not_bearish_regime(slope_atr=1.040 threshold<-0.4) | close_not_below_ema(close_minus_ema=12.32 >= 0) || LONG_FAILS=not_red_candle(close=27430.59 >= open=27416.20)[0m
+STATUS 5M | now=2026-04-30 15:07:59 EDT ndx=27445.91 in_signal_window=False in_trade_window=False trades=2/2 broker=ninjatrader instrument=MNQ 06-26 position=LONG entry=27318.97 sl=27403.97 target=27531.34 trail_step=2 qty=1 pending=NONE
+
+[15:10:05] BAR 2026-04-30 15:05:00 | O=27430.64 H=27448.86 L=27426.63 C=27443.97 | NDX live=27445.53
+[33m  SIGNAL CHECK: NO  | outside_signal_window: bar_time=15:05:00 allowed=09:30:00-15:00:00[0m
+STATUS 5M | now=2026-04-30 15:12:59 EDT ndx=27454.52 in_signal_window=False in_trade_window=False trades=2/2 broker=ninjatrader instrument=MNQ 06-26 position=LONG entry=27318.97 sl=27403.97 target=27531.34 trail_step=2 qty=1 pending=NONE
+
+[15:15:05] BAR 2026-04-30 15:10:00 | O=27444.44 H=27464.77 L=27444.43 C=27464.48 | NDX live=27463.15
+[33m  SIGNAL CHECK: NO  | outside_signal_window: bar_time=15:10:00 allowed=09:30:00-15:00:00[0m
+STATUS 5M | now=2026-04-30 15:17:59 EDT ndx=27462.76 in_signal_window=False in_trade_window=False trades=2/2 broker=ninjatrader instrument=MNQ 06-26 position=LONG entry=27318.97 sl=27403.97 target=27531.34 trail_step=2 qty=1 pending=NONE
+
+[15:20:05] BAR 2026-04-30 15:15:00 | O=27465.1 H=27468.13 L=27458.62 C=27461.83 | NDX live=27459.21
+[33m  SIGNAL CHECK: NO  | outside_signal_window: bar_time=15:15:00 allowed=09:30:00-15:00:00[0m
+STATUS 5M | now=2026-04-30 15:22:59 EDT ndx=27462.81 in_signal_window=False in_trade_window=False trades=2/2 broker=ninjatrader instrument=MNQ 06-26 position=LONG entry=27318.97 sl=27403.97 target=27531.34 trail_step=2 qty=1 pending=NONE
+
+[15:25:05] BAR 2026-04-30 15:20:00 | O=27461.21 H=27468.71 L=27454.72 C=27467.82 | NDX live=27466.62
+[33m  SIGNAL CHECK: NO  | outside_signal_window: bar_time=15:20:00 allowed=09:30:00-15:00:00[0m
+STATUS 5M | now=2026-04-30 15:27:59 EDT ndx=27464.96 in_signal_window=False in_trade_window=False trades=2/2 broker=ninjatrader instrument=MNQ 06-26 position=LONG entry=27318.97 sl=27403.97 target=27531.34 trail_step=2 qty=1 pending=NONE
+[33m
+EOD 15:30 — flattening all...[0m
+  FLATTEN response: {'success': True, 'message': 'OK: FLATTEN MNQ JUN26', 'data': {}}
+[33mEOD complete.[0m
+
+[15:30:05] BAR 2026-04-30 15:25:00 | O=27467.99 H=27471.94 L=27456.84 C=27456.85 | NDX live=27453.77
+[33m  SIGNAL CHECK: NO  | outside_signal_window: bar_time=15:25:00 allowed=09:30:00-15:00:00[0m
+STATUS 5M | now=2026-04-30 15:41:35 EDT ndx=27459.50 in_signal_window=False in_trade_window=False trades=2/2 broker=ninjatrader instrument=MNQ 06-26 position=FLAT pending=NONE
+STATUS 5M | now=2026-04-30 15:46:35 EDT ndx=27476.49 in_signal_window=False in_trade_window=False trades=2/2 broker=ninjatrader instrument=MNQ 06-26 position=FLAT pending=NONE
+STATUS 5M | now=2026-04-30 15:51:35 EDT ndx=27456.00 in_signal_window=False in_trade_window=False trades=2/2 broker=ninjatrader instrument=MNQ 06-26 position=FLAT pending=NONE
+STATUS 5M | now=2026-04-30 15:56:35 EDT ndx=27447.46 in_signal_window=False in_trade_window=False trades=2/2 broker=ninjatrader instrument=MNQ 06-26 position=FLAT pending=NONE
+STATUS 5M | now=2026-04-30 16:01:35 EDT ndx=27452.12 in_signal_window=False in_trade_window=False trades=2/2 broker=ninjatrader instrument=MNQ 06-26 position=FLAT pending=NONE
+STATUS 5M | now=2026-04-30 16:06:35 EDT ndx=27452.12 in_signal_window=False in_trade_window=False trades=2/2 broker=ninjatrader instrument=MNQ 06-26 position=FLAT pending=NONE
+STATUS 5M | now=2026-04-30 16:11:35 EDT ndx=27452.12 in_signal_window=False in_trade_window=False trades=2/2 broker=ninjatrader instrument=MNQ 06-26 position=FLAT pending=NONE
+STATUS 5M | now=2026-04-30 16:16:35 EDT ndx=27452.12 in_signal_window=False in_trade_window=False trades=2/2 broker=ninjatrader instrument=MNQ 06-26 position=FLAT pending=NONE
+STATUS 5M | now=2026-04-30 16:21:35 EDT ndx=27452.12 in_signal_window=False in_trade_window=False trades=2/2 broker=ninjatrader instrument=MNQ 06-26 position=FLAT pending=NONE
+STATUS 5M | now=2026-04-30 16:26:35 EDT ndx=27452.12 in_signal_window=False in_trade_window=False trades=2/2 broker=ninjatrader instrument=MNQ 06-26 position=FLAT pending=NONE
+STATUS 5M | now=2026-04-30 16:31:35 EDT ndx=27452.12 in_signal_window=False in_trade_window=False trades=2/2 broker=ninjatrader instrument=MNQ 06-26 position=FLAT pending=NONE
+STATUS 5M | now=2026-04-30 16:36:35 EDT ndx=27452.12 in_signal_window=False in_trade_window=False trades=2/2 broker=ninjatrader instrument=MNQ 06-26 position=FLAT pending=NONE
+STATUS 5M | now=2026-04-30 16:41:35 EDT ndx=27452.12 in_signal_window=False in_trade_window=False trades=2/2 broker=ninjatrader instrument=MNQ 06-26 position=FLAT pending=NONE
+STATUS 5M | now=2026-04-30 16:46:35 EDT ndx=27452.12 in_signal_window=False in_trade_window=False trades=2/2 broker=ninjatrader instrument=MNQ 06-26 position=FLAT pending=NONE
+STATUS 5M | now=2026-04-30 16:51:35 EDT ndx=27452.12 in_signal_window=False in_trade_window=False trades=2/2 broker=ninjatrader instrument=MNQ 06-26 position=FLAT pending=NONE
+STATUS 5M | now=2026-04-30 16:56:35 EDT ndx=27452.12 in_signal_window=False in_trade_window=False trades=2/2 broker=ninjatrader instrument=MNQ 06-26 position=FLAT pending=NONE
+STATUS 5M | now=2026-04-30 17:01:35 EDT ndx=27452.12 in_signal_window=False in_trade_window=False trades=2/2 broker=ninjatrader instrument=MNQ 06-26 position=FLAT pending=NONE
+STATUS 5M | now=2026-04-30 17:06:36 EDT ndx=27452.12 in_signal_window=False in_trade_window=False trades=2/2 broker=ninjatrader instrument=MNQ 06-26 position=FLAT pending=NONE
+STATUS 5M | now=2026-04-30 17:11:36 EDT ndx=27452.12 in_signal_window=False in_trade_window=False trades=2/2 broker=ninjatrader instrument=MNQ 06-26 position=FLAT pending=NONE
+STATUS 5M | now=2026-04-30 17:16:36 EDT ndx=27452.12 in_signal_window=False in_trade_window=False trades=2/2 broker=ninjatrader instrument=MNQ 06-26 position=FLAT pending=NONE
+STATUS 5M | now=2026-04-30 17:21:36 EDT ndx=27452.12 in_signal_window=False in_trade_window=False trades=2/2 broker=ninjatrader instrument=MNQ 06-26 position=FLAT pending=NONE
+STATUS 5M | now=2026-04-30 17:26:36 EDT ndx=27452.12 in_signal_window=False in_trade_window=False trades=2/2 broker=ninjatrader instrument=MNQ 06-26 position=FLAT pending=NONE
+STATUS 5M | now=2026-04-30 17:31:36 EDT ndx=27452.12 in_signal_window=False in_trade_window=False trades=2/2 broker=ninjatrader instrument=MNQ 06-26 position=FLAT pending=NONE
+STATUS 5M | now=2026-04-30 17:36:36 EDT ndx=27452.12 in_signal_window=False in_trade_window=False trades=2/2 broker=ninjatrader instrument=MNQ 06-26 position=FLAT pending=NONE
+STATUS 5M | now=2026-04-30 17:41:36 EDT ndx=27452.12 in_signal_window=False in_trade_window=False trades=2/2 broker=ninjatrader instrument=MNQ 06-26 position=FLAT pending=NONE
+STATUS 5M | now=2026-04-30 17:46:36 EDT ndx=27452.12 in_signal_window=False in_trade_window=False trades=2/2 broker=ninjatrader instrument=MNQ 06-26 position=FLAT pending=NONE
+STATUS 5M | now=2026-04-30 17:51:36 EDT ndx=27452.12 in_signal_window=False in_trade_window=False trades=2/2 broker=ninjatrader instrument=MNQ 06-26 position=FLAT pending=NONE
+STATUS 5M | now=2026-04-30 17:56:36 EDT ndx=27452.12 in_signal_window=False in_trade_window=False trades=2/2 broker=ninjatrader instrument=MNQ 06-26 position=FLAT pending=NONE
+STATUS 5M | now=2026-04-30 18:01:36 EDT ndx=27452.12 in_signal_window=False in_trade_window=False trades=2/2 broker=ninjatrader instrument=MNQ 06-26 position=FLAT pending=NONE
+STATUS 5M | now=2026-04-30 18:06:36 EDT ndx=27452.12 in_signal_window=False in_trade_window=False trades=2/2 broker=ninjatrader instrument=MNQ 06-26 position=FLAT pending=NONE
+  TELEGRAM ALERT sent to chat_id=1372083421
+  TELEGRAM ALERT sent to chat_id=-5036528161
+BROKER | name=ninjatrader  host=127.0.0.1  port=5557  instrument=MNQ 06-26
+  orders=True  dry_run=False  default_qty=1
+Startup: skipping auto-flatten (STARTUP_FLATTEN=false)
+Startup cleanup complete.
+
+Connecting to IBKR | 127.0.0.1:7497  clientId=99  timeout=6.0s
+IBKR connected | 127.0.0.1:7497
+NDX contract: NDX NASDAQ USD (IBKR 127.0.0.1:7497)
+Historical bars loaded: 156 bars (5-min, NDX)
+Real-time NDX tick subscription active.
+
+[36m============================================================[0m
+[36m    NDX SIGNAL  →  MNQ EXECUTION  ENGINE[0m
+[36m============================================================[0m
+  Session : 10:01 – 15:00 NY  |  EOD exit: 15:30
+  Signal window : 09:30 - 15:00 NY
+  Trade window  : 10:01 - 15:00 NY
+  Max trades/day: 2
+
+Startup after 15:30 NY; same-day automatic EOD flatten is disabled.
+
+New day: 2026-04-30 | trade count reset
+STATUS 5M | now=2026-04-30 18:11:18 EDT ndx=27452.12 in_signal_window=False in_trade_window=False trades=0/2 broker=ninjatrader instrument=MNQ 06-26 position=FLAT pending=NONE
+
+[18:11:18] BAR 2026-04-30 15:50:00 | O=27483.87 H=27483.87 L=27436.93 C=27463.64 | NDX live=27452.12
+[33m  SIGNAL CHECK: NO  | outside_signal_window: bar_time=15:50:00 allowed=09:30:00-15:00:00[0m
+STATUS 5M | now=2026-04-30 18:11:36 EDT ndx=27452.12 in_signal_window=False in_trade_window=False trades=2/2 broker=ninjatrader instrument=MNQ 06-26 position=FLAT pending=NONE

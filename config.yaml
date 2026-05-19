@@ -1,0 +1,107 @@
+# ---------------------------------------------------------------------------
+# Broker selection: ninjatrader | rithmic
+# ---------------------------------------------------------------------------
+broker:
+  name: ninjatrader
+
+# ---------------------------------------------------------------------------
+# NinjaTrader TCP order server
+# ---------------------------------------------------------------------------
+ninjatrader:
+  host: "127.0.0.1"
+  port: 5555
+  instrument: "MNQ 06-26"
+
+# ---------------------------------------------------------------------------
+# Rithmic bridge (used only when broker.name = rithmic)
+# ---------------------------------------------------------------------------
+rithmic:
+  host: "127.0.0.1"
+  port: 6500
+  instrument: "MNQM6"
+  account_id: ""
+  exchange: "CME"
+  gateway: ""
+
+# ---------------------------------------------------------------------------
+# IBKR connection (data only — NDX price feed)
+#   paper/demo TWS : port 7497
+#   live TWS       : port 7496
+#   IB Gateway live: port 4001
+# ---------------------------------------------------------------------------
+ibkr:
+  host: "127.0.0.1"
+  port: 4001
+  client_id: 99
+  connect_timeout_seconds: 6
+
+# ---------------------------------------------------------------------------
+# Order execution switches
+#   Set enable_orders=true and dry_run=false to go live
+# ---------------------------------------------------------------------------
+execution:
+  enable_orders: true
+  dry_run: false
+  startup_flatten: false
+
+# ---------------------------------------------------------------------------
+# Strategy parameters
+# ---------------------------------------------------------------------------
+strategy:
+  ema_length: 12
+  ema_bar_difference: 4
+  short_slope: -0.3
+  long_slope: 0.2
+  bounce_distance_atr_mult: 1.4
+  sl_atr_mult: 0.6
+  entry_offset_points: 4.0  
+  max_entry_deviation_pts: 10.0   # cancel signal if price runs >N pts past entry level before trigger
+  risk_cap_points: 60.0
+  steep_slope_threshold: 1.0
+  steep_risk_atr_mult: 2.0
+  steep_risk_hard_cap: 90.0
+  steep_bounce_distance_atr_mult: 1.6
+  rr_multiple: 5.0
+  signal_start: "09:30"
+  trade_start: "10:01"
+  session_end: "16:00"
+  max_trades_per_day: 2
+  min_body_points: 5.0
+
+# ---------------------------------------------------------------------------
+# HUD / display
+# ---------------------------------------------------------------------------
+hud:
+  status_update_seconds: 300
+
+# ---------------------------------------------------------------------------
+# Order settings
+# ---------------------------------------------------------------------------
+orders:
+  order_qty: 1 #failsafe default; actual qty is computed dynamically based on risk and this multiplier
+  qty_multiplier: 2         # multiplies the risk-based qty (1=no change, 2=double, etc.)
+  flatten_position_at_end: true
+
+# ---------------------------------------------------------------------------
+# Telegram alerts
+#   Add one entry per bot under `bots`.
+#   Each bot sends to its own chat_ids list.
+#   To find a chat_id: message the bot on Telegram, then run getUpdates.
+# ---------------------------------------------------------------------------
+telegram:
+  enabled: true
+  bots:
+#    - token: "8715734239:AAHP5-h1L6i0abHxRMdITZk_d2PL00kU5DU"
+#      chat_ids: ["1372083421", "-5036528161"]
+    - token: "8731253279:AAErgz35wUVu2Z6uU_698KIp0PxH6NWwwp0"
+      chat_ids: ["631306695"]
+
+# ---------------------------------------------------------------------------
+# Data feed for live NDX price and bar data
+#   source: ibkr    — IBKR TWS / IB Gateway via ib_insync (default)
+#   source: massive — massive.com (Polygon.io) WebSocket + REST API
+# ---------------------------------------------------------------------------
+data_feed:
+  source: massive          # ibkr | massive
+  massive_api_key: "uNioMAkg6bkQVWJGVw4HDDoVEp_GwMlF"
+  massive_ticker: "I:NDX"

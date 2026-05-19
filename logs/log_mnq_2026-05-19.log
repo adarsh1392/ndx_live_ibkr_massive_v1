@@ -1,0 +1,724 @@
+
+[36mBroker: NINJATRADER  |  127.0.0.1:5555  |  MNQ 06-26[0m
+  Orders enabled: True   Dry run: False
+[32m  ✔ NinjaTrader connected | 127.0.0.1:5555 instrument=MNQ 06-26[0m
+Startup: STARTUP_FLATTEN=false — skipping auto-flatten
+
+[36mConnecting to massive.com (Polygon.io) data feed...[0m
+  Waiting 230s for current 5-min bar to complete (next bar at 09:30:00 NY)...
+  Bar complete — fetching warmup bars now.
+  Fetching EMA/ATR warmup bars via Polygon REST API...
+[32m  ✔ Warmup bars loaded: 252 bars — EMA/ATR ready[0m
+  Warmup range: 2026-05-14 09:30 → 2026-05-18 17:15 NY  |  last close=28994.37
+[32m  ✔ Massive WebSocket feed started — streaming I:NDX[0m
+
+[36m════════════════════════════════════════════════════════[0m
+  Mode         : [31m[1mLIVE ORDERS[0m
+  Signal window: 09:30 – 16:00 NY
+  Trade window : 10:01 – 16:00 NY
+  EOD flatten  : 15:30 NY
+  Max trades   : 2/day
+[36m════════════════════════════════════════════════════════[0m
+
+
+[36mNew trading day: 2026-05-19 | trade count reset[0m
+
+[HEARTBEAT 09:30:12] NDX=28795.02  trades=0/2  position=FLAT  pending=NONE
+
+[09:30:12] BAR CLOSED 2026-05-18 17:15:00 | O=28994.37  H=28994.37  L=28994.37  C=28994.37 | NDX tick=28795.02
+  [36m┌─ CANDLE DIAGNOSTICS ──────────────────────────────────────────┐[0m
+  [36m│  EMA-12   :   28988.53[0m
+  [36m│  ATR-14   :       0.00 pts[0m
+  [36m│  Slope    :       +inf   [2m[36m[bullish >+0.200 | bearish <-0.300][0m  →  [32m[1mBULLISH[0m
+  [36m│  Body     :       0.00 pts   [2m[36m(min 5.00 required)[0m
+  [36m│  Bounce   :       0.00 pts   [2m[36m= 1.4 × 0.00 ATR[0m
+  [36m│  H−EMA  :      +5.84 pts   [2m[36m(candle high vs EMA; negative = high below EMA)[0m
+  [36m│  EMA−L  :      -5.84 pts   [2m[36m(EMA vs candle low;  negative = low above EMA)[0m
+  [36m│  SL base  :       0.00 pts   [2m[36m= 0.6 × 0.00 ATR[0m
+  [36m│  Risk cap :      60.00 pts[0m
+  [36m└────────────────────────────────────────────────────────────────┘[0m
+
+[09:35:05] BAR CLOSED 2026-05-19 09:30:00 | O=28795.02  H=28907.97  L=28783.36  C=28860.44 | NDX tick=28838.44
+  [36m┌─ CANDLE DIAGNOSTICS ──────────────────────────────────────────┐[0m
+  [36m│  EMA-12   :   28968.83[0m
+  [36m│  ATR-14   :      15.07 pts[0m
+  [36m│  Slope    :     -1.056   [2m[36m[bullish >+0.200 | bearish <-0.300][0m  →  [31m[1mBEARISH[0m
+  [36m│  Body     :      65.42 pts   [2m[36m(min 5.00 required)[0m
+  [36m│  Bounce   :      21.10 pts   [2m[36m= 1.4 × 15.07 ATR[0m
+  [36m│  H−EMA  :     -60.85 pts   [2m[36m(candle high vs EMA; negative = high below EMA)[0m
+  [36m│  EMA−L  :    +185.46 pts   [2m[36m(EMA vs candle low;  negative = low above EMA)[0m
+  [36m│  SL base  :       9.04 pts   [2m[36m= 0.6 × 15.07 ATR[0m
+  [36m│  Risk cap :      60.00 pts[0m
+  [36m└────────────────────────────────────────────────────────────────┘[0m
+
+[HEARTBEAT 09:35:12] NDX=28868.66  trades=0/2  position=FLAT  pending=NONE
+[2026-05-19 09:35:00] SHORT signal rejected: risk 130.77 pts outside allowed range (0, 60.00]
+
+[09:40:07] BAR CLOSED 2026-05-19 09:35:00 | O=28861.70  H=28978.42  L=28838.44  C=28945.33 | NDX tick=28926.41
+  [36m┌─ CANDLE DIAGNOSTICS ──────────────────────────────────────────┐[0m
+  [36m│  EMA-12   :   28965.21[0m
+  [36m│  ATR-14   :      25.07 pts[0m
+  [36m│  Slope    :     -0.838   [2m[36m[bullish >+0.200 | bearish <-0.300][0m  →  [31m[1mBEARISH[0m
+  [36m│  Body     :      83.62 pts   [2m[36m(min 5.00 required)[0m
+  [36m│  Bounce   :      35.10 pts   [2m[36m= 1.4 × 25.07 ATR[0m
+  [36m│  H−EMA  :     +13.21 pts   [2m[36m(candle high vs EMA; negative = high below EMA)[0m
+  [36m│  EMA−L  :    +126.77 pts   [2m[36m(EMA vs candle low;  negative = low above EMA)[0m
+  [36m│  SL base  :      15.04 pts   [2m[36m= 0.6 × 25.07 ATR[0m
+  [36m│  Risk cap :      60.00 pts[0m
+  [36m└────────────────────────────────────────────────────────────────┘[0m
+
+[HEARTBEAT 09:40:12] NDX=28913.66  trades=0/2  position=FLAT  pending=NONE
+
+[09:45:06] BAR CLOSED 2026-05-19 09:40:00 | O=28945.36  H=28948.45  L=28810.39  C=28819.71 | NDX tick=28837.31
+  [36m┌─ CANDLE DIAGNOSTICS ──────────────────────────────────────────┐[0m
+  [36m│  EMA-12   :   28942.83[0m
+  [36m│  ATR-14   :      34.93 pts[0m
+  [36m│  Slope    :     -1.278   [2m[36m[bullish >+0.200 | bearish <-0.300][0m  →  [31m[1mBEARISH[0m
+  [36m│  Body     :     125.64 pts   [2m[36m(min 5.00 required)[0m
+  [36m│  Bounce   :      48.90 pts   [2m[36m= 1.4 × 34.93 ATR[0m
+  [36m│  H−EMA  :      +5.63 pts   [2m[36m(candle high vs EMA; negative = high below EMA)[0m
+  [36m│  EMA−L  :    +132.43 pts   [2m[36m(EMA vs candle low;  negative = low above EMA)[0m
+  [36m│  SL base  :      20.96 pts   [2m[36m= 0.6 × 34.93 ATR[0m
+  [36m│  Risk cap :      60.00 pts[0m
+  [36m└────────────────────────────────────────────────────────────────┘[0m
+
+[HEARTBEAT 09:45:12] NDX=28821.92  trades=0/2  position=FLAT  pending=NONE
+
+[HEARTBEAT 09:50:12] NDX=28825.50  trades=0/2  position=FLAT  pending=NONE
+[2026-05-19 09:45:00] SHORT signal rejected: risk 151.71 pts outside allowed range (0, 87.43]
+
+[09:50:18] BAR CLOSED 2026-05-19 09:45:00 | O=28819.83  H=28904.05  L=28781.10  C=28851.73 | NDX tick=28838.51
+  [36m┌─ CANDLE DIAGNOSTICS ──────────────────────────────────────────┐[0m
+  [36m│  EMA-12   :   28928.81[0m
+  [36m│  ATR-14   :      43.71 pts[0m
+  [36m│  Slope    :     -1.366   [2m[36m[bullish >+0.200 | bearish <-0.300][0m  →  [31m[1mBEARISH[0m
+  [36m│  Body     :      31.90 pts   [2m[36m(min 5.00 required)[0m
+  [36m│  Bounce   :      61.20 pts   [2m[36m= 1.4 × 43.71 ATR[0m
+  [36m│  H−EMA  :     -24.76 pts   [2m[36m(candle high vs EMA; negative = high below EMA)[0m
+  [36m│  EMA−L  :    +147.71 pts   [2m[36m(EMA vs candle low;  negative = low above EMA)[0m
+  [36m│  SL base  :      26.23 pts   [2m[36m= 0.6 × 43.71 ATR[0m
+  [36m│  Risk cap :      60.00 pts[0m
+  [36m└────────────────────────────────────────────────────────────────┘[0m
+
+[HEARTBEAT 09:55:12] NDX=28917.78  trades=0/2  position=FLAT  pending=NONE
+[2026-05-19 09:50:00] SHORT signal rejected: risk 104.99 pts outside allowed range (0, 60.00]
+
+[09:55:18] BAR CLOSED 2026-05-19 09:50:00 | O=28851.04  H=28910.73  L=28824.18  C=28905.13 | NDX tick=28923.17
+  [36m┌─ CANDLE DIAGNOSTICS ──────────────────────────────────────────┐[0m
+  [36m│  EMA-12   :   28925.17[0m
+  [36m│  ATR-14   :      49.90 pts[0m
+  [36m│  Slope    :     -0.875   [2m[36m[bullish >+0.200 | bearish <-0.300][0m  →  [31m[1mBEARISH[0m
+  [36m│  Body     :      54.09 pts   [2m[36m(min 5.00 required)[0m
+  [36m│  Bounce   :      69.85 pts   [2m[36m= 1.4 × 49.90 ATR[0m
+  [36m│  H−EMA  :     -14.44 pts   [2m[36m(candle high vs EMA; negative = high below EMA)[0m
+  [36m│  EMA−L  :    +100.99 pts   [2m[36m(EMA vs candle low;  negative = low above EMA)[0m
+  [36m│  SL base  :      29.94 pts   [2m[36m= 0.6 × 49.90 ATR[0m
+  [36m│  Risk cap :      60.00 pts[0m
+  [36m└────────────────────────────────────────────────────────────────┘[0m
+
+[33m[1m[Q] Quit requested — exiting WITHOUT squaring off position.{Style.RESET_ALL}
+
+[36mBroker: NINJATRADER  |  127.0.0.1:5555  |  MNQ 06-26[0m
+  Orders enabled: True   Dry run: False
+[32m  ✔ NinjaTrader connected | 127.0.0.1:5555 instrument=MNQ 06-26[0m
+Startup: STARTUP_FLATTEN=false — skipping auto-flatten
+
+[36mConnecting to massive.com (Polygon.io) data feed...[0m
+  Waiting 254s for current 5-min bar to complete (next bar at 10:05:00 NY)...
+  Bar complete — fetching warmup bars now.
+  Fetching EMA/ATR warmup bars via Polygon REST API...
+[32m  ✔ Warmup bars loaded: 259 bars — EMA/ATR ready[0m
+  Warmup range: 2026-05-14 09:30 → 2026-05-19 10:00 NY  |  last close=28821.48
+[32m  ✔ Massive WebSocket feed started — streaming I:NDX[0m
+
+[36m════════════════════════════════════════════════════════[0m
+  Mode         : [31m[1mLIVE ORDERS[0m
+  Signal window: 09:30 – 16:00 NY
+  Trade window : 10:01 – 16:00 NY
+  EOD flatten  : 15:30 NY
+  Max trades   : 2/day
+[36m════════════════════════════════════════════════════════[0m
+
+
+[36mNew trading day: 2026-05-19 | trade count reset[0m
+
+[HEARTBEAT 10:05:24] NDX=28794.28  trades=0/2  position=FLAT  pending=NONE
+
+[10:05:24] BAR CLOSED 2026-05-19 10:00:00 | O=28842.32  H=28842.32  L=28775.87  C=28821.48 | NDX tick=28794.28
+  [36m┌─ CANDLE DIAGNOSTICS ──────────────────────────────────────────┐[0m
+  [36m│  EMA-12   :   28897.79[0m
+  [36m│  ATR-14   :      62.00 pts[0m
+  [36m│  Slope    :     -0.726   [2m[36m[bullish >+0.200 | bearish <-0.300][0m  →  [31m[1mBEARISH[0m
+  [36m│  Body     :      20.84 pts   [2m[36m(min 5.00 required)[0m
+  [36m│  Bounce   :      86.80 pts   [2m[36m= 1.4 × 62.00 ATR[0m
+  [36m│  H−EMA  :     -55.48 pts   [2m[36m(candle high vs EMA; negative = high below EMA)[0m
+  [36m│  EMA−L  :    +121.92 pts   [2m[36m(EMA vs candle low;  negative = low above EMA)[0m
+  [36m│  SL base  :      37.20 pts   [2m[36m= 0.6 × 62.00 ATR[0m
+  [36m│  Risk cap :      60.00 pts[0m
+  [36m└────────────────────────────────────────────────────────────────┘[0m
+
+[10:10:06] BAR CLOSED 2026-05-19 10:05:00 | O=28819.55  H=28825.74  L=28674.81  C=28699.00 | NDX tick=28688.01
+  [36m┌─ CANDLE DIAGNOSTICS ──────────────────────────────────────────┐[0m
+  [36m│  EMA-12   :   28867.21[0m
+  [36m│  ATR-14   :      72.78 pts[0m
+  [36m│  Slope    :     -0.846   [2m[36m[bullish >+0.200 | bearish <-0.300][0m  →  [31m[1mBEARISH[0m
+  [36m│  Body     :     120.55 pts   [2m[36m(min 5.00 required)[0m
+  [36m│  Bounce   :     101.89 pts   [2m[36m= 1.4 × 72.78 ATR[0m
+  [36m│  H−EMA  :     -41.47 pts   [2m[36m(candle high vs EMA; negative = high below EMA)[0m
+  [36m│  EMA−L  :    +192.40 pts   [2m[36m(EMA vs candle low;  negative = low above EMA)[0m
+  [36m│  SL base  :      43.67 pts   [2m[36m= 0.6 × 72.78 ATR[0m
+  [36m│  Risk cap :      60.00 pts[0m
+  [36m└────────────────────────────────────────────────────────────────┘[0m
+
+[HEARTBEAT 10:10:24] NDX=28687.97  trades=0/2  position=FLAT  pending=NONE
+
+[10:15:18] BAR CLOSED 2026-05-19 10:10:00 | O=28698.44  H=28726.34  L=28632.70  C=28640.96 | NDX tick=28625.48
+  [36m┌─ CANDLE DIAGNOSTICS ──────────────────────────────────────────┐[0m
+  [36m│  EMA-12   :   28832.40[0m
+  [36m│  ATR-14   :      79.47 pts[0m
+  [36m│  Slope    :     -1.167   [2m[36m[bullish >+0.200 | bearish <-0.300][0m  →  [31m[1mBEARISH[0m
+  [36m│  Body     :      57.48 pts   [2m[36m(min 5.00 required)[0m
+  [36m│  Bounce   :     111.25 pts   [2m[36m= 1.4 × 79.47 ATR[0m
+  [36m│  H−EMA  :    -106.06 pts   [2m[36m(candle high vs EMA; negative = high below EMA)[0m
+  [36m│  EMA−L  :    +199.70 pts   [2m[36m(EMA vs candle low;  negative = low above EMA)[0m
+  [36m│  SL base  :      47.68 pts   [2m[36m= 0.6 × 79.47 ATR[0m
+  [36m│  Risk cap :      60.00 pts[0m
+  [36m└────────────────────────────────────────────────────────────────┘[0m
+
+[HEARTBEAT 10:15:24] NDX=28633.01  trades=0/2  position=FLAT  pending=NONE
+
+[10:20:08] BAR CLOSED 2026-05-19 10:15:00 | O=28637.75  H=28646.16  L=28598.06  C=28610.99 | NDX tick=28612.40
+  [36m┌─ CANDLE DIAGNOSTICS ──────────────────────────────────────────┐[0m
+  [36m│  EMA-12   :   28798.34[0m
+  [36m│  ATR-14   :      82.90 pts[0m
+  [36m│  Slope    :     -1.367   [2m[36m[bullish >+0.200 | bearish <-0.300][0m  →  [31m[1mBEARISH[0m
+  [36m│  Body     :      26.75 pts   [2m[36m(min 5.00 required)[0m
+  [36m│  Bounce   :     116.06 pts   [2m[36m= 1.4 × 82.90 ATR[0m
+  [36m│  H−EMA  :    -152.18 pts   [2m[36m(candle high vs EMA; negative = high below EMA)[0m
+  [36m│  EMA−L  :    +200.28 pts   [2m[36m(EMA vs candle low;  negative = low above EMA)[0m
+  [36m│  SL base  :      49.74 pts   [2m[36m= 0.6 × 82.90 ATR[0m
+  [36m│  Risk cap :      60.00 pts[0m
+  [36m└────────────────────────────────────────────────────────────────┘[0m
+
+[HEARTBEAT 10:20:24] NDX=28604.07  trades=0/2  position=FLAT  pending=NONE
+[2026-05-19 10:20:00] SHORT signal rejected: risk 209.77 pts outside allowed range (0, 90.00]
+
+[10:25:07] BAR CLOSED 2026-05-19 10:20:00 | O=28610.73  H=28633.34  L=28567.16  C=28633.20 | NDX tick=28624.60
+  [36m┌─ CANDLE DIAGNOSTICS ──────────────────────────────────────────┐[0m
+  [36m│  EMA-12   :   28772.93[0m
+  [36m│  ATR-14   :      87.63 pts[0m
+  [36m│  Slope    :     -1.425   [2m[36m[bullish >+0.200 | bearish <-0.300][0m  →  [31m[1mBEARISH[0m
+  [36m│  Body     :      22.47 pts   [2m[36m(min 5.00 required)[0m
+  [36m│  Bounce   :     122.68 pts   [2m[36m= 1.4 × 87.63 ATR[0m
+  [36m│  H−EMA  :    -139.59 pts   [2m[36m(candle high vs EMA; negative = high below EMA)[0m
+  [36m│  EMA−L  :    +205.77 pts   [2m[36m(EMA vs candle low;  negative = low above EMA)[0m
+  [36m│  SL base  :      52.58 pts   [2m[36m= 0.6 × 87.63 ATR[0m
+  [36m│  Risk cap :      60.00 pts[0m
+  [36m└────────────────────────────────────────────────────────────────┘[0m
+
+[HEARTBEAT 10:25:24] NDX=28609.76  trades=0/2  position=FLAT  pending=NONE
+
+[10:30:06] BAR CLOSED 2026-05-19 10:25:00 | O=28634.68  H=28657.92  L=28600.93  C=28616.60 | NDX tick=28622.62
+  [36m┌─ CANDLE DIAGNOSTICS ──────────────────────────────────────────┐[0m
+  [36m│  EMA-12   :   28748.88[0m
+  [36m│  ATR-14   :      91.70 pts[0m
+  [36m│  Slope    :     -1.290   [2m[36m[bullish >+0.200 | bearish <-0.300][0m  →  [31m[1mBEARISH[0m
+  [36m│  Body     :      18.08 pts   [2m[36m(min 5.00 required)[0m
+  [36m│  Bounce   :     128.38 pts   [2m[36m= 1.4 × 91.70 ATR[0m
+  [36m│  H−EMA  :     -90.96 pts   [2m[36m(candle high vs EMA; negative = high below EMA)[0m
+  [36m│  EMA−L  :    +147.96 pts   [2m[36m(EMA vs candle low;  negative = low above EMA)[0m
+  [36m│  SL base  :      55.02 pts   [2m[36m= 0.6 × 91.70 ATR[0m
+  [36m│  Risk cap :      60.00 pts[0m
+  [36m└────────────────────────────────────────────────────────────────┘[0m
+
+[HEARTBEAT 10:30:24] NDX=28606.40  trades=0/2  position=FLAT  pending=NONE
+
+[10:35:07] BAR CLOSED 2026-05-19 10:30:00 | O=28616.76  H=28668.24  L=28592.08  C=28604.21 | NDX tick=28611.04
+  [36m┌─ CANDLE DIAGNOSTICS ──────────────────────────────────────────┐[0m
+  [36m│  EMA-12   :   28726.63[0m
+  [36m│  ATR-14   :      97.14 pts[0m
+  [36m│  Slope    :     -1.089   [2m[36m[bullish >+0.200 | bearish <-0.300][0m  →  [31m[1mBEARISH[0m
+  [36m│  Body     :      12.55 pts   [2m[36m(min 5.00 required)[0m
+  [36m│  Bounce   :     136.00 pts   [2m[36m= 1.4 × 97.14 ATR[0m
+  [36m│  H−EMA  :     -58.39 pts   [2m[36m(candle high vs EMA; negative = high below EMA)[0m
+  [36m│  EMA−L  :    +134.55 pts   [2m[36m(EMA vs candle low;  negative = low above EMA)[0m
+  [36m│  SL base  :      58.28 pts   [2m[36m= 0.6 × 97.14 ATR[0m
+  [36m│  Risk cap :      60.00 pts[0m
+  [36m└────────────────────────────────────────────────────────────────┘[0m
+
+[HEARTBEAT 10:35:24] NDX=28613.74  trades=0/2  position=FLAT  pending=NONE
+[2026-05-19 10:35:00] SHORT signal rejected: risk 117.73 pts outside allowed range (0, 60.00]
+
+[10:40:07] BAR CLOSED 2026-05-19 10:35:00 | O=28603.82  H=28675.12  L=28603.82  C=28667.65 | NDX tick=28638.05
+  [36m┌─ CANDLE DIAGNOSTICS ──────────────────────────────────────────┐[0m
+  [36m│  EMA-12   :   28717.55[0m
+  [36m│  ATR-14   :     102.23 pts[0m
+  [36m│  Slope    :     -0.790   [2m[36m[bullish >+0.200 | bearish <-0.300][0m  →  [31m[1mBEARISH[0m
+  [36m│  Body     :      63.83 pts   [2m[36m(min 5.00 required)[0m
+  [36m│  Bounce   :     143.13 pts   [2m[36m= 1.4 × 102.23 ATR[0m
+  [36m│  H−EMA  :     -42.43 pts   [2m[36m(candle high vs EMA; negative = high below EMA)[0m
+  [36m│  EMA−L  :    +113.73 pts   [2m[36m(EMA vs candle low;  negative = low above EMA)[0m
+  [36m│  SL base  :      61.34 pts   [2m[36m= 0.6 × 102.23 ATR[0m
+  [36m│  Risk cap :      60.00 pts[0m
+  [36m└────────────────────────────────────────────────────────────────┘[0m
+
+[HEARTBEAT 10:40:24] NDX=28659.16  trades=0/2  position=FLAT  pending=NONE
+
+[10:45:18] BAR CLOSED 2026-05-19 10:40:00 | O=28668.87  H=28702.12  L=28633.14  C=28647.50 | NDX tick=28653.77
+  [36m┌─ CANDLE DIAGNOSTICS ──────────────────────────────────────────┐[0m
+  [36m│  EMA-12   :   28706.78[0m
+  [36m│  ATR-14   :      92.09 pts[0m
+  [36m│  Slope    :     -0.718   [2m[36m[bullish >+0.200 | bearish <-0.300][0m  →  [31m[1mBEARISH[0m
+  [36m│  Body     :      21.37 pts   [2m[36m(min 5.00 required)[0m
+  [36m│  Bounce   :     128.92 pts   [2m[36m= 1.4 × 92.09 ATR[0m
+  [36m│  H−EMA  :      -4.66 pts   [2m[36m(candle high vs EMA; negative = high below EMA)[0m
+  [36m│  EMA−L  :     +73.64 pts   [2m[36m(EMA vs candle low;  negative = low above EMA)[0m
+  [36m│  SL base  :      55.25 pts   [2m[36m= 0.6 × 92.09 ATR[0m
+  [36m│  Risk cap :      60.00 pts[0m
+  [36m└────────────────────────────────────────────────────────────────┘[0m
+
+[HEARTBEAT 10:45:24] NDX=28651.71  trades=0/2  position=FLAT  pending=NONE
+
+[10:50:08] BAR CLOSED 2026-05-19 10:45:00 | O=28647.65  H=28659.48  L=28582.48  C=28615.77 | NDX tick=28602.83
+  [36m┌─ CANDLE DIAGNOSTICS ──────────────────────────────────────────┐[0m
+  [36m│  EMA-12   :   28692.77[0m
+  [36m│  ATR-14   :      87.59 pts[0m
+  [36m│  Slope    :     -0.641   [2m[36m[bullish >+0.200 | bearish <-0.300][0m  →  [31m[1mBEARISH[0m
+  [36m│  Body     :      31.88 pts   [2m[36m(min 5.00 required)[0m
+  [36m│  Bounce   :     122.63 pts   [2m[36m= 1.4 × 87.59 ATR[0m
+  [36m│  H−EMA  :     -33.29 pts   [2m[36m(candle high vs EMA; negative = high below EMA)[0m
+  [36m│  EMA−L  :    +110.29 pts   [2m[36m(EMA vs candle low;  negative = low above EMA)[0m
+  [36m│  SL base  :      52.55 pts   [2m[36m= 0.6 × 87.59 ATR[0m
+  [36m│  Risk cap :      60.00 pts[0m
+  [36m└────────────────────────────────────────────────────────────────┘[0m
+
+[HEARTBEAT 10:50:24] NDX=28618.42  trades=0/2  position=FLAT  pending=NONE
+[2026-05-19 10:50:00] SHORT signal rejected: risk 87.25 pts outside allowed range (0, 60.00]
+
+[10:55:07] BAR CLOSED 2026-05-19 10:50:00 | O=28616.12  H=28664.95  L=28602.83  C=28649.26 | NDX tick=28656.55
+  [36m┌─ CANDLE DIAGNOSTICS ──────────────────────────────────────────┐[0m
+  [36m│  EMA-12   :   28686.08[0m
+  [36m│  ATR-14   :      82.16 pts[0m
+  [36m│  Slope    :     -0.493   [2m[36m[bullish >+0.200 | bearish <-0.300][0m  →  [31m[1mBEARISH[0m
+  [36m│  Body     :      33.15 pts   [2m[36m(min 5.00 required)[0m
+  [36m│  Bounce   :     115.03 pts   [2m[36m= 1.4 × 82.16 ATR[0m
+  [36m│  H−EMA  :     -21.13 pts   [2m[36m(candle high vs EMA; negative = high below EMA)[0m
+  [36m│  EMA−L  :     +83.25 pts   [2m[36m(EMA vs candle low;  negative = low above EMA)[0m
+  [36m│  SL base  :      49.30 pts   [2m[36m= 0.6 × 82.16 ATR[0m
+  [36m│  Risk cap :      60.00 pts[0m
+  [36m└────────────────────────────────────────────────────────────────┘[0m
+
+[HEARTBEAT 10:55:24] NDX=28658.58  trades=0/2  position=FLAT  pending=NONE
+
+[11:00:09] BAR CLOSED 2026-05-19 10:55:00 | O=28646.03  H=28708.73  L=28642.83  C=28706.96 | NDX tick=28707.36
+  [36m┌─ CANDLE DIAGNOSTICS ──────────────────────────────────────────┐[0m
+  [36m│  EMA-12   :   28689.29[0m
+  [36m│  ATR-14   :      78.09 pts[0m
+  [36m│  Slope    :     -0.362   [2m[36m[bullish >+0.200 | bearish <-0.300][0m  →  [31m[1mBEARISH[0m
+  [36m│  Body     :      60.93 pts   [2m[36m(min 5.00 required)[0m
+  [36m│  Bounce   :     109.33 pts   [2m[36m= 1.4 × 78.09 ATR[0m
+  [36m│  H−EMA  :     +19.43 pts   [2m[36m(candle high vs EMA; negative = high below EMA)[0m
+  [36m│  EMA−L  :     +46.46 pts   [2m[36m(EMA vs candle low;  negative = low above EMA)[0m
+  [36m│  SL base  :      46.85 pts   [2m[36m= 0.6 × 78.09 ATR[0m
+  [36m│  Risk cap :      60.00 pts[0m
+  [36m└────────────────────────────────────────────────────────────────┘[0m
+
+[HEARTBEAT 11:00:24] NDX=28708.78  trades=0/2  position=FLAT  pending=NONE
+
+[33m[1m[Q] Quit requested — exiting WITHOUT squaring off position.{Style.RESET_ALL}
+
+[36mBroker: NINJATRADER  |  127.0.0.1:5555  |  MNQ 06-26[0m
+  Orders enabled: True   Dry run: False
+[32m  ✔ NinjaTrader connected | 127.0.0.1:5555 instrument=MNQ 06-26[0m
+Startup: STARTUP_FLATTEN=false — skipping auto-flatten
+
+[36mConnecting to massive.com (Polygon.io) data feed...[0m
+  Waiting 241s for current 5-min bar to complete (next bar at 11:05:00 NY)...
+  Bar complete — fetching warmup bars now.
+  Fetching EMA/ATR warmup bars via Polygon REST API...
+[32m  ✔ Warmup bars loaded: 271 bars — EMA/ATR ready[0m
+  Warmup range: 2026-05-14 09:30 → 2026-05-19 11:00 NY  |  last close=28717.35
+[32m  ✔ Massive WebSocket feed started — streaming I:NDX[0m
+
+[36m════════════════════════════════════════════════════════[0m
+  Mode         : [31m[1mLIVE ORDERS[0m
+  Signal window: 09:30 – 16:00 NY
+  Trade window : 10:01 – 16:00 NY
+  EOD flatten  : 15:30 NY
+  Max trades   : 2/day
+[36m════════════════════════════════════════════════════════[0m
+
+
+[36mNew trading day: 2026-05-19 | trade count reset[0m
+
+[HEARTBEAT 11:05:07] NDX=28717.80  trades=0/2  position=FLAT  pending=NONE
+
+[11:05:07] BAR CLOSED 2026-05-19 11:00:00 | O=28706.91  H=28733.42  L=28690.13  C=28717.35 | NDX tick=28717.80
+  [36m┌─ CANDLE DIAGNOSTICS ──────────────────────────────────────────┐[0m
+  [36m│  EMA-12   :   28693.61[0m
+  [36m│  ATR-14   :      75.00 pts[0m
+  [36m│  Slope    :     -0.176   [2m[36m[bullish >+0.200 | bearish <-0.300][0m  →  [37m[1mNEUTRAL[0m
+  [36m│  Body     :      10.44 pts   [2m[36m(min 5.00 required)[0m
+  [36m│  Bounce   :     105.00 pts   [2m[36m= 1.4 × 75.00 ATR[0m
+  [36m│  H−EMA  :     +39.82 pts   [2m[36m(candle high vs EMA; negative = high below EMA)[0m
+  [36m│  EMA−L  :      +3.48 pts   [2m[36m(EMA vs candle low;  negative = low above EMA)[0m
+  [36m│  SL base  :      45.00 pts   [2m[36m= 0.6 × 75.00 ATR[0m
+  [36m│  Risk cap :      60.00 pts[0m
+  [36m└────────────────────────────────────────────────────────────────┘[0m
+
+[HEARTBEAT 11:10:07] NDX=28704.12  trades=0/2  position=FLAT  pending=NONE
+
+[11:10:09] BAR CLOSED 2026-05-19 11:05:00 | O=28716.69  H=28718.91  L=28660.43  C=28696.13 | NDX tick=28703.82
+  [36m┌─ CANDLE DIAGNOSTICS ──────────────────────────────────────────┐[0m
+  [36m│  EMA-12   :   28694.00[0m
+  [36m│  ATR-14   :      71.82 pts[0m
+  [36m│  Slope    :     +0.017   [2m[36m[bullish >+0.200 | bearish <-0.300][0m  →  [37m[1mNEUTRAL[0m
+  [36m│  Body     :      20.57 pts   [2m[36m(min 5.00 required)[0m
+  [36m│  Bounce   :     100.55 pts   [2m[36m= 1.4 × 71.82 ATR[0m
+  [36m│  H−EMA  :     +24.92 pts   [2m[36m(candle high vs EMA; negative = high below EMA)[0m
+  [36m│  EMA−L  :     +33.56 pts   [2m[36m(EMA vs candle low;  negative = low above EMA)[0m
+  [36m│  SL base  :      43.09 pts   [2m[36m= 0.6 × 71.82 ATR[0m
+  [36m│  Risk cap :      60.00 pts[0m
+  [36m└────────────────────────────────────────────────────────────────┘[0m
+
+[33m[1m[Q] Quit requested — exiting WITHOUT squaring off position.{Style.RESET_ALL}
+
+[36mBroker: NINJATRADER  |  127.0.0.1:5555  |  MNQ 06-26[0m
+  Orders enabled: True   Dry run: False
+[32m  ✔ NinjaTrader connected | 127.0.0.1:5555 instrument=MNQ 06-26[0m
+Startup: STARTUP_FLATTEN=false — skipping auto-flatten
+
+[36mConnecting to massive.com (Polygon.io) data feed...[0m
+  Waiting 249s for current 5-min bar to complete (next bar at 11:15:00 NY)...
+  Bar complete — fetching warmup bars now.
+  Fetching EMA/ATR warmup bars via Polygon REST API...
+[32m  ✔ Warmup bars loaded: 273 bars — EMA/ATR ready[0m
+  Warmup range: 2026-05-14 09:30 → 2026-05-19 11:10 NY  |  last close=28731.32
+[32m  ✔ Massive WebSocket feed started — streaming I:NDX[0m
+
+[36m════════════════════════════════════════════════════════[0m
+  Mode         : [31m[1mLIVE ORDERS[0m
+  Signal window: 09:30 – 16:00 NY
+  Trade window : 10:01 – 16:00 NY
+  EOD flatten  : 15:30 NY
+  Max trades   : 2/day
+[36m════════════════════════════════════════════════════════[0m
+
+
+[36mNew trading day: 2026-05-19 | trade count reset[0m
+
+[HEARTBEAT 11:15:09] NDX=28748.27  trades=0/2  position=FLAT  pending=NONE
+
+[11:15:09] BAR CLOSED 2026-05-19 11:10:00 | O=28697.47  H=28738.54  L=28697.47  C=28731.32 | NDX tick=28748.27
+  [36m┌─ CANDLE DIAGNOSTICS ──────────────────────────────────────────┐[0m
+  [36m│  EMA-12   :   28699.74[0m
+  [36m│  ATR-14   :      70.11 pts[0m
+  [36m│  Slope    :     +0.195   [2m[36m[bullish >+0.200 | bearish <-0.300][0m  →  [37m[1mNEUTRAL[0m
+  [36m│  Body     :      33.86 pts   [2m[36m(min 5.00 required)[0m
+  [36m│  Bounce   :      98.15 pts   [2m[36m= 1.4 × 70.11 ATR[0m
+  [36m│  H−EMA  :     +38.80 pts   [2m[36m(candle high vs EMA; negative = high below EMA)[0m
+  [36m│  EMA−L  :      +2.27 pts   [2m[36m(EMA vs candle low;  negative = low above EMA)[0m
+  [36m│  SL base  :      42.06 pts   [2m[36m= 0.6 × 70.11 ATR[0m
+  [36m│  Risk cap :      60.00 pts[0m
+  [36m└────────────────────────────────────────────────────────────────┘[0m
+
+[HEARTBEAT 11:20:09] NDX=28695.42  trades=0/2  position=FLAT  pending=NONE
+
+[11:20:17] BAR CLOSED 2026-05-19 11:15:00 | O=28731.76  H=28763.24  L=28699.32  C=28699.32 | NDX tick=28697.12
+  [36m┌─ CANDLE DIAGNOSTICS ──────────────────────────────────────────┐[0m
+  [36m│  EMA-12   :   28699.67[0m
+  [36m│  ATR-14   :      63.89 pts[0m
+  [36m│  Slope    :     +0.162   [2m[36m[bullish >+0.200 | bearish <-0.300][0m  →  [37m[1mNEUTRAL[0m
+  [36m│  Body     :      32.43 pts   [2m[36m(min 5.00 required)[0m
+  [36m│  Bounce   :      89.45 pts   [2m[36m= 1.4 × 63.89 ATR[0m
+  [36m│  H−EMA  :     +63.56 pts   [2m[36m(candle high vs EMA; negative = high below EMA)[0m
+  [36m│  EMA−L  :      +0.35 pts   [2m[36m(EMA vs candle low;  negative = low above EMA)[0m
+  [36m│  SL base  :      38.33 pts   [2m[36m= 0.6 × 63.89 ATR[0m
+  [36m│  Risk cap :      60.00 pts[0m
+  [36m└────────────────────────────────────────────────────────────────┘[0m
+
+[11:25:09] BAR CLOSED 2026-05-19 11:20:00 | O=28696.95  H=28720.23  L=28652.11  C=28652.11 | NDX tick=28634.51
+  [36m┌─ CANDLE DIAGNOSTICS ──────────────────────────────────────────┐[0m
+  [36m│  EMA-12   :   28692.36[0m
+  [36m│  ATR-14   :      62.07 pts[0m
+  [36m│  Slope    :     -0.020   [2m[36m[bullish >+0.200 | bearish <-0.300][0m  →  [37m[1mNEUTRAL[0m
+  [36m│  Body     :      44.84 pts   [2m[36m(min 5.00 required)[0m
+  [36m│  Bounce   :      86.89 pts   [2m[36m= 1.4 × 62.07 ATR[0m
+  [36m│  H−EMA  :     +27.87 pts   [2m[36m(candle high vs EMA; negative = high below EMA)[0m
+  [36m│  EMA−L  :     +40.24 pts   [2m[36m(EMA vs candle low;  negative = low above EMA)[0m
+  [36m│  SL base  :      37.24 pts   [2m[36m= 0.6 × 62.07 ATR[0m
+  [36m│  Risk cap :      60.00 pts[0m
+  [36m└────────────────────────────────────────────────────────────────┘[0m
+
+[HEARTBEAT 11:25:09] NDX=28639.24  trades=0/2  position=FLAT  pending=NONE
+
+[HEARTBEAT 11:30:09] NDX=28670.52  trades=0/2  position=FLAT  pending=NONE
+
+[11:30:25] BAR CLOSED 2026-05-19 11:25:00 | O=28651.92  H=28695.16  L=28634.51  C=28676.37 | NDX tick=28679.31
+  [36m┌─ CANDLE DIAGNOSTICS ──────────────────────────────────────────┐[0m
+  [36m│  EMA-12   :   28689.90[0m
+  [36m│  ATR-14   :      62.96 pts[0m
+  [36m│  Slope    :     -0.065   [2m[36m[bullish >+0.200 | bearish <-0.300][0m  →  [37m[1mNEUTRAL[0m
+  [36m│  Body     :      24.45 pts   [2m[36m(min 5.00 required)[0m
+  [36m│  Bounce   :      88.15 pts   [2m[36m= 1.4 × 62.96 ATR[0m
+  [36m│  H−EMA  :      +5.26 pts   [2m[36m(candle high vs EMA; negative = high below EMA)[0m
+  [36m│  EMA−L  :     +55.38 pts   [2m[36m(EMA vs candle low;  negative = low above EMA)[0m
+  [36m│  SL base  :      37.78 pts   [2m[36m= 0.6 × 62.96 ATR[0m
+  [36m│  Risk cap :      60.00 pts[0m
+  [36m└────────────────────────────────────────────────────────────────┘[0m
+
+[HEARTBEAT 11:35:09] NDX=28692.08  trades=0/2  position=FLAT  pending=NONE
+
+[11:35:10] BAR CLOSED 2026-05-19 11:30:00 | O=28676.31  H=28740.19  L=28666.61  C=28708.00 | NDX tick=28692.08
+  [36m┌─ CANDLE DIAGNOSTICS ──────────────────────────────────────────┐[0m
+  [36m│  EMA-12   :   28692.68[0m
+  [36m│  ATR-14   :      63.49 pts[0m
+  [36m│  Slope    :     -0.111   [2m[36m[bullish >+0.200 | bearish <-0.300][0m  →  [37m[1mNEUTRAL[0m
+  [36m│  Body     :      31.69 pts   [2m[36m(min 5.00 required)[0m
+  [36m│  Bounce   :      88.89 pts   [2m[36m= 1.4 × 63.49 ATR[0m
+  [36m│  H−EMA  :     +47.51 pts   [2m[36m(candle high vs EMA; negative = high below EMA)[0m
+  [36m│  EMA−L  :     +26.07 pts   [2m[36m(EMA vs candle low;  negative = low above EMA)[0m
+  [36m│  SL base  :      38.10 pts   [2m[36m= 0.6 × 63.49 ATR[0m
+  [36m│  Risk cap :      60.00 pts[0m
+  [36m└────────────────────────────────────────────────────────────────┘[0m
+
+[HEARTBEAT 11:40:09] NDX=28741.53  trades=0/2  position=FLAT  pending=NONE
+
+[11:40:15] BAR CLOSED 2026-05-19 11:35:00 | O=28698.53  H=28758.87  L=28689.33  C=28752.20 | NDX tick=28737.08
+  [36m┌─ CANDLE DIAGNOSTICS ──────────────────────────────────────────┐[0m
+  [36m│  EMA-12   :   28701.84[0m
+  [36m│  ATR-14   :      64.39 pts[0m
+  [36m│  Slope    :     +0.034   [2m[36m[bullish >+0.200 | bearish <-0.300][0m  →  [37m[1mNEUTRAL[0m
+  [36m│  Body     :      53.66 pts   [2m[36m(min 5.00 required)[0m
+  [36m│  Bounce   :      90.15 pts   [2m[36m= 1.4 × 64.39 ATR[0m
+  [36m│  H−EMA  :     +57.03 pts   [2m[36m(candle high vs EMA; negative = high below EMA)[0m
+  [36m│  EMA−L  :     +12.51 pts   [2m[36m(EMA vs candle low;  negative = low above EMA)[0m
+  [36m│  SL base  :      38.63 pts   [2m[36m= 0.6 × 64.39 ATR[0m
+  [36m│  Risk cap :      60.00 pts[0m
+  [36m└────────────────────────────────────────────────────────────────┘[0m
+
+[HEARTBEAT 11:45:09] NDX=28768.18  trades=0/2  position=FLAT  pending=NONE
+
+[11:45:18] BAR CLOSED 2026-05-19 11:40:00 | O=28750.63  H=28779.59  L=28735.21  C=28762.75 | NDX tick=28767.23
+  [36m┌─ CANDLE DIAGNOSTICS ──────────────────────────────────────────┐[0m
+  [36m│  EMA-12   :   28711.21[0m
+  [36m│  ATR-14   :      62.12 pts[0m
+  [36m│  Slope    :     +0.303   [2m[36m[bullish >+0.200 | bearish <-0.300][0m  →  [32m[1mBULLISH[0m
+  [36m│  Body     :      12.12 pts   [2m[36m(min 5.00 required)[0m
+  [36m│  Bounce   :      86.97 pts   [2m[36m= 1.4 × 62.12 ATR[0m
+  [36m│  H−EMA  :     +68.38 pts   [2m[36m(candle high vs EMA; negative = high below EMA)[0m
+  [36m│  EMA−L  :     -24.00 pts   [2m[36m(EMA vs candle low;  negative = low above EMA)[0m
+  [36m│  SL base  :      37.27 pts   [2m[36m= 0.6 × 62.12 ATR[0m
+  [36m│  Risk cap :      60.00 pts[0m
+  [36m└────────────────────────────────────────────────────────────────┘[0m
+
+[HEARTBEAT 11:50:09] NDX=28755.81  trades=0/2  position=FLAT  pending=NONE
+
+[11:50:13] BAR CLOSED 2026-05-19 11:45:00 | O=28763.34  H=28768.95  L=28730.27  C=28754.69 | NDX tick=28754.11
+  [36m┌─ CANDLE DIAGNOSTICS ✔──────────────────────────────────────────┐[0m
+  [36m│  EMA-12   :   28717.90[0m
+  [36m│  ATR-14   :      59.79 pts[0m
+  [36m│  Slope    :     +0.468   [2m[36m[bullish >+0.200 | bearish <-0.300][0m  →  [32m[1mBULLISH[0m
+  [36m│  Body     :       8.65 pts   [2m[36m(min 5.00 required)[0m
+  [36m│  Bounce   :      83.71 pts   [2m[36m= 1.4 × 59.79 ATR[0m
+  [36m│  H−EMA  :     +51.05 pts   [2m[36m(candle high vs EMA; negative = high below EMA)[0m
+  [36m│  EMA−L  :     -12.37 pts   [2m[36m(EMA vs candle low;  negative = low above EMA)[0m
+  [36m│  SL base  :      35.87 pts   [2m[36m= 0.6 × 59.79 ATR[0m
+  [36m│  Risk cap :      60.00 pts[0m
+  [36m└────────────────────────────────────────────────────────────────┘[0m
+  SIGNAL LONG | entry=28772.95  sl=28717.90  target=29048.20  risk=55.05 pts  qty=2
+  TELEGRAM: sent to chat_id=631306695
+
+[HEARTBEAT 11:55:09] NDX=28708.65  trades=0/2  position=FLAT  pending=LONG entry=28772.95
+
+[11:55:26] BAR CLOSED 2026-05-19 11:50:00 | O=28756.07  H=28760.61  L=28713.16  C=28727.34 | NDX tick=28709.56
+  [36m┌─ CANDLE DIAGNOSTICS ✔──────────────────────────────────────────┐[0m
+  [36m│  EMA-12   :   28719.35[0m
+  [36m│  ATR-14   :      58.25 pts[0m
+  [36m│  Slope    :     +0.458   [2m[36m[bullish >+0.200 | bearish <-0.300][0m  →  [32m[1mBULLISH[0m
+  [36m│  Body     :      28.73 pts   [2m[36m(min 5.00 required)[0m
+  [36m│  Bounce   :      81.55 pts   [2m[36m= 1.4 × 58.25 ATR[0m
+  [36m│  H−EMA  :     +41.26 pts   [2m[36m(candle high vs EMA; negative = high below EMA)[0m
+  [36m│  EMA−L  :      +6.20 pts   [2m[36m(EMA vs candle low;  negative = low above EMA)[0m
+  [36m│  SL base  :      34.95 pts   [2m[36m= 0.6 × 58.25 ATR[0m
+  [36m│  Risk cap :      60.00 pts[0m
+  [36m└────────────────────────────────────────────────────────────────┘[0m
+  SIGNAL LONG | entry=28764.61  sl=28719.35  target=28990.90  risk=45.26 pts  qty=2
+  TELEGRAM: sent to chat_id=631306695
+
+[HEARTBEAT 12:00:09] NDX=28724.87  trades=0/2  position=FLAT  pending=LONG entry=28764.61
+
+[12:00:17] BAR CLOSED 2026-05-19 11:55:00 | O=28725.28  H=28725.84  L=28687.87  C=28717.67 | NDX tick=28727.93
+  [36m┌─ CANDLE DIAGNOSTICS ──────────────────────────────────────────┐[0m
+  [36m│  EMA-12   :   28719.09[0m
+  [36m│  ATR-14   :      55.57 pts[0m
+  [36m│  Slope    :     +0.310   [2m[36m[bullish >+0.200 | bearish <-0.300][0m  →  [32m[1mBULLISH[0m
+  [36m│  Body     :       7.61 pts   [2m[36m(min 5.00 required)[0m
+  [36m│  Bounce   :      77.80 pts   [2m[36m= 1.4 × 55.57 ATR[0m
+  [36m│  H−EMA  :      +6.74 pts   [2m[36m(candle high vs EMA; negative = high below EMA)[0m
+  [36m│  EMA−L  :     +31.22 pts   [2m[36m(EMA vs candle low;  negative = low above EMA)[0m
+  [36m│  SL base  :      33.34 pts   [2m[36m= 0.6 × 55.57 ATR[0m
+  [36m│  Risk cap :      60.00 pts[0m
+  [36m└────────────────────────────────────────────────────────────────┘[0m
+
+[33m[1m[12:02:13] ENTRY TRIGGERED | LONG | NDX=28764.67 | level=28764.61[0m
+  ORDER → NinjaTrader | ENTRY|LONG|2 | MNQ 06-26 | 127.0.0.1:5555
+  ENTRY ORDER response: {'success': True, 'message': 'OK: ENTRY LONG 2 MNQ JUN26', 'data': {}}
+  NINJA FILL (ENTRY): not captured within window
+  TELEGRAM: error for chat_id=631306695: 
+
+[HEARTBEAT 12:05:09] NDX=28773.17  trades=1/2  position=LONG entry=28764.67 sl=28719.35 target=28990.90 step=0 qty=2  pending=NONE
+
+[12:05:29] BAR CLOSED 2026-05-19 12:00:00 | O=28721.69  H=28782.61  L=28721.69  C=28773.17 | NDX tick=28768.05
+  [36m┌─ CANDLE DIAGNOSTICS ──────────────────────────────────────────┐[0m
+  [36m│  EMA-12   :   28727.41[0m
+  [36m│  ATR-14   :      55.77 pts[0m
+  [36m│  Slope    :     +0.291   [2m[36m[bullish >+0.200 | bearish <-0.300][0m  →  [32m[1mBULLISH[0m
+  [36m│  Body     :      51.48 pts   [2m[36m(min 5.00 required)[0m
+  [36m│  Bounce   :      78.08 pts   [2m[36m= 1.4 × 55.77 ATR[0m
+  [36m│  H−EMA  :     +55.20 pts   [2m[36m(candle high vs EMA; negative = high below EMA)[0m
+  [36m│  EMA−L  :      +5.72 pts   [2m[36m(EMA vs candle low;  negative = low above EMA)[0m
+  [36m│  SL base  :      33.46 pts   [2m[36m= 0.6 × 55.77 ATR[0m
+  [36m│  Risk cap :      60.00 pts[0m
+  [36m└────────────────────────────────────────────────────────────────┘[0m
+
+[HEARTBEAT 12:10:09] NDX=28747.94  trades=1/2  position=LONG entry=28764.67 sl=28719.35 target=28990.90 step=0 qty=2  pending=NONE
+
+[12:12:02] BAR CLOSED 2026-05-19 12:05:00 | O=28774.65  H=28779.80  L=28719.92  C=28719.92 | NDX tick=28747.94
+  [36m┌─ CANDLE DIAGNOSTICS ──────────────────────────────────────────┐[0m
+  [36m│  EMA-12   :   28726.26[0m
+  [36m│  ATR-14   :      55.34 pts[0m
+  [36m│  Slope    :     +0.151   [2m[36m[bullish >+0.200 | bearish <-0.300][0m  →  [37m[1mNEUTRAL[0m
+  [36m│  Body     :      54.73 pts   [2m[36m(min 5.00 required)[0m
+  [36m│  Bounce   :      77.48 pts   [2m[36m= 1.4 × 55.34 ATR[0m
+  [36m│  H−EMA  :     +53.54 pts   [2m[36m(candle high vs EMA; negative = high below EMA)[0m
+  [36m│  EMA−L  :      +6.35 pts   [2m[36m(EMA vs candle low;  negative = low above EMA)[0m
+  [36m│  SL base  :      33.21 pts   [2m[36m= 0.6 × 55.34 ATR[0m
+  [36m│  Risk cap :      60.00 pts[0m
+  [36m└────────────────────────────────────────────────────────────────┘[0m
+
+[31m[1m[12:13:01] EXIT | SL | LONG | NDX=28713.13 | level=28719.35 | PnL=-45.32 pts[0m
+  ORDER → NinjaTrader | EXIT|LONG|2 | MNQ 06-26 | 127.0.0.1:5555
+  EXIT ORDER response: {'success': False, 'message': 'TCP error: [WinError 1225] The remote computer refused the network connection'}
+  TELEGRAM: error for chat_id=631306695: 
+
+[HEARTBEAT 12:15:09] NDX=28707.50  trades=1/2  position=FLAT  pending=NONE
+
+[12:16:42] BAR CLOSED 2026-05-19 12:10:00 | O=28717.37  H=28735.52  L=28702.85  C=28718.27 | NDX tick=28707.50
+  [36m┌─ CANDLE DIAGNOSTICS ──────────────────────────────────────────┐[0m
+  [36m│  EMA-12   :   28725.03[0m
+  [36m│  ATR-14   :      54.58 pts[0m
+  [36m│  Slope    :     +0.104   [2m[36m[bullish >+0.200 | bearish <-0.300][0m  →  [37m[1mNEUTRAL[0m
+  [36m│  Body     :       0.90 pts   [2m[36m(min 5.00 required)[0m
+  [36m│  Bounce   :      76.42 pts   [2m[36m= 1.4 × 54.58 ATR[0m
+  [36m│  H−EMA  :     +10.49 pts   [2m[36m(candle high vs EMA; negative = high below EMA)[0m
+  [36m│  EMA−L  :     +22.18 pts   [2m[36m(EMA vs candle low;  negative = low above EMA)[0m
+  [36m│  SL base  :      32.75 pts   [2m[36m= 0.6 × 54.58 ATR[0m
+  [36m│  Risk cap :      60.00 pts[0m
+  [36m└────────────────────────────────────────────────────────────────┘[0m
+
+[HEARTBEAT 12:20:09] NDX=28763.37  trades=1/2  position=FLAT  pending=NONE
+
+[12:20:10] BAR CLOSED 2026-05-19 12:15:00 | O=28719.95  H=28767.58  L=28719.95  C=28762.07 | NDX tick=28765.09
+  [36m┌─ CANDLE DIAGNOSTICS ──────────────────────────────────────────┐[0m
+  [36m│  EMA-12   :   28730.73[0m
+  [36m│  ATR-14   :      53.93 pts[0m
+  [36m│  Slope    :     +0.216   [2m[36m[bullish >+0.200 | bearish <-0.300][0m  →  [32m[1mBULLISH[0m
+  [36m│  Body     :      42.12 pts   [2m[36m(min 5.00 required)[0m
+  [36m│  Bounce   :      75.50 pts   [2m[36m= 1.4 × 53.93 ATR[0m
+  [36m│  H−EMA  :     +36.85 pts   [2m[36m(candle high vs EMA; negative = high below EMA)[0m
+  [36m│  EMA−L  :     +10.78 pts   [2m[36m(EMA vs candle low;  negative = low above EMA)[0m
+  [36m│  SL base  :      32.36 pts   [2m[36m= 0.6 × 53.93 ATR[0m
+  [36m│  Risk cap :      60.00 pts[0m
+  [36m└────────────────────────────────────────────────────────────────┘[0m
+
+[HEARTBEAT 12:25:09] NDX=28797.67  trades=1/2  position=FLAT  pending=NONE
+
+[12:25:12] BAR CLOSED 2026-05-19 12:20:00 | O=28762.68  H=28780.09  L=28749.92  C=28780.09 | NDX tick=28794.06
+  [36m┌─ CANDLE DIAGNOSTICS ──────────────────────────────────────────┐[0m
+  [36m│  EMA-12   :   28738.32[0m
+  [36m│  ATR-14   :      53.06 pts[0m
+  [36m│  Slope    :     +0.206   [2m[36m[bullish >+0.200 | bearish <-0.300][0m  →  [32m[1mBULLISH[0m
+  [36m│  Body     :      17.41 pts   [2m[36m(min 5.00 required)[0m
+  [36m│  Bounce   :      74.28 pts   [2m[36m= 1.4 × 53.06 ATR[0m
+  [36m│  H−EMA  :     +41.76 pts   [2m[36m(candle high vs EMA; negative = high below EMA)[0m
+  [36m│  EMA−L  :     -11.60 pts   [2m[36m(EMA vs candle low;  negative = low above EMA)[0m
+  [36m│  SL base  :      31.83 pts   [2m[36m= 0.6 × 53.06 ATR[0m
+  [36m│  Risk cap :      60.00 pts[0m
+  [36m└────────────────────────────────────────────────────────────────┘[0m
+
+[HEARTBEAT 12:30:09] NDX=28817.80  trades=1/2  position=FLAT  pending=NONE
+
+[12:30:11] BAR CLOSED 2026-05-19 12:25:00 | O=28780.25  H=28826.55  L=28780.11  C=28817.43 | NDX tick=28821.04
+  [36m┌─ CANDLE DIAGNOSTICS ──────────────────────────────────────────┐[0m
+  [36m│  EMA-12   :   28750.49[0m
+  [36m│  ATR-14   :      51.81 pts[0m
+  [36m│  Slope    :     +0.468   [2m[36m[bullish >+0.200 | bearish <-0.300][0m  →  [32m[1mBULLISH[0m
+  [36m│  Body     :      37.18 pts   [2m[36m(min 5.00 required)[0m
+  [36m│  Bounce   :      72.53 pts   [2m[36m= 1.4 × 51.81 ATR[0m
+  [36m│  H−EMA  :     +76.06 pts   [2m[36m(candle high vs EMA; negative = high below EMA)[0m
+  [36m│  EMA−L  :     -29.62 pts   [2m[36m(EMA vs candle low;  negative = low above EMA)[0m
+  [36m│  SL base  :      31.09 pts   [2m[36m= 0.6 × 51.81 ATR[0m
+  [36m│  Risk cap :      60.00 pts[0m
+  [36m└────────────────────────────────────────────────────────────────┘[0m
+
+[12:35:09] BAR CLOSED 2026-05-19 12:30:00 | O=28815.51  H=28857.98  L=28810.11  C=28852.22 | NDX tick=28855.37
+  [36m┌─ CANDLE DIAGNOSTICS ──────────────────────────────────────────┐[0m
+  [36m│  EMA-12   :   28766.14[0m
+  [36m│  ATR-14   :      50.36 pts[0m
+  [36m│  Slope    :     +0.816   [2m[36m[bullish >+0.200 | bearish <-0.300][0m  →  [32m[1mBULLISH[0m
+  [36m│  Body     :      36.71 pts   [2m[36m(min 5.00 required)[0m
+  [36m│  Bounce   :      70.51 pts   [2m[36m= 1.4 × 50.36 ATR[0m
+  [36m│  H−EMA  :     +91.84 pts   [2m[36m(candle high vs EMA; negative = high below EMA)[0m
+  [36m│  EMA−L  :     -43.96 pts   [2m[36m(EMA vs candle low;  negative = low above EMA)[0m
+  [36m│  SL base  :      30.22 pts   [2m[36m= 0.6 × 50.36 ATR[0m
+  [36m│  Risk cap :      60.00 pts[0m
+  [36m└────────────────────────────────────────────────────────────────┘[0m
+
+[HEARTBEAT 12:35:09] NDX=28855.37  trades=1/2  position=FLAT  pending=NONE
+
+[HEARTBEAT 12:40:09] NDX=28870.97  trades=1/2  position=FLAT  pending=NONE
+
+[12:40:22] BAR CLOSED 2026-05-19 12:35:00 | O=28850.68  H=28876.36  L=28829.61  C=28871.96 | NDX tick=28876.23
+  [36m┌─ CANDLE DIAGNOSTICS ──────────────────────────────────────────┐[0m
+  [36m│  EMA-12   :   28782.42[0m
+  [36m│  ATR-14   :      49.37 pts[0m
+  [36m│  Slope    :     +1.047   [2m[36m[bullish >+0.200 | bearish <-0.300][0m  →  [32m[1mBULLISH[0m
+  [36m│  Body     :      21.28 pts   [2m[36m(min 5.00 required)[0m
+  [36m│  Bounce   :      69.12 pts   [2m[36m= 1.4 × 49.37 ATR[0m
+  [36m│  H−EMA  :     +93.93 pts   [2m[36m(candle high vs EMA; negative = high below EMA)[0m
+  [36m│  EMA−L  :     -47.19 pts   [2m[36m(EMA vs candle low;  negative = low above EMA)[0m
+  [36m│  SL base  :      29.62 pts   [2m[36m= 0.6 × 49.37 ATR[0m
+  [36m│  Risk cap :      60.00 pts[0m
+  [36m└────────────────────────────────────────────────────────────────┘[0m
+
+[HEARTBEAT 12:45:09] NDX=28896.15  trades=1/2  position=FLAT  pending=NONE
+
+[12:45:11] BAR CLOSED 2026-05-19 12:40:00 | O=28872.98  H=28890.78  L=28868.69  C=28889.96 | NDX tick=28896.70
+  [36m┌─ CANDLE DIAGNOSTICS ──────────────────────────────────────────┐[0m
+  [36m│  EMA-12   :   28798.97[0m
+  [36m│  ATR-14   :      45.69 pts[0m
+  [36m│  Slope    :     +1.327   [2m[36m[bullish >+0.200 | bearish <-0.300][0m  →  [32m[1mBULLISH[0m
+  [36m│  Body     :      16.97 pts   [2m[36m(min 5.00 required)[0m
+  [36m│  Bounce   :      63.97 pts   [2m[36m= 1.4 × 45.69 ATR[0m
+  [36m│  H−EMA  :     +91.82 pts   [2m[36m(candle high vs EMA; negative = high below EMA)[0m
+  [36m│  EMA−L  :     -69.72 pts   [2m[36m(EMA vs candle low;  negative = low above EMA)[0m
+  [36m│  SL base  :      27.42 pts   [2m[36m= 0.6 × 45.69 ATR[0m
+  [36m│  Risk cap :      60.00 pts[0m
+  [36m└────────────────────────────────────────────────────────────────┘[0m
+[2026-05-19 12:45:00] LONG signal rejected: risk 90.93 pts outside allowed range (0, 85.20]
+
+[12:50:08] BAR CLOSED 2026-05-19 12:45:00 | O=28892.82  H=28899.14  L=28872.92  C=28885.05 | NDX tick=28879.22
+  [36m┌─ CANDLE DIAGNOSTICS ──────────────────────────────────────────┐[0m
+  [36m│  EMA-12   :   28812.21[0m
+  [36m│  ATR-14   :      42.60 pts[0m
+  [36m│  Slope    :     +1.449   [2m[36m[bullish >+0.200 | bearish <-0.300][0m  →  [32m[1mBULLISH[0m
+  [36m│  Body     :       7.77 pts   [2m[36m(min 5.00 required)[0m
+  [36m│  Bounce   :      59.64 pts   [2m[36m= 1.4 × 42.60 ATR[0m
+  [36m│  H−EMA  :     +86.93 pts   [2m[36m(candle high vs EMA; negative = high below EMA)[0m
+  [36m│  EMA−L  :     -60.71 pts   [2m[36m(EMA vs candle low;  negative = low above EMA)[0m
+  [36m│  SL base  :      25.56 pts   [2m[36m= 0.6 × 42.60 ATR[0m
+  [36m│  Risk cap :      60.00 pts[0m
+  [36m└────────────────────────────────────────────────────────────────┘[0m
+
+[HEARTBEAT 12:50:09] NDX=28879.95  trades=1/2  position=FLAT  pending=NONE

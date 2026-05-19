@@ -1,0 +1,8 @@
+ib_insync
+python-dotenv
+colorama
+pandas
+numpy
+pyyaml
+httpx
+massive

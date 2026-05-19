@@ -1,0 +1,526 @@
+
+[36mBroker: NINJATRADER  |  127.0.0.1:5557  |  MNQ 06-26[0m
+  Orders enabled: True   Dry run: False
+[33m  ⚠ NinjaTrader ping failed: TCP error: [WinError 1225] The remote computer refused the network connection[0m
+Startup: STARTUP_FLATTEN=false — skipping auto-flatten
+
+[36mConnecting to Interactive Brokers TWS...[0m
+  Connecting to IBKR | 127.0.0.1:7497  clientId=99 ...
+  ✖ IBKR connect failed on 127.0.0.1:7497 → [WinError 1225] The remote computer refused the network connection
+  Connecting to IBKR | 127.0.0.1:7496  clientId=99 ...
+  ✖ IBKR connect failed on 127.0.0.1:7496 → [WinError 1225] The remote computer refused the network connection
+  Connecting to IBKR | 127.0.0.1:4001  clientId=99 ...
+  ✖ IBKR connect failed on 127.0.0.1:4001 → [WinError 1225] The remote computer refused the network connection
+  Connecting to IBKR | 127.0.0.1:4002  clientId=99 ...
+  ✖ IBKR connect failed on 127.0.0.1:4002 → [WinError 1225] The remote computer refused the network connection
+
+[36mBroker: NINJATRADER  |  127.0.0.1:5557  |  MNQ 06-26[0m
+  Orders enabled: True   Dry run: False
+[33m  ⚠ NinjaTrader ping failed: TCP error: [WinError 1225] The remote computer refused the network connection[0m
+Startup: STARTUP_FLATTEN=false — skipping auto-flatten
+
+[36mConnecting to Interactive Brokers TWS...[0m
+  Connecting to IBKR | 127.0.0.1:7497  clientId=99 ...
+  ✖ IBKR connect failed on 127.0.0.1:7497 → [WinError 1225] The remote computer refused the network connection
+  Connecting to IBKR | 127.0.0.1:7496  clientId=99 ...
+  ✖ IBKR connect failed on 127.0.0.1:7496 → [WinError 1225] The remote computer refused the network connection
+  Connecting to IBKR | 127.0.0.1:4001  clientId=99 ...
+  ✖ IBKR connect failed on 127.0.0.1:4001 → [WinError 1225] The remote computer refused the network connection
+  Connecting to IBKR | 127.0.0.1:4002  clientId=99 ...
+  ✖ IBKR connect failed on 127.0.0.1:4002 → [WinError 1225] The remote computer refused the network connection
+
+[31m[1m╔══ IBKR CONNECTION FAILED ══════════════════════════════╗
+║                                                        ║
+║  Could not connect to TWS / IB Gateway on any port.   ║
+║                                                        ║
+║  To fix:                                               ║
+║  1. Open TWS or IB Gateway and log in                  ║
+║  2. Go to:  Edit → Global Configuration → API          ║
+║             → Settings                                  ║
+║  3. Check:  ✔ Enable ActiveX and Socket Clients        ║
+║  4. Uncheck: Read-Only API                              ║
+║  5. Make sure the port matches config.yaml (ibkr.port) ║
+║     Paper/demo TWS = 7497  Live TWS = 7496             ║
+║     IB Gateway live = 4001                             ║
+║                                                        ║
+╚════════════════════════════════════════════════════════╝[0m
+
+  Detail: IBKR connection failed on all ports [7497, 7496, 4001, 4002]. Check TWS/IB Gateway: API → Enable ActiveX and Socket Clients, Read-Only API disabled.
+
+
+[36mBroker: NINJATRADER  |  127.0.0.1:5557  |  MNQ 06-26[0m
+  Orders enabled: True   Dry run: False
+[33m  ⚠ NinjaTrader ping failed: TCP error: [WinError 1225] The remote computer refused the network connection[0m
+Startup: STARTUP_FLATTEN=false — skipping auto-flatten
+
+[36mConnecting to Interactive Brokers TWS...[0m
+  Connecting to IBKR | 127.0.0.1:7497  clientId=99 ...
+  ✖ IBKR connect failed on 127.0.0.1:7497 → [WinError 1225] The remote computer refused the network connection
+  Connecting to IBKR | 127.0.0.1:7496  clientId=99 ...
+  ✖ IBKR connect failed on 127.0.0.1:7496 → [WinError 1225] The remote computer refused the network connection
+  Connecting to IBKR | 127.0.0.1:4001  clientId=99 ...
+  ✖ IBKR connect failed on 127.0.0.1:4001 → [WinError 1225] The remote computer refused the network connection
+  Connecting to IBKR | 127.0.0.1:4002  clientId=99 ...
+  ✖ IBKR connect failed on 127.0.0.1:4002 → [WinError 1225] The remote computer refused the network connection
+
+[31m[1m╔══ IBKR CONNECTION FAILED ══════════════════════════════╗
+║                                                        ║
+║  Could not connect to TWS / IB Gateway on any port.    ║
+║                                                        ║
+║  To fix:                                               ║
+║  1. Open TWS or IB Gateway and log in                  ║
+║  2. Go to:  Edit → Global Configuration → API          ║
+║             → Settings                                 ║
+║  3. Check:  ✔ Enable ActiveX and Socket Clients        ║
+║  4. Uncheck: Read-Only API                             ║
+║  5. Make sure the port matches config.yaml (ibkr.port) ║
+║     Paper/demo TWS = 7497  Live TWS = 7496             ║
+║     IB Gateway live = 4001                             ║
+║                                                        ║
+╚════════════════════════════════════════════════════════╝[0m
+
+  Detail: IBKR connection failed on all ports [7497, 7496, 4001, 4002]. Check TWS/IB Gateway: API → Enable ActiveX and Socket Clients, Read-Only API disabled.
+
+
+[36mBroker: NINJATRADER  |  127.0.0.1:5557  |  MNQ 06-26[0m
+  Orders enabled: True   Dry run: False
+[33m  ⚠ NinjaTrader ping failed: TCP error: [WinError 1225] The remote computer refused the network connection[0m
+Startup: STARTUP_FLATTEN=false — skipping auto-flatten
+
+[36mConnecting to Interactive Brokers TWS...[0m
+  Connecting to IBKR | 127.0.0.1:7497  clientId=99 ...
+[32m  ✔ IBKR connected | 127.0.0.1:7497[0m
+  NDX contract qualified: NDX NASDAQ USD
+  Historical bars loaded: 114 bars (5-min, NDX)
+[32m  ✔ Real-time NDX tick subscription active[0m
+
+[36m════════════════════════════════════════════════════════[0m
+  Mode         : [31m[1mLIVE ORDERS[0m
+  Signal window: 09:30 – 15:00 NY
+  Trade window : 10:01 – 15:00 NY
+  EOD flatten  : 15:30 NY
+  Max trades   : 2/day
+[36m════════════════════════════════════════════════════════[0m
+
+
+[36mNew trading day: 2026-05-01 | trade count reset[0m
+
+[HEARTBEAT 12:28:48] NDX=27710.12  trades=0/2  position=FLAT  pending=NONE
+
+[12:28:48] BAR CLOSED 2026-05-01 12:20:00 | O=27739.66  H=27749.84  L=27704.92  C=27725.30 | NDX tick=27710.12
+
+[12:30:06] BAR CLOSED 2026-05-01 12:25:00 | O=27724.99  H=27727.00  L=27697.22  C=27708.85 | NDX tick=27705.54
+
+[33m[1m[Q] Quit requested — exiting WITHOUT squaring off position.{Style.RESET_ALL}
+IBKR disconnected.
+
+[36mBroker: NINJATRADER  |  127.0.0.1:5555  |  MNQ 06-26[0m
+  Orders enabled: True   Dry run: False
+[32m  ✔ NinjaTrader connected | 127.0.0.1:5555 instrument=MNQ 06-26[0m
+Startup: STARTUP_FLATTEN=false — skipping auto-flatten
+
+[36mConnecting to Interactive Brokers TWS...[0m
+  Connecting to IBKR | 127.0.0.1:7497  clientId=99 ...
+[32m  ✔ IBKR connected | 127.0.0.1:7497[0m
+  NDX contract qualified: NDX NASDAQ USD
+  Historical bars loaded: 115 bars (5-min, NDX)
+[32m  ✔ Real-time NDX tick subscription active[0m
+
+[36m════════════════════════════════════════════════════════[0m
+  Mode         : [31m[1mLIVE ORDERS[0m
+  Signal window: 09:30 – 15:00 NY
+  Trade window : 10:01 – 15:00 NY
+  EOD flatten  : 15:30 NY
+  Max trades   : 2/day
+[36m════════════════════════════════════════════════════════[0m
+
+
+[36mNew trading day: 2026-05-01 | trade count reset[0m
+
+[HEARTBEAT 12:31:06] NDX=27715.35  trades=0/2  position=FLAT  pending=NONE
+
+[12:31:06] BAR CLOSED 2026-05-01 12:25:00 | O=27724.99  H=27727.00  L=27697.22  C=27708.85 | NDX tick=27715.35
+
+[33m[1m[Q] Quit requested — exiting WITHOUT squaring off position.{Style.RESET_ALL}
+IBKR disconnected.
+
+[36mBroker: NINJATRADER  |  127.0.0.1:5555  |  MNQ 06-26[0m
+  Orders enabled: True   Dry run: False
+[32m  ✔ NinjaTrader connected | 127.0.0.1:5555 instrument=MNQ 06-26[0m
+Startup: STARTUP_FLATTEN=false — skipping auto-flatten
+
+[36mConnecting to Interactive Brokers TWS...[0m
+  Connecting to IBKR | 127.0.0.1:7497  clientId=99 ...
+[32m  ✔ IBKR connected | 127.0.0.1:7497[0m
+  NDX contract qualified: NDX NASDAQ USD
+  Historical bars loaded: 116 bars (5-min, NDX)
+[32m  ✔ Real-time NDX tick subscription active[0m
+
+[36m════════════════════════════════════════════════════════[0m
+  Mode         : [31m[1mLIVE ORDERS[0m
+  Signal window: 09:30 – 15:00 NY
+  Trade window : 10:01 – 15:00 NY
+  EOD flatten  : 15:30 NY
+  Max trades   : 2/day
+[36m════════════════════════════════════════════════════════[0m
+
+
+[36mNew trading day: 2026-05-01 | trade count reset[0m
+
+[HEARTBEAT 12:35:40] NDX=27706.19  trades=0/2  position=FLAT  pending=NONE
+
+[12:35:40] BAR CLOSED 2026-05-01 12:30:00 | O=27708.34  H=27715.60  L=27688.27  C=27704.39 | NDX tick=27706.19
+
+[12:40:06] BAR CLOSED 2026-05-01 12:35:00 | O=27704.31  H=27720.99  L=27700.02  C=27718.61 | NDX tick=27720.51
+
+[HEARTBEAT 12:40:40] NDX=27711.58  trades=0/2  position=FLAT  pending=NONE
+
+[12:45:06] BAR CLOSED 2026-05-01 12:40:00 | O=27718.78  H=27720.97  L=27697.16  C=27697.28 | NDX tick=27690.66
+
+[HEARTBEAT 12:45:40] NDX=27700.00  trades=0/2  position=FLAT  pending=NONE
+
+[12:50:06] BAR CLOSED 2026-05-01 12:45:00 | O=27695.86  H=27706.22  L=27681.16  C=27692.30 | NDX tick=27692.32
+
+[HEARTBEAT 12:50:40] NDX=27689.22  trades=0/2  position=FLAT  pending=NONE
+
+[12:55:06] BAR CLOSED 2026-05-01 12:50:00 | O=27693.22  H=27718.20  L=27687.10  C=27713.73 | NDX tick=27717.82
+  SIGNAL SHORT | entry=27682.10  sl=27717.59  target=27504.66  risk=35.49 pts  qty=1
+  TELEGRAM: sent to chat_id=1372083421
+  TELEGRAM: sent to chat_id=-5036528161
+  TELEGRAM: sent to chat_id=631306695
+
+[HEARTBEAT 12:55:40] NDX=27725.95  trades=0/2  position=FLAT  pending=SHORT entry=27682.10
+
+[13:00:06] BAR CLOSED 2026-05-01 12:55:00 | O=27714.59  H=27728.07  L=27706.16  C=27706.68 | NDX tick=27708.95
+
+[HEARTBEAT 13:00:40] NDX=27711.45  trades=0/2  position=FLAT  pending=SHORT entry=27682.10
+
+[HEARTBEAT 13:05:40] NDX=27717.48  trades=0/2  position=FLAT  pending=SHORT entry=27682.10
+
+[HEARTBEAT 13:10:40] NDX=27722.36  trades=0/2  position=FLAT  pending=SHORT entry=27682.10
+
+[HEARTBEAT 13:15:40] NDX=27739.08  trades=0/2  position=FLAT  pending=SHORT entry=27682.10
+
+[HEARTBEAT 13:20:40] NDX=27751.35  trades=0/2  position=FLAT  pending=SHORT entry=27682.10
+
+[HEARTBEAT 13:25:40] NDX=27753.09  trades=0/2  position=FLAT  pending=SHORT entry=27682.10
+
+[HEARTBEAT 13:30:40] NDX=27759.35  trades=0/2  position=FLAT  pending=SHORT entry=27682.10
+
+[HEARTBEAT 13:35:40] NDX=27750.60  trades=0/2  position=FLAT  pending=SHORT entry=27682.10
+
+[HEARTBEAT 13:40:40] NDX=27753.23  trades=0/2  position=FLAT  pending=SHORT entry=27682.10
+
+[HEARTBEAT 13:45:40] NDX=27759.15  trades=0/2  position=FLAT  pending=SHORT entry=27682.10
+
+[HEARTBEAT 13:50:40] NDX=27761.64  trades=0/2  position=FLAT  pending=SHORT entry=27682.10
+
+[HEARTBEAT 13:55:40] NDX=27764.37  trades=0/2  position=FLAT  pending=SHORT entry=27682.10
+
+[HEARTBEAT 14:00:40] NDX=27762.46  trades=0/2  position=FLAT  pending=SHORT entry=27682.10
+
+[HEARTBEAT 14:05:40] NDX=27740.93  trades=0/2  position=FLAT  pending=SHORT entry=27682.10
+IBKR disconnected.
+
+[36mBroker: NINJATRADER  |  127.0.0.1:5555  |  MNQ 06-26[0m
+  Orders enabled: True   Dry run: False
+[32m  ✔ NinjaTrader connected | 127.0.0.1:5555 instrument=MNQ 06-26[0m
+Startup: STARTUP_FLATTEN=false — skipping auto-flatten
+
+[36mConnecting to Interactive Brokers TWS...[0m
+  Connecting to IBKR | 127.0.0.1:7497  clientId=99 ...
+[32m  ✔ IBKR connected | 127.0.0.1:7497[0m
+  NDX contract qualified: NDX NASDAQ USD
+  Historical bars loaded: 134 bars (5-min, NDX)
+[32m  ✔ Real-time NDX tick subscription active[0m
+
+[36m════════════════════════════════════════════════════════[0m
+  Mode         : [31m[1mLIVE ORDERS[0m
+  Signal window: 09:30 – 15:00 NY
+  Trade window : 10:01 – 15:00 NY
+  EOD flatten  : 15:30 NY
+  Max trades   : 2/day
+[36m════════════════════════════════════════════════════════[0m
+
+
+[36mNew trading day: 2026-05-01 | trade count reset[0m
+
+[HEARTBEAT 14:08:29] NDX=27743.74  trades=0/2  position=FLAT  pending=NONE
+
+[14:08:29] BAR CLOSED 2026-05-01 14:00:00 | O=27759.47  H=27765.08  L=27743.60  C=27745.92 | NDX tick=27743.74
+  [36mEMA=27746.08  ATR=15.29  Angle(slope_atr)=+0.811  Bounce dist=18.35 pts  Risk cap=60 pts[0m
+
+[14:10:06] BAR CLOSED 2026-05-01 14:05:00 | O=27745.98  H=27757.22  L=27732.65  C=27754.62 | NDX tick=27754.00
+  [36mEMA=27747.22  ATR=15.48  Angle(slope_atr)=+0.751  Bounce dist=18.57 pts  Risk cap=60 pts[0m
+
+[HEARTBEAT 14:13:29] NDX=27737.36  trades=0/2  position=FLAT  pending=NONE
+
+[HEARTBEAT 14:18:29] NDX=27723.46  trades=0/2  position=FLAT  pending=NONE
+
+[HEARTBEAT 14:23:29] NDX=27723.46  trades=0/2  position=FLAT  pending=NONE
+
+[HEARTBEAT 14:28:29] NDX=27723.46  trades=0/2  position=FLAT  pending=NONE
+
+[HEARTBEAT 14:33:29] NDX=27723.46  trades=0/2  position=FLAT  pending=NONE
+
+[HEARTBEAT 14:38:29] NDX=27723.46  trades=0/2  position=FLAT  pending=NONE
+
+[HEARTBEAT 14:43:29] NDX=27723.46  trades=0/2  position=FLAT  pending=NONE
+
+[HEARTBEAT 14:48:29] NDX=27723.46  trades=0/2  position=FLAT  pending=NONE
+
+[HEARTBEAT 14:53:29] NDX=27723.46  trades=0/2  position=FLAT  pending=NONE
+
+[HEARTBEAT 14:58:29] NDX=27723.46  trades=0/2  position=FLAT  pending=NONE
+
+[HEARTBEAT 15:03:29] NDX=27723.46  trades=0/2  position=FLAT  pending=NONE
+
+[HEARTBEAT 15:08:29] NDX=27723.46  trades=0/2  position=FLAT  pending=NONE
+
+[HEARTBEAT 15:13:29] NDX=27723.46  trades=0/2  position=FLAT  pending=NONE
+
+[33m[1m[Q] Quit requested — exiting WITHOUT squaring off position.{Style.RESET_ALL}
+IBKR disconnected.
+
+[36mBroker: NINJATRADER  |  127.0.0.1:5555  |  MNQ 06-26[0m
+  Orders enabled: True   Dry run: False
+[32m  ✔ NinjaTrader connected | 127.0.0.1:5555 instrument=MNQ 06-26[0m
+Startup: STARTUP_FLATTEN=false — skipping auto-flatten
+
+[36mConnecting to Interactive Brokers TWS...[0m
+  Connecting to IBKR | 127.0.0.1:7497  clientId=99 ...
+  ✖ IBKR connect failed on 127.0.0.1:7497 → [WinError 1225] The remote computer refused the network connection
+  Connecting to IBKR | 127.0.0.1:7496  clientId=99 ...
+  ✖ IBKR connect failed on 127.0.0.1:7496 → [WinError 1225] The remote computer refused the network connection
+  Connecting to IBKR | 127.0.0.1:4001  clientId=99 ...
+  ✖ IBKR connect failed on 127.0.0.1:4001 → [WinError 1225] The remote computer refused the network connection
+  Connecting to IBKR | 127.0.0.1:4002  clientId=99 ...
+  ✖ IBKR connect failed on 127.0.0.1:4002 → [WinError 1225] The remote computer refused the network connection
+
+[31m[1m╔══ IBKR CONNECTION FAILED ══════════════════════════════╗
+║                                                        ║
+║  Could not connect to TWS / IB Gateway on any port.    ║
+║                                                        ║
+║  To fix:                                               ║
+║  1. Open TWS or IB Gateway and log in                  ║
+║  2. Go to:  Edit → Global Configuration → API          ║
+║             → Settings                                 ║
+║  3. Check:  ✔ Enable ActiveX and Socket Clients        ║
+║  4. Uncheck: Read-Only API                             ║
+║  5. Make sure the port matches config.yaml (ibkr.port) ║
+║     Paper/demo TWS = 7497  Live TWS = 7496             ║
+║     IB Gateway live = 4001                             ║
+║                                                        ║
+╚════════════════════════════════════════════════════════╝[0m
+
+  Detail: IBKR connection failed on all ports [7497, 7496, 4001, 4002]. Check TWS/IB Gateway: API → Enable ActiveX and Socket Clients, Read-Only API disabled.
+
+
+[36mBroker: NINJATRADER  |  127.0.0.1:5555  |  MNQ 06-26[0m
+  Orders enabled: True   Dry run: False
+[32m  ✔ NinjaTrader connected | 127.0.0.1:5555 instrument=MNQ 06-26[0m
+Startup: STARTUP_FLATTEN=false — skipping auto-flatten
+
+[36mConnecting to Interactive Brokers TWS...[0m
+  Connecting to IBKR | 127.0.0.1:7497  clientId=99 ...
+[32m  ✔ IBKR connected | 127.0.0.1:7497[0m
+  NDX contract qualified: NDX NASDAQ USD
+  Historical bars loaded: 0 bars (5-min, NDX)
+[32m  ✔ Real-time NDX tick subscription active[0m
+
+[36m════════════════════════════════════════════════════════[0m
+  Mode         : [31m[1mLIVE ORDERS[0m
+  Signal window: 09:30 – 15:00 NY
+  Trade window : 10:01 – 15:00 NY
+  EOD flatten  : 15:30 NY
+  Max trades   : 2/day
+[36m════════════════════════════════════════════════════════[0m
+
+
+[36mNew trading day: 2026-05-01 | trade count reset[0m
+
+[HEARTBEAT 15:20:58] NDX=27743.71  trades=0/2  position=FLAT  pending=NONE
+
+[HEARTBEAT 15:25:58] NDX=27762.21  trades=0/2  position=FLAT  pending=NONE
+
+[33m[1m[Q] Quit requested — exiting WITHOUT squaring off position.{Style.RESET_ALL}
+IBKR disconnected.
+
+[36mBroker: NINJATRADER  |  127.0.0.1:5555  |  MNQ 06-26[0m
+  Orders enabled: True   Dry run: False
+[32m  ✔ NinjaTrader connected | 127.0.0.1:5555 instrument=MNQ 06-26[0m
+Startup: STARTUP_FLATTEN=false — skipping auto-flatten
+
+[36mConnecting to Interactive Brokers TWS...[0m
+  Connecting to IBKR | 127.0.0.1:7497  clientId=99 ...
+[32m  ✔ IBKR connected | 127.0.0.1:7497[0m
+  NDX contract qualified: NDX NASDAQ USD
+[33m  ⚠ No bars on first attempt — retrying in 5s...[0m
+  Historical bars loaded: 0 bars (5-min, NDX)
+[32m  ✔ Real-time NDX tick subscription active[0m
+
+[36m════════════════════════════════════════════════════════[0m
+  Mode         : [31m[1mLIVE ORDERS[0m
+  Signal window: 09:30 – 15:00 NY
+  Trade window : 10:01 – 15:00 NY
+  EOD flatten  : 15:30 NY
+  Max trades   : 2/day
+[36m════════════════════════════════════════════════════════[0m
+
+
+[36mNew trading day: 2026-05-01 | trade count reset[0m
+
+[HEARTBEAT 15:29:27] NDX=27771.70  trades=0/2  position=FLAT  pending=NONE
+
+[33m[1mEOD 15:30 — flattening all...[0m
+  FLATTEN response: {'success': True, 'message': 'OK: FLATTEN MNQ JUN26', 'data': {}}
+[33mEOD complete.[0m
+
+[33m[1m[Q] Quit requested — exiting WITHOUT squaring off position.{Style.RESET_ALL}
+IBKR disconnected.
+
+[36mBroker: NINJATRADER  |  127.0.0.1:5555  |  MNQ 06-26[0m
+  Orders enabled: True   Dry run: False
+[33m  ⚠ NinjaTrader ping failed: TCP error: [WinError 1225] The remote computer refused the network connection[0m
+Startup: STARTUP_FLATTEN=false — skipping auto-flatten
+
+[36mConnecting to Interactive Brokers TWS...[0m
+  Connecting to IBKR | 127.0.0.1:7497  clientId=99 ...
+[32m  ✔ IBKR connected | 127.0.0.1:7497[0m
+  NDX contract qualified: NDX NASDAQ USD
+  Fetching EMA/ATR warmup bars (2 days)...
+[33m  ⚠ No warmup bars on attempt 1 — retrying in 5s...[0m
+[33m  ⚠ No warmup bars on attempt 2 — retrying in 5s...[0m
+[31m  ✖ Could not load warmup bars after 3 attempts. EMA/ATR will be NaN until enough live bars accumulate.[0m
+  Starting live 5-min bar stream...
+  Live bar stream active: 0 recent bars
+[32m  ✔ Real-time NDX tick subscription active[0m
+
+[36m════════════════════════════════════════════════════════[0m
+  Mode         : [31m[1mLIVE ORDERS[0m
+  Signal window: 09:30 – 15:00 NY
+  Trade window : 10:01 – 15:00 NY
+  EOD flatten  : 15:30 NY
+  Max trades   : 2/day
+[36m════════════════════════════════════════════════════════[0m
+
+
+[36mNew trading day: 2026-05-01 | trade count reset[0m
+
+[HEARTBEAT 15:37:06] NDX=27748.59  trades=0/2  position=FLAT  pending=NONE
+
+[33m[1m[Q] Quit requested — exiting WITHOUT squaring off position.{Style.RESET_ALL}
+IBKR disconnected.
+
+[36mBroker: NINJATRADER  |  127.0.0.1:5555  |  MNQ 06-26[0m
+  Orders enabled: True   Dry run: False
+[32m  ✔ NinjaTrader connected | 127.0.0.1:5555 instrument=MNQ 06-26[0m
+Startup: STARTUP_FLATTEN=false — skipping auto-flatten
+
+[36mConnecting to Interactive Brokers TWS...[0m
+  Connecting to IBKR | 127.0.0.1:7497  clientId=99 ...
+[32m  ✔ IBKR connected | 127.0.0.1:7497[0m
+  NDX contract qualified: NDX NASDAQ USD
+  Fetching EMA/ATR warmup bars (2 days)...
+
+[36mBroker: NINJATRADER  |  127.0.0.1:5555  |  MNQ 06-26[0m
+  Orders enabled: True   Dry run: False
+[32m  ✔ NinjaTrader connected | 127.0.0.1:5555 instrument=MNQ 06-26[0m
+Startup: STARTUP_FLATTEN=false — skipping auto-flatten
+
+[36mConnecting to Interactive Brokers TWS...[0m
+  Connecting to IBKR | 127.0.0.1:7497  clientId=99 ...
+[32m  ✔ IBKR connected | 127.0.0.1:7497[0m
+  NDX contract qualified: NDX NASDAQ USD
+  Fetching EMA/ATR warmup bars (2 days)...
+[33m  ⚠ No warmup bars on attempt 1 — retrying in 5s...[0m
+[33m  ⚠ No warmup bars on attempt 2 — retrying in 5s...[0m
+[31m  ✖ Could not load warmup bars after 3 attempts. EMA/ATR will be NaN until enough live bars accumulate.[0m
+  Pausing 5s before live stream subscription (IBKR pacing)...
+  Starting live 5-min bar stream (Error 162 below is normal)...
+  Live bar stream active: 0 recent bars
+[32m  ✔ Real-time NDX tick subscription active[0m
+
+[36m════════════════════════════════════════════════════════[0m
+  Mode         : [31m[1mLIVE ORDERS[0m
+  Signal window: 09:30 – 15:00 NY
+  Trade window : 10:01 – 15:00 NY
+  EOD flatten  : 15:30 NY
+  Max trades   : 2/day
+[36m════════════════════════════════════════════════════════[0m
+
+
+[36mNew trading day: 2026-05-01 | trade count reset[0m
+
+[HEARTBEAT 15:45:18] NDX=27749.86  trades=0/2  position=FLAT  pending=NONE
+
+[33m[1m[Q] Quit requested — exiting WITHOUT squaring off position.{Style.RESET_ALL}
+IBKR disconnected.
+
+[36mBroker: NINJATRADER  |  127.0.0.1:5555  |  MNQ 06-26[0m
+  Orders enabled: True   Dry run: False
+[33m  ⚠ NinjaTrader ping failed: TCP error: [WinError 1225] The remote computer refused the network connection[0m
+Startup: STARTUP_FLATTEN=false — skipping auto-flatten
+
+[36mConnecting to Interactive Brokers TWS...[0m
+  Connecting to IBKR | 127.0.0.1:7497  clientId=99 ...
+  ✖ IBKR connect failed on 127.0.0.1:7497 → [WinError 1225] The remote computer refused the network connection
+  Connecting to IBKR | 127.0.0.1:7496  clientId=99 ...
+  ✖ IBKR connect failed on 127.0.0.1:7496 → [WinError 1225] The remote computer refused the network connection
+  Connecting to IBKR | 127.0.0.1:4001  clientId=99 ...
+  ✖ IBKR connect failed on 127.0.0.1:4001 → [WinError 1225] The remote computer refused the network connection
+  Connecting to IBKR | 127.0.0.1:4002  clientId=99 ...
+  ✖ IBKR connect failed on 127.0.0.1:4002 → [WinError 1225] The remote computer refused the network connection
+
+[31m[1m╔══ IBKR CONNECTION FAILED ══════════════════════════════╗
+║                                                        ║
+║  Could not connect to TWS / IB Gateway on any port.    ║
+║                                                        ║
+║  To fix:                                               ║
+║  1. Open TWS or IB Gateway and log in                  ║
+║  2. Go to:  Edit → Global Configuration → API          ║
+║             → Settings                                 ║
+║  3. Check:  ✔ Enable ActiveX and Socket Clients        ║
+║  4. Uncheck: Read-Only API                             ║
+║  5. Make sure the port matches config.yaml (ibkr.port) ║
+║     Paper/demo TWS = 7497  Live TWS = 7496             ║
+║     IB Gateway live = 4001                             ║
+║                                                        ║
+╚════════════════════════════════════════════════════════╝[0m
+
+  Detail: IBKR connection failed on all ports [7497, 7496, 4001, 4002]. Check TWS/IB Gateway: API → Enable ActiveX and Socket Clients, Read-Only API disabled.
+
+
+[36mBroker: NINJATRADER  |  127.0.0.1:5555  |  MNQ 06-26[0m
+  Orders enabled: True   Dry run: False
+[32m  ✔ NinjaTrader connected | 127.0.0.1:5555 instrument=MNQ 06-26[0m
+Startup: STARTUP_FLATTEN=false — skipping auto-flatten
+
+[36mConnecting to Interactive Brokers TWS...[0m
+  Connecting to IBKR | 127.0.0.1:7496  clientId=99 ...
+  ✖ IBKR connect failed on 127.0.0.1:7496 → [WinError 1225] The remote computer refused the network connection
+  Connecting to IBKR | 127.0.0.1:7497  clientId=99 ...
+  ✖ IBKR connect failed on 127.0.0.1:7497 → [WinError 1225] The remote computer refused the network connection
+  Connecting to IBKR | 127.0.0.1:4001  clientId=99 ...
+  ✖ IBKR connect failed on 127.0.0.1:4001 → [WinError 1225] The remote computer refused the network connection
+  Connecting to IBKR | 127.0.0.1:4002  clientId=99 ...
+  ✖ IBKR connect failed on 127.0.0.1:4002 → [WinError 1225] The remote computer refused the network connection
+
+[31m[1m╔══ IBKR CONNECTION FAILED ══════════════════════════════╗
+║                                                        ║
+║  Could not connect to TWS / IB Gateway on any port.    ║
+║                                                        ║
+║  To fix:                                               ║
+║  1. Open TWS or IB Gateway and log in                  ║
+║  2. Go to:  Edit → Global Configuration → API          ║
+║             → Settings                                 ║
+║  3. Check:  ✔ Enable ActiveX and Socket Clients        ║
+║  4. Uncheck: Read-Only API                             ║
+║  5. Make sure the port matches config.yaml (ibkr.port) ║
+║     Paper/demo TWS = 7497  Live TWS = 7496             ║
+║     IB Gateway live = 4001                             ║
+║                                                        ║
+╚════════════════════════════════════════════════════════╝[0m
+
+  Detail: IBKR connection failed on all ports [7496, 7497, 4001, 4002]. Check TWS/IB Gateway: API → Enable ActiveX and Socket Clients, Read-Only API disabled.
+

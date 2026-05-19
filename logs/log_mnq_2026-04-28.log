@@ -1,0 +1,28 @@
+  TELEGRAM ALERT failed: All connection attempts failed
+  TELEGRAM ALERT sent to chat_id=1372083421
+  TELEGRAM ALERT sent to chat_id=-5036528161
+BROKER | name=ninjatrader  host=127.0.0.1  port=5557  instrument=MNQ 06-26
+  orders=False  dry_run=True  default_qty=1
+Startup: skipping auto-flatten (STARTUP_FLATTEN=false)
+Startup cleanup complete.
+
+Connecting to IBKR | 127.0.0.1:7497  clientId=99  timeout=6.0s
+IBKR connected | 127.0.0.1:7497
+NDX contract: NDX NASDAQ USD (IBKR 127.0.0.1:7497)
+Historical bars loaded: 156 bars (5-min, NDX)
+Real-time NDX tick subscription active.
+
+[36m============================================================[0m
+[36m    NDX SIGNAL  →  MNQ EXECUTION  ENGINE[0m
+[36m============================================================[0m
+  Session : 10:01 – 15:00 NY  |  EOD exit: 15:30
+  Max trades/day: 2
+
+Startup after 15:30 NY; same-day automatic EOD flatten is disabled.
+
+New day: 2026-04-28 | trade count reset
+STATUS 5M | now=2026-04-28 19:01:03 EDT ndx=27029.01 in_session=False trades=0/2 broker=ninjatrader instrument=MNQ 06-26 position=FLAT pending=NONE
+
+[19:01:03] BAR 2026-04-28 15:50:00 | O=27050.46 H=27051.03 L=27020.13 C=27029.9 | NDX live=27029.01
+[33m  SIGNAL CHECK: NO  | outside_session_window: bar_time=15:50:00 allowed=10:01:00-15:00:00[0m
+IBKR disconnected.
