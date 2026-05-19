@@ -103,5 +103,5 @@ telegram:
 # ---------------------------------------------------------------------------
 data_feed:
   source: massive          # ibkr | massive
-  massive_api_key: "uNioMAkg6bkQVWJGVw4HDDoVEp_GwMlF"
+  massive_api_key: "<Fill massive.com api key>"
   massive_ticker: "I:NDX"
