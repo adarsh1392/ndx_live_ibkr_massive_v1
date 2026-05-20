@@ -1045,7 +1045,7 @@ async def run():
             await asyncio.sleep(_wait_secs)
             log("  Bar complete — fetching warmup bars now.")
 
-        log("  Fetching EMA/ATR warmup bars via Polygon REST API...")
+        log("  Fetching EMA/ATR warmup bars via Polygon REST API (last 2 RTH sessions)...")
         try:
             warmup_bars = await feed.fetch_warmup_bars_async(days=2)
             log(f"{Fore.GREEN}  ✔ Warmup bars loaded: {len(warmup_bars)} bars — EMA/ATR ready{Style.RESET_ALL}")
@@ -1053,6 +1053,7 @@ async def run():
                 _wb_first = warmup_bars[0].date.astimezone(NY_TZ).strftime("%Y-%m-%d %H:%M")
                 _wb_last  = warmup_bars[-1].date.astimezone(NY_TZ).strftime("%Y-%m-%d %H:%M")
                 _wb_c     = warmup_bars[-1].close
+                log("  Warmup normalization: RTH-only, capped to last 156 completed 5-min bars")
                 log(f"  Warmup range: {_wb_first} → {_wb_last} NY  |  last close={_wb_c:.2f}")
         except Exception as _wu_exc:
             log(f"{Fore.RED}  ✖ Warmup fetch failed: {_wu_exc} — EMA/ATR will be NaN until enough live bars accumulate.{Style.RESET_ALL}")

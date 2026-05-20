@@ -22,6 +22,7 @@ from zoneinfo import ZoneInfo
 
 NY_TZ = ZoneInfo("America/New_York")
 UTC   = timezone.utc
+RTH_BARS_PER_SESSION = 78
 
 
 # ---------------------------------------------------------------------------
@@ -42,6 +43,13 @@ class BarData:
 def _floor_5min_utc(dt: datetime) -> datetime:
     """Truncate a UTC datetime to the start of its 5-minute bar."""
     return dt.replace(minute=(dt.minute // 5) * 5, second=0, microsecond=0)
+
+
+def _is_rth_bar_start(bar_start_utc: datetime) -> bool:
+    """True when the 5-minute bar start falls inside the regular NY session."""
+    ny = bar_start_utc.astimezone(NY_TZ)
+    minutes = ny.hour * 60 + ny.minute
+    return 9 * 60 + 30 <= minutes < 16 * 60
 
 
 def _bar_from_agg(a) -> "BarData | None":
@@ -101,6 +109,12 @@ def _fetch_warmup_bars_sync(api_key: str, ticker: str, days: int) -> list:
     # Drop any bar whose 5-min period is still in progress
     current_bar_start = _floor_5min_utc(datetime.now(UTC))
     bars = [b for b in bars if b.date < current_bar_start]
+
+    # Normalize to the same regular-session bar universe IBKR/TradingView use.
+    bars = [b for b in bars if _is_rth_bar_start(b.date)]
+    target_bars = max(1, int(days)) * RTH_BARS_PER_SESSION
+    if len(bars) > target_bars:
+        bars = bars[-target_bars:]
 
     return bars
 
@@ -226,6 +240,8 @@ class MassiveFeed:
                 break
 
             completed_bar_start = next_boundary - timedelta(minutes=5)
+            if not _is_rth_bar_start(completed_bar_start):
+                continue
 
             # Retry loop — Polygon may take a moment to publish the bar
             for attempt in range(3):
