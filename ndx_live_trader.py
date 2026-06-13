@@ -190,6 +190,8 @@ def _sh_add(sig: dict, status: str, now_ny) -> int:
         "target":      sig.get("target",    float("nan")),
         "risk":        sig.get("risk",      float("nan")),
         "qty":         sig.get("qty",       0),
+        "original_entry": sig.get("original_entry", sig.get("entry", float("nan"))),
+        "history_note": None,
         "status":      status,
         "status_at":   now_ny,
         "fill_price":  None,
@@ -211,6 +213,41 @@ def _sh_update(signal_id: int, status: str, now_ny, fill_price=None):
             return
 
 
+def _sh_sync_pending(signal_id: int, sig: dict):
+    """Keep signal-history snapshot aligned with a mutated pending signal."""
+    if signal_id is None:
+        return
+    for e in _signal_history:
+        if e["id"] == signal_id:
+            e["entry"] = sig.get("entry", e["entry"])
+            e["sl"] = sig.get("sl", e["sl"])
+            e["target"] = sig.get("target", e["target"])
+            e["risk"] = sig.get("risk", e["risk"])
+            e["qty"] = sig.get("qty", e["qty"])
+            e["original_entry"] = sig.get("original_entry", e.get("original_entry", e["entry"]))
+            return
+
+
+def _sh_mark_early_converted(signal_id: int, sig: dict, now_ny):
+    """Mark a pending signal as converted into early-entry mode."""
+    if signal_id is None:
+        return
+    for e in _signal_history:
+        if e["id"] == signal_id:
+            original_entry = float(sig.get("original_entry", e.get("original_entry", sig.get("entry", float("nan")))))
+            revised_entry = float(sig.get("entry", e["entry"]))
+            e["entry"] = revised_entry
+            e["sl"] = sig.get("sl", e["sl"])
+            e["target"] = sig.get("target", e["target"])
+            e["risk"] = sig.get("risk", e["risk"])
+            e["qty"] = sig.get("qty", e["qty"])
+            e["original_entry"] = original_entry
+            e["history_note"] = f"{sig.get('direction', '?')} entry {original_entry:.2f} -> {revised_entry:.2f}"
+            e["status"] = "EARLY-CONV"
+            e["status_at"] = now_ny
+            return
+
+
 def print_signal_history():
     """Print the full signal history for today to console (not log file)."""
     from colorama import Fore, Style
@@ -221,6 +258,7 @@ def print_signal_history():
 
     STATUS_COL = {
         "PENDING":    Fore.YELLOW  + B,
+        "EARLY-CONV": Fore.MAGENTA + B,
         "TRIGGERED":  Fore.GREEN   + B,
         "EXPIRED":    Fore.WHITE   + Style.DIM,
         "OVERRIDDEN": Fore.MAGENTA + Style.DIM,
@@ -247,6 +285,12 @@ def print_signal_history():
             f"{C}║{R} {sc}{status_txt:<13}{R}{C}║{R}",
             flush=True,
         )
+        if e.get("history_note"):
+            note_txt = str(e["history_note"])[:72]
+            print(
+                f"{C}║{R} {Fore.MAGENTA}{note_txt:<72}{R} {C}║{R}",
+                flush=True,
+            )
 
     print(f"{C}╚{'═' * 4}╩{'═' * 6}╩{'═' * 6}╩{'═' * 10}╩{'═' * 8}╩{'═' * 8}╩{'═' * 8}╩{'═' * 14}╝{R}\n", flush=True)
 
@@ -556,6 +600,16 @@ def qty_from_risk(risk_points: float) -> int:
     if risk_points >= 20.0: return 2
     if risk_points >= 15.0: return 3
     return 4
+
+
+def qty_for_signal(sig: dict, qty_multiplier: int) -> int:
+    forced_qty = sig.get("force_qty")
+    base_qty = (
+        int(forced_qty)
+        if forced_qty is not None
+        else qty_from_risk(float(sig["risk"]))
+    )
+    return base_qty * qty_multiplier
 
 # ---------------------------------------------------------------------------
 # Telegram
@@ -1365,16 +1419,18 @@ async def run():
                             log(f"{Fore.YELLOW}  Signal suppressed — max trades ({max_trades_per_day}) reached{Style.RESET_ALL}")
                             _sh_add(sig, "SUPPRESSED", now_ny)
                         else:
-                            forced_qty = sig.get("force_qty")
-                            signal_qty = (
-                                int(forced_qty)
-                                if forced_qty is not None
-                                else qty_from_risk(float(sig["risk"]))
-                            ) * qty_multiplier
+                            signal_qty = qty_for_signal(sig, qty_multiplier)
                             # expire previous pending signal if still alive
                             if _pending_signal_id is not None:
                                 _sh_update(_pending_signal_id, "EXPIRED", now_ny)
                             sig["qty"] = signal_qty
+                            sig["original_entry"] = float(sig["entry"])
+                            sig["original_risk"] = float(sig["risk"])
+                            sig["early_enabled"] = bool(float(sig["risk"]) > 40.0)
+                            sig["early_active"] = False
+                            sig["early_finalized"] = False
+                            sig["custom_exit"] = False
+                            sig["point_trailing"] = False
                             _pending_signal_id = _sh_add(sig, "PENDING", now_ny)
                             pending_signal       = sig
                             pending_signal["qty"] = signal_qty
@@ -1391,6 +1447,72 @@ async def run():
 
                             await send_signal_telegram(sig, signal_qty)
 
+                if (
+                    pending_signal is not None
+                    and algo_position is None
+                    and pending_signal.get("early_enabled")
+                    and not pending_signal.get("early_active")
+                    and not pending_signal.get("early_finalized")
+                ):
+                    pending_signal_dt = pd.Timestamp(pending_signal["signal_dt"])
+                    current_candle_dt = pd.Timestamp(last_bar["datetime_ny"])
+                    if current_candle_dt > pending_signal_dt and not pd.isna(ind_row["ema"]):
+                        direction = pending_signal["direction"]
+                        original_entry = float(pending_signal.get("original_entry", pending_signal["entry"]))
+                        original_triggered = (
+                            (direction == "SHORT" and live_price <= original_entry) or
+                            (direction == "LONG"  and live_price >= original_entry)
+                        )
+                        if not original_triggered:
+                            close_price = float(last_bar["Close"])
+                            ema_value = float(ind_row["ema"])
+                            retrace_confirmed = (
+                                close_price <= ema_value - 1.0
+                                if direction == "LONG"
+                                else close_price >= ema_value + 1.0
+                            )
+                            if retrace_confirmed:
+                                early_entry = (
+                                    float(pending_signal["sl"]) + 35.0
+                                    if direction == "LONG"
+                                    else float(pending_signal["sl"]) - 35.0
+                                )
+                                better_than_original = (
+                                    early_entry < original_entry
+                                    if direction == "LONG"
+                                    else early_entry > original_entry
+                                )
+                                if better_than_original:
+                                    pending_signal.update({
+                                        "entry": float(early_entry),
+                                        "risk": 35.0,
+                                        "target": float(early_entry + 210.0 if direction == "LONG" else early_entry - 210.0),
+                                        "qty": qty_for_signal({**pending_signal, "risk": 35.0}, qty_multiplier),
+                                        "early_active": True,
+                                        "early_finalized": True,
+                                        "custom_exit": True,
+                                        "point_trailing": False,
+                                        "early_risk": 35.0,
+                                    })
+                                    _sh_mark_early_converted(_pending_signal_id, pending_signal, now_ny)
+                                    log(
+                                        f"\n{Fore.MAGENTA}{Style.BRIGHT}"
+                                        f"{'=' * 72}\n"
+                                        f"  PENDING SIGNAL CONVERTED TO EARLY ENTRY\n"
+                                        f"  {direction} entry: {original_entry:.2f} -> {pending_signal['entry']:.2f}\n"
+                                        f"  revised SL={pending_signal['sl']:.2f}  target={pending_signal['target']:.2f}  "
+                                        f"risk=35.00 pts  qty={pending_signal['qty']}\n"
+                                        f"{'=' * 72}"
+                                        f"{Style.RESET_ALL}"
+                                    )
+                                else:
+                                    pending_signal["early_finalized"] = True
+                                    log(
+                                        f"{Fore.MAGENTA}  EARLY ENTRY SKIPPED | {direction} | "
+                                        f"candidate={early_entry:.2f} not better than original={original_entry:.2f}"
+                                        f"{Style.RESET_ALL}"
+                                    )
+
             # -----------------------------------------------------------
             # Entry trigger
             # -----------------------------------------------------------
@@ -1398,6 +1520,7 @@ async def run():
                 direction   = pending_signal["direction"]
                 entry_level = pending_signal["entry"]
                 entry_qty   = int(pending_signal.get("qty", default_order_qty))
+                entry_mode  = "EARLY" if pending_signal.get("early_active") else "BASE"
 
                 triggered = (
                     (direction == "SHORT" and live_price <= entry_level) or
@@ -1434,7 +1557,7 @@ async def run():
                     log(
                         f"\n{Fore.YELLOW}{Style.BRIGHT}"
                         f"[{now_ny.strftime('%H:%M:%S')}] ENTRY TRIGGERED | "
-                        f"{direction} | NDX={trigger_ndx:.2f} | level={entry_level:.2f}"
+                        f"{entry_mode} {direction} | NDX={trigger_ndx:.2f} | level={entry_level:.2f}"
                         f"{Style.RESET_ALL}"
                     )
 
@@ -1470,6 +1593,12 @@ async def run():
                                 log("  NINJA FILL (ENTRY): not captured within window")
 
                     if filled:
+                        if pending_signal.get("early_active"):
+                            log(
+                                f"{Fore.MAGENTA}{Style.BRIGHT}  EARLY ENTRY FILLED | "
+                                f"{direction} | entry={trigger_ndx:.2f} | sl={pending_signal['sl']:.2f} | "
+                                f"target={pending_signal['target']:.2f} | qty={entry_qty}{Style.RESET_ALL}"
+                            )
                         algo_position = {
                             "direction":  direction,
                             "entry_ndx":  trigger_ndx,
@@ -1479,6 +1608,10 @@ async def run():
                             "qty":        entry_qty,
                             "trail_step": 0,
                             "entry_time": now_ny.isoformat(),
+                            "early_active": bool(pending_signal.get("early_active")),
+                            "early_risk": float(pending_signal.get("early_risk", pending_signal["risk"])),
+                            "custom_exit": bool(pending_signal.get("custom_exit", False)),
+                            "point_trailing": bool(pending_signal.get("point_trailing", False)),
                             "gap_trail": (
                                 prev_day_close is not None
                                 and abs(trigger_ndx - prev_day_close) / prev_day_close > 0.015
@@ -1510,7 +1643,17 @@ async def run():
 
                 # Update trailing stop
                 new_sl, new_step = sl, trail_step
-                if algo_position.get("gap_trail"):
+                if algo_position.get("early_active"):
+                    early_risk = float(algo_position.get("early_risk", 35.0))
+                    if direction == "LONG":
+                        move = live_price - entry_ndx
+                        if   move >= 4.0 * early_risk: new_sl = max(sl, entry_ndx + 2.0 * early_risk); new_step = max(trail_step, 2)
+                        elif move >= 2.0 * early_risk: new_sl = max(sl, entry_ndx + 0.5 * early_risk); new_step = max(trail_step, 1)
+                    else:
+                        move = entry_ndx - live_price
+                        if   move >= 4.0 * early_risk: new_sl = min(sl, entry_ndx - 2.0 * early_risk); new_step = max(trail_step, 2)
+                        elif move >= 2.0 * early_risk: new_sl = min(sl, entry_ndx - 0.5 * early_risk); new_step = max(trail_step, 1)
+                elif algo_position.get("gap_trail"):
                     # Fixed-point gap-trail schedule (activated when entry > 1.5% from prev-day close AND risk > 60 pts)
                     # Steps: move (pts in favour) → lock SL at (pts from entry)
                     # 100 → 40,  150 → 80,  200 → 100,  260 → 130,  320 → 200
@@ -1545,7 +1688,14 @@ async def run():
                     algo_position["sl"]         = new_sl
                     algo_position["trail_step"] = new_step
                     save_position_state(algo_position)
-                    if algo_position.get("gap_trail"):
+                    if algo_position.get("early_active"):
+                        _move = live_price - entry_ndx if direction == "LONG" else entry_ndx - live_price
+                        log(
+                            f"\n{Fore.YELLOW}[{now_ny.strftime('%H:%M:%S')}] TSL MOVED (EARLY) | "
+                            f"{direction} | move={_move:.1f} pts | sl: {sl:.2f} → {new_sl:.2f} | "
+                            f"step {trail_step}→{new_step}{Style.RESET_ALL}"
+                        )
+                    elif algo_position.get("gap_trail"):
                         _move = live_price - entry_ndx if direction == "LONG" else entry_ndx - live_price
                         log(
                             f"\n{Fore.YELLOW}[{now_ny.strftime('%H:%M:%S')}] TSL MOVED (GAP) | "
